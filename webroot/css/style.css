@@ -1,0 +1,95 @@
+body{
+background-color: rgba(112, 12, 136, 0.14);
+font-family: 'Muli', sans-serif;
+}
+h1,h2,h3,h4,h5{
+font-family: 'Yanone Kaffeesatz', sans-serif;	
+}
+.corPadrao{
+	background-color: #700c88;
+}
+.logo-menu{
+	max-width:100%;
+}
+
+.img-{
+	
+}
+.icones{
+	/*width:250px;
+	height:150px;*/
+	background-color:gray;
+	color:#FFFFFF;
+}
+.teste{
+	display: flex;
+  align-items: center;
+  justify-content: center
+}
+
+.centro {
+    position:absolute;
+    top:50%;
+    left:50%;
+    margin-top:-50px;
+    margin-left:-50px;
+}/*
+.resultados_rodape span{
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  border: solid 1px red;
+}
+	*/
+.fntLobster{
+	font-family: 'Lobster', cursive;
+}
+/* Sticky footer styles
+-------------------------------------------------- */
+
+.footer {
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  /* Set the fixed height of the footer here */
+  height: 60px;
+  line-height: 60px; /* Vertically center the text there */
+  background-color: #f5f5f5;
+}
+
+a:link {
+    text-decoration: none;
+}
+
+a:visited {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+a:active {
+    text-decoration: none;
+	
+}
+.buttonColor{
+	color:#FFFFFF;
+  background: red; /* For browsers that do not support gradients */
+  background: -webkit-linear-gradient(left, #700c88 , #eadcee); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(right, #700c88 , #eadcee); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(right, #700c88 , #eadcee); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(to right, #700c88 , #eadcee); /* Standard syntax */
+
+}
+/*https://brandcolors.net/*/
+.spotifyColor{
+	color:#1db954;
+}
+.youtubeColor{
+	color:#ff0000;
+}
+.soundcloudColor{
+	color:#ff8800;
+}
+
