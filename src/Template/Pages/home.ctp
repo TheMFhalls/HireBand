@@ -1,19 +1,4 @@
-<!DOCTYPE html>
-<html>
-    <head>
-		<!--Import Google Icon Font-->
-        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-		<!--Let browser know website is optimized for mobile-->
-        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-		<link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
-		<link href="https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz" rel="stylesheet">
-		<link href="https://fonts.googleapis.com/css?family=Muli" rel="stylesheet">
-        <?= $this->Html->css('bootstrap.min.css') ?>
-        <?= $this->Html->css('bootstrap-grid.min.css') ?>
-        <?= $this->Html->css('bootstrap-reboot.min.css') ?>
-        <?= $this->Html->css('style.css') ?>
-    </head>
-    <body>
+
 		<nav class="navbar navbar-expand-lg corPadrao">
 			<div class="form-inline col-md-2" >	
 				<a class="navbar-brand" href="#">
@@ -36,7 +21,7 @@
 					<a class="nav-link" href="<?php echo LOCAL_HOST; ?>/usuarios/add" style=" color:#FFFFFF" >CADASTRE-SE</a>
 				  </li>
 				  <li class="nav-item">
-					<a class="nav-link disabled" href="#"  style=" color:#FFFFFF" >LOGIN</a>
+					<a class="nav-link disabled" href="<?php echo LOCAL_HOST; ?>/login"  style=" color:#FFFFFF" >LOGIN</a>
 				  </li>
 				</ul>
 			</div>
@@ -82,6 +67,3 @@
 				<!--FIM BLOCO LATERAL-->
 			</div>
 		</div>
-        <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
-    </body>
-</html>
