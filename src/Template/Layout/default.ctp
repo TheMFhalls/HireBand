@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <title>HireBand - Find your Band!</title>
     <!--Import Google Icon Font-->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <!--Let browser know website is optimized for mobile-->
@@ -11,6 +12,7 @@
     <?= $this->Html->css("https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css") ?>
     <?= $this->Html->script('https://code.jquery.com/jquery-3.2.1.min.js') ?>
     <?= $this->Html->css('style.css') ?>
+    <?= $this->Html->css('helper.css') ?>
 </head>
 <body>
 <?= $this->fetch('content') ?>

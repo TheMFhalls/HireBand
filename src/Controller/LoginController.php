@@ -2,6 +2,7 @@
 namespace App\Controller;
 
 use App\Controller\AppController;
+use Cake\ORM\TableRegistry;
 
 class LoginController extends AppController
 {
@@ -11,6 +12,19 @@ class LoginController extends AppController
     }
 
     public function sessao(){
-        print_r($_REQUEST);
+        $usuario = TableRegistry::get('usuarios')
+            ->find()
+            ->where(['email' => $_REQUEST['email']])
+            ->first();
+
+        if($usuario->id){
+            session_start();
+
+            $_SESSION['usuario'] = $usuario;
+
+            $this->redirect('/');
+        }else{
+            echo "SEM ACESSO";
+        }
     }
 }
