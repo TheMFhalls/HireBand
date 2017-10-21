@@ -51,6 +51,8 @@ define('CONFIG', ROOT . DS . 'config' . DS);
  */
 define('WWW_ROOT', ROOT . DS . 'webroot' . DS);
 
+define('LOCAL_HOST', 'http://localhost/HireBand');
+
 /**
  * Path to the tests directory.
  */

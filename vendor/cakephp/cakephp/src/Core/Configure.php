@@ -33,6 +33,8 @@ use RuntimeException;
 class Configure
 {
 
+    protected static $_universalpath = "localhost/HireBand/";
+
     /**
      * Array of values currently stored in Configure.
      *

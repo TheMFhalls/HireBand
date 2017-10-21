@@ -30,6 +30,7 @@ if (!defined('DS')) {
     define('DS', DIRECTORY_SEPARATOR);
 }
 define('ROOT', dirname(__DIR__));
+define('LOCALHOST', 'HireBand');
 define('APP_DIR', 'TestApp');
 
 define('TMP', sys_get_temp_dir() . DS);
