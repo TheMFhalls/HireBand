@@ -27,3 +27,8 @@ if (!function_exists('collection')) {
     }
 
 }
+
+function user_logged(){
+    @session_start();
+    return isset($_SESSION["usuario"]);
+}

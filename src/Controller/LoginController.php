@@ -23,12 +23,13 @@ class LoginController extends AppController
             ->first();
 
         if($usuario->id){
-            session_start();
-
+            @session_start();
             $_SESSION['usuario'] = $usuario;
-
+            $_SESSION['mensagem'] = "Obrigado por logar, $usuario->nome";
             $this->redirect('/');
         }else{
+            @session_start();
+            $_SESSION['mensagem'] = "Usuário ou senha inválidas!";
             $this->redirect(
                 ['controller' => 'Login', 'action' => 'index']
             );
@@ -37,7 +38,8 @@ class LoginController extends AppController
 
     public function logout(){
         session_start();
+        unset($_SESSION);
         session_destroy();
-        $_SESSION = null;
+        $this->redirect('/');
     }
 }
