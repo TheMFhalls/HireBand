@@ -29,9 +29,6 @@
 		<div class="container">
 			<div class="row">
 				<!--INICIO BLOCO CENTRAL-->
-                <div class="col-xs-12">
-                    <?= print_r($_SESSION); ?>
-                </div>
 				<div class="col-sm-12 col-md-9" style="background-color:">
 					<div class="col-12" style="background-color:">
 						<img src="img/capa.jpg" class="img-fluid" alt="Responsive image">

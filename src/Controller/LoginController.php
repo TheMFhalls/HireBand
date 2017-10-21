@@ -14,6 +14,11 @@ class LoginController extends AppController
     public function sessao(){
         $usuario = TableRegistry::get('usuarios')
             ->find()
+            ->select([
+                'id',
+                'nome',
+                'email'
+            ])
             ->where(['email' => $_REQUEST['email']])
             ->first();
 
@@ -24,7 +29,15 @@ class LoginController extends AppController
 
             $this->redirect('/');
         }else{
-            echo "SEM ACESSO";
+            $this->redirect(
+                ['controller' => 'Login', 'action' => 'index']
+            );
         }
+    }
+
+    public function logout(){
+        session_start();
+        session_destroy();
+        $_SESSION = null;
     }
 }
