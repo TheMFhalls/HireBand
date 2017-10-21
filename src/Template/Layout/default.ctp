@@ -10,6 +10,7 @@
     <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Muli" rel="stylesheet">
+    <?= $this->Html->meta('icon', LOCAL_HOST."/img/favicon.png"); ?>
     <?= $this->Html->css("https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css") ?>
     <?= $this->Html->script('https://code.jquery.com/jquery-3.2.1.slim.min.js') ?>
     <?= $this->Html->script('https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js') ?>
