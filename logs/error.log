@@ -2430,3 +2430,815 @@ Cake\Http\Server::run() - CORE\src\Http\Server.php, line 81
 
 
 
+2017-10-21 19:01:01 Error: [Cake\Datasource\Exception\InvalidPrimaryKeyException] Record not found in table "usuarios" with primary key [NULL]
+Request URL: /usuarios/edit
+Stack Trace:
+#0 C:\xampp\htdocs\HireBand\src\Controller\UsuariosController.php(92): Cake\ORM\Table->get(Array, Array)
+#1 C:\xampp\htdocs\HireBand\vendor\cakephp\cakephp\src\Controller\Controller.php(440): App\Controller\UsuariosController->edit()
+#2 C:\xampp\htdocs\HireBand\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(119): Cake\Controller\Controller->invokeAction()
+#3 C:\xampp\htdocs\HireBand\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(93): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\UsuariosController))
+#4 C:\xampp\htdocs\HireBand\vendor\cakephp\cakephp\src\Http\BaseApplication.php(103): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#5 C:\xampp\htdocs\HireBand\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#6 C:\xampp\htdocs\HireBand\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(107): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#7 C:\xampp\htdocs\HireBand\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#8 C:\xampp\htdocs\HireBand\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#9 C:\xampp\htdocs\HireBand\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#10 C:\xampp\htdocs\HireBand\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(95): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#11 C:\xampp\htdocs\HireBand\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#12 C:\xampp\htdocs\HireBand\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php(52): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#13 C:\xampp\htdocs\HireBand\vendor\cakephp\cakephp\src\Http\Runner.php(65): DebugKit\Middleware\DebugKitMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#14 C:\xampp\htdocs\HireBand\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#15 C:\xampp\htdocs\HireBand\vendor\cakephp\cakephp\src\Http\Server.php(81): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#16 C:\xampp\htdocs\HireBand\webroot\index.php(40): Cake\Http\Server->run()
+#17 {main}
+
+
+2017-10-21 19:01:01 Warning: Warning (512): Unable to emit headers. Headers sent in file=C:\xampp\htdocs\HireBand\vendor\cakephp\cakephp\src\Error\Debugger.php line=850 in [C:\xampp\htdocs\HireBand\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 48]
+Request URL: /usuarios/edit
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 153
+Cake\Http\ResponseEmitter::emit() - CORE\src\Http\ResponseEmitter.php, line 48
+Cake\Http\Server::emit() - CORE\src\Http\Server.php, line 106
+[main] - ROOT\webroot\index.php, line 40
+
+
+
+2017-10-21 19:01:01 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at C:\xampp\htdocs\HireBand\vendor\cakephp\cakephp\src\Error\Debugger.php:850) in [C:\xampp\htdocs\HireBand\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 148]
+Request URL: /usuarios/edit
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 153
+header - [internal], line ??
+Cake\Http\ResponseEmitter::emitStatusLine() - CORE\src\Http\ResponseEmitter.php, line 148
+Cake\Http\ResponseEmitter::emit() - CORE\src\Http\ResponseEmitter.php, line 54
+Cake\Http\Server::emit() - CORE\src\Http\Server.php, line 106
+[main] - ROOT\webroot\index.php, line 40
+
+
+
+2017-10-21 19:01:01 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at C:\xampp\htdocs\HireBand\vendor\cakephp\cakephp\src\Error\Debugger.php:850) in [C:\xampp\htdocs\HireBand\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 181]
+Request URL: /usuarios/edit
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 153
+header - [internal], line ??
+Cake\Http\ResponseEmitter::emitHeaders() - CORE\src\Http\ResponseEmitter.php, line 181
+Cake\Http\ResponseEmitter::emit() - CORE\src\Http\ResponseEmitter.php, line 55
+Cake\Http\Server::emit() - CORE\src\Http\Server.php, line 106
+[main] - ROOT\webroot\index.php, line 40
+
+
+
+2017-10-21 19:01:01 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at C:\xampp\htdocs\HireBand\vendor\cakephp\cakephp\src\Error\Debugger.php:850) in [C:\xampp\htdocs\HireBand\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 181]
+Request URL: /usuarios/edit
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 153
+header - [internal], line ??
+Cake\Http\ResponseEmitter::emitHeaders() - CORE\src\Http\ResponseEmitter.php, line 181
+Cake\Http\ResponseEmitter::emit() - CORE\src\Http\ResponseEmitter.php, line 55
+Cake\Http\Server::emit() - CORE\src\Http\Server.php, line 106
+[main] - ROOT\webroot\index.php, line 40
+
+
+
+2017-10-21 19:01:07 Warning: Warning (512): Unable to emit headers. Headers sent in file=C:\xampp\htdocs\HireBand\vendor\cakephp\cakephp\src\Error\Debugger.php line=850 in [C:\xampp\htdocs\HireBand\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 48]
+Request URL: /usuarios/edit/1
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 153
+Cake\Http\ResponseEmitter::emit() - CORE\src\Http\ResponseEmitter.php, line 48
+Cake\Http\Server::emit() - CORE\src\Http\Server.php, line 106
+[main] - ROOT\webroot\index.php, line 40
+
+
+
+2017-10-21 19:01:07 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at C:\xampp\htdocs\HireBand\vendor\cakephp\cakephp\src\Error\Debugger.php:850) in [C:\xampp\htdocs\HireBand\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 148]
+Request URL: /usuarios/edit/1
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 153
+header - [internal], line ??
+Cake\Http\ResponseEmitter::emitStatusLine() - CORE\src\Http\ResponseEmitter.php, line 148
+Cake\Http\ResponseEmitter::emit() - CORE\src\Http\ResponseEmitter.php, line 54
+Cake\Http\Server::emit() - CORE\src\Http\Server.php, line 106
+[main] - ROOT\webroot\index.php, line 40
+
+
+
+2017-10-21 19:01:07 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at C:\xampp\htdocs\HireBand\vendor\cakephp\cakephp\src\Error\Debugger.php:850) in [C:\xampp\htdocs\HireBand\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 181]
+Request URL: /usuarios/edit/1
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 153
+header - [internal], line ??
+Cake\Http\ResponseEmitter::emitHeaders() - CORE\src\Http\ResponseEmitter.php, line 181
+Cake\Http\ResponseEmitter::emit() - CORE\src\Http\ResponseEmitter.php, line 55
+Cake\Http\Server::emit() - CORE\src\Http\Server.php, line 106
+[main] - ROOT\webroot\index.php, line 40
+
+
+
+2017-10-21 19:01:07 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at C:\xampp\htdocs\HireBand\vendor\cakephp\cakephp\src\Error\Debugger.php:850) in [C:\xampp\htdocs\HireBand\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 181]
+Request URL: /usuarios/edit/1
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 153
+header - [internal], line ??
+Cake\Http\ResponseEmitter::emitHeaders() - CORE\src\Http\ResponseEmitter.php, line 181
+Cake\Http\ResponseEmitter::emit() - CORE\src\Http\ResponseEmitter.php, line 55
+Cake\Http\Server::emit() - CORE\src\Http\Server.php, line 106
+[main] - ROOT\webroot\index.php, line 40
+
+
+
+2017-10-21 19:01:07 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at C:\xampp\htdocs\HireBand\vendor\cakephp\cakephp\src\Error\Debugger.php:850) in [C:\xampp\htdocs\HireBand\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 181]
+Request URL: /usuarios/edit/1
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 153
+header - [internal], line ??
+Cake\Http\ResponseEmitter::emitHeaders() - CORE\src\Http\ResponseEmitter.php, line 181
+Cake\Http\ResponseEmitter::emit() - CORE\src\Http\ResponseEmitter.php, line 55
+Cake\Http\Server::emit() - CORE\src\Http\Server.php, line 106
+[main] - ROOT\webroot\index.php, line 40
+
+
+
+2017-10-21 19:03:30 Warning: Warning (512): Unable to emit headers. Headers sent in file=C:\xampp\htdocs\HireBand\vendor\cakephp\cakephp\src\Error\Debugger.php line=850 in [C:\xampp\htdocs\HireBand\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 48]
+Request URL: /usuarios/edit/5
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 153
+Cake\Http\ResponseEmitter::emit() - CORE\src\Http\ResponseEmitter.php, line 48
+Cake\Http\Server::emit() - CORE\src\Http\Server.php, line 106
+[main] - ROOT\webroot\index.php, line 40
+
+
+
+2017-10-21 19:03:30 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at C:\xampp\htdocs\HireBand\vendor\cakephp\cakephp\src\Error\Debugger.php:850) in [C:\xampp\htdocs\HireBand\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 148]
+Request URL: /usuarios/edit/5
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 153
+header - [internal], line ??
+Cake\Http\ResponseEmitter::emitStatusLine() - CORE\src\Http\ResponseEmitter.php, line 148
+Cake\Http\ResponseEmitter::emit() - CORE\src\Http\ResponseEmitter.php, line 54
+Cake\Http\Server::emit() - CORE\src\Http\Server.php, line 106
+[main] - ROOT\webroot\index.php, line 40
+
+
+
+2017-10-21 19:03:30 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at C:\xampp\htdocs\HireBand\vendor\cakephp\cakephp\src\Error\Debugger.php:850) in [C:\xampp\htdocs\HireBand\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 181]
+Request URL: /usuarios/edit/5
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 153
+header - [internal], line ??
+Cake\Http\ResponseEmitter::emitHeaders() - CORE\src\Http\ResponseEmitter.php, line 181
+Cake\Http\ResponseEmitter::emit() - CORE\src\Http\ResponseEmitter.php, line 55
+Cake\Http\Server::emit() - CORE\src\Http\Server.php, line 106
+[main] - ROOT\webroot\index.php, line 40
+
+
+
+2017-10-21 19:03:30 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at C:\xampp\htdocs\HireBand\vendor\cakephp\cakephp\src\Error\Debugger.php:850) in [C:\xampp\htdocs\HireBand\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 181]
+Request URL: /usuarios/edit/5
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 153
+header - [internal], line ??
+Cake\Http\ResponseEmitter::emitHeaders() - CORE\src\Http\ResponseEmitter.php, line 181
+Cake\Http\ResponseEmitter::emit() - CORE\src\Http\ResponseEmitter.php, line 55
+Cake\Http\Server::emit() - CORE\src\Http\Server.php, line 106
+[main] - ROOT\webroot\index.php, line 40
+
+
+
+2017-10-21 19:03:30 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at C:\xampp\htdocs\HireBand\vendor\cakephp\cakephp\src\Error\Debugger.php:850) in [C:\xampp\htdocs\HireBand\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 181]
+Request URL: /usuarios/edit/5
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 153
+header - [internal], line ??
+Cake\Http\ResponseEmitter::emitHeaders() - CORE\src\Http\ResponseEmitter.php, line 181
+Cake\Http\ResponseEmitter::emit() - CORE\src\Http\ResponseEmitter.php, line 55
+Cake\Http\Server::emit() - CORE\src\Http\Server.php, line 106
+[main] - ROOT\webroot\index.php, line 40
+
+
+
+2017-10-21 19:04:51 Warning: Warning (512): Unable to emit headers. Headers sent in file=C:\xampp\htdocs\HireBand\vendor\cakephp\cakephp\src\Error\Debugger.php line=850 in [C:\xampp\htdocs\HireBand\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 48]
+Request URL: /usuarios/edit/5
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 153
+Cake\Http\ResponseEmitter::emit() - CORE\src\Http\ResponseEmitter.php, line 48
+Cake\Http\Server::emit() - CORE\src\Http\Server.php, line 106
+[main] - ROOT\webroot\index.php, line 40
+
+
+
+2017-10-21 19:04:51 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at C:\xampp\htdocs\HireBand\vendor\cakephp\cakephp\src\Error\Debugger.php:850) in [C:\xampp\htdocs\HireBand\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 148]
+Request URL: /usuarios/edit/5
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 153
+header - [internal], line ??
+Cake\Http\ResponseEmitter::emitStatusLine() - CORE\src\Http\ResponseEmitter.php, line 148
+Cake\Http\ResponseEmitter::emit() - CORE\src\Http\ResponseEmitter.php, line 54
+Cake\Http\Server::emit() - CORE\src\Http\Server.php, line 106
+[main] - ROOT\webroot\index.php, line 40
+
+
+
+2017-10-21 19:04:51 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at C:\xampp\htdocs\HireBand\vendor\cakephp\cakephp\src\Error\Debugger.php:850) in [C:\xampp\htdocs\HireBand\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 181]
+Request URL: /usuarios/edit/5
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 153
+header - [internal], line ??
+Cake\Http\ResponseEmitter::emitHeaders() - CORE\src\Http\ResponseEmitter.php, line 181
+Cake\Http\ResponseEmitter::emit() - CORE\src\Http\ResponseEmitter.php, line 55
+Cake\Http\Server::emit() - CORE\src\Http\Server.php, line 106
+[main] - ROOT\webroot\index.php, line 40
+
+
+
+2017-10-21 19:04:51 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at C:\xampp\htdocs\HireBand\vendor\cakephp\cakephp\src\Error\Debugger.php:850) in [C:\xampp\htdocs\HireBand\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 181]
+Request URL: /usuarios/edit/5
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 153
+header - [internal], line ??
+Cake\Http\ResponseEmitter::emitHeaders() - CORE\src\Http\ResponseEmitter.php, line 181
+Cake\Http\ResponseEmitter::emit() - CORE\src\Http\ResponseEmitter.php, line 55
+Cake\Http\Server::emit() - CORE\src\Http\Server.php, line 106
+[main] - ROOT\webroot\index.php, line 40
+
+
+
+2017-10-21 19:04:51 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at C:\xampp\htdocs\HireBand\vendor\cakephp\cakephp\src\Error\Debugger.php:850) in [C:\xampp\htdocs\HireBand\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 181]
+Request URL: /usuarios/edit/5
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 153
+header - [internal], line ??
+Cake\Http\ResponseEmitter::emitHeaders() - CORE\src\Http\ResponseEmitter.php, line 181
+Cake\Http\ResponseEmitter::emit() - CORE\src\Http\ResponseEmitter.php, line 55
+Cake\Http\Server::emit() - CORE\src\Http\Server.php, line 106
+[main] - ROOT\webroot\index.php, line 40
+
+
+
+2017-10-21 19:21:31 Error: [Error] Class 'App\Controller\TableRegistry' not found in C:\xampp\htdocs\HireBand\src\Controller\UsuariosController.php on line 74
+Request URL: /usuarios/add
+Referer URL: http://localhost/HireBand/usuarios/add
+Stack Trace:
+#0 C:\xampp\htdocs\HireBand\vendor\cakephp\cakephp\src\Controller\Controller.php(440): App\Controller\UsuariosController->add()
+#1 C:\xampp\htdocs\HireBand\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(119): Cake\Controller\Controller->invokeAction()
+#2 C:\xampp\htdocs\HireBand\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(93): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\UsuariosController))
+#3 C:\xampp\htdocs\HireBand\vendor\cakephp\cakephp\src\Http\BaseApplication.php(103): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#4 C:\xampp\htdocs\HireBand\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#5 C:\xampp\htdocs\HireBand\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(107): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#6 C:\xampp\htdocs\HireBand\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#7 C:\xampp\htdocs\HireBand\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#8 C:\xampp\htdocs\HireBand\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#9 C:\xampp\htdocs\HireBand\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(95): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#10 C:\xampp\htdocs\HireBand\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#11 C:\xampp\htdocs\HireBand\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php(52): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#12 C:\xampp\htdocs\HireBand\vendor\cakephp\cakephp\src\Http\Runner.php(65): DebugKit\Middleware\DebugKitMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#13 C:\xampp\htdocs\HireBand\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#14 C:\xampp\htdocs\HireBand\vendor\cakephp\cakephp\src\Http\Server.php(81): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#15 C:\xampp\htdocs\HireBand\webroot\index.php(40): Cake\Http\Server->run()
+#16 {main}
+
+
+2017-10-21 19:22:16 Warning: Warning (512): Unable to emit headers. Headers sent in file=C:\xampp\htdocs\HireBand\vendor\cakephp\cakephp\src\Error\Debugger.php line=850 in [C:\xampp\htdocs\HireBand\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 48]
+Request URL: /usuarios/add
+Referer URL: http://localhost/HireBand/usuarios/add
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 153
+Cake\Http\ResponseEmitter::emit() - CORE\src\Http\ResponseEmitter.php, line 48
+Cake\Http\Server::emit() - CORE\src\Http\Server.php, line 106
+[main] - ROOT\webroot\index.php, line 40
+
+
+
+2017-10-21 19:22:16 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at C:\xampp\htdocs\HireBand\vendor\cakephp\cakephp\src\Error\Debugger.php:850) in [C:\xampp\htdocs\HireBand\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 148]
+Request URL: /usuarios/add
+Referer URL: http://localhost/HireBand/usuarios/add
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 153
+header - [internal], line ??
+Cake\Http\ResponseEmitter::emitStatusLine() - CORE\src\Http\ResponseEmitter.php, line 148
+Cake\Http\ResponseEmitter::emit() - CORE\src\Http\ResponseEmitter.php, line 54
+Cake\Http\Server::emit() - CORE\src\Http\Server.php, line 106
+[main] - ROOT\webroot\index.php, line 40
+
+
+
+2017-10-21 19:22:16 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at C:\xampp\htdocs\HireBand\vendor\cakephp\cakephp\src\Error\Debugger.php:850) in [C:\xampp\htdocs\HireBand\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 181]
+Request URL: /usuarios/add
+Referer URL: http://localhost/HireBand/usuarios/add
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 153
+header - [internal], line ??
+Cake\Http\ResponseEmitter::emitHeaders() - CORE\src\Http\ResponseEmitter.php, line 181
+Cake\Http\ResponseEmitter::emit() - CORE\src\Http\ResponseEmitter.php, line 55
+Cake\Http\Server::emit() - CORE\src\Http\Server.php, line 106
+[main] - ROOT\webroot\index.php, line 40
+
+
+
+2017-10-21 19:22:16 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at C:\xampp\htdocs\HireBand\vendor\cakephp\cakephp\src\Error\Debugger.php:850) in [C:\xampp\htdocs\HireBand\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 181]
+Request URL: /usuarios/add
+Referer URL: http://localhost/HireBand/usuarios/add
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 153
+header - [internal], line ??
+Cake\Http\ResponseEmitter::emitHeaders() - CORE\src\Http\ResponseEmitter.php, line 181
+Cake\Http\ResponseEmitter::emit() - CORE\src\Http\ResponseEmitter.php, line 55
+Cake\Http\Server::emit() - CORE\src\Http\Server.php, line 106
+[main] - ROOT\webroot\index.php, line 40
+
+
+
+2017-10-21 19:23:57 Warning: Warning (512): Unable to emit headers. Headers sent in file=C:\xampp\htdocs\HireBand\vendor\cakephp\cakephp\src\Error\Debugger.php line=850 in [C:\xampp\htdocs\HireBand\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 48]
+Request URL: /usuarios/add
+Referer URL: http://localhost/HireBand/usuarios/add
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 153
+Cake\Http\ResponseEmitter::emit() - CORE\src\Http\ResponseEmitter.php, line 48
+Cake\Http\Server::emit() - CORE\src\Http\Server.php, line 106
+[main] - ROOT\webroot\index.php, line 40
+
+
+
+2017-10-21 19:23:57 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at C:\xampp\htdocs\HireBand\vendor\cakephp\cakephp\src\Error\Debugger.php:850) in [C:\xampp\htdocs\HireBand\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 148]
+Request URL: /usuarios/add
+Referer URL: http://localhost/HireBand/usuarios/add
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 153
+header - [internal], line ??
+Cake\Http\ResponseEmitter::emitStatusLine() - CORE\src\Http\ResponseEmitter.php, line 148
+Cake\Http\ResponseEmitter::emit() - CORE\src\Http\ResponseEmitter.php, line 54
+Cake\Http\Server::emit() - CORE\src\Http\Server.php, line 106
+[main] - ROOT\webroot\index.php, line 40
+
+
+
+2017-10-21 19:23:57 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at C:\xampp\htdocs\HireBand\vendor\cakephp\cakephp\src\Error\Debugger.php:850) in [C:\xampp\htdocs\HireBand\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 181]
+Request URL: /usuarios/add
+Referer URL: http://localhost/HireBand/usuarios/add
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 153
+header - [internal], line ??
+Cake\Http\ResponseEmitter::emitHeaders() - CORE\src\Http\ResponseEmitter.php, line 181
+Cake\Http\ResponseEmitter::emit() - CORE\src\Http\ResponseEmitter.php, line 55
+Cake\Http\Server::emit() - CORE\src\Http\Server.php, line 106
+[main] - ROOT\webroot\index.php, line 40
+
+
+
+2017-10-21 19:23:57 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at C:\xampp\htdocs\HireBand\vendor\cakephp\cakephp\src\Error\Debugger.php:850) in [C:\xampp\htdocs\HireBand\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 181]
+Request URL: /usuarios/add
+Referer URL: http://localhost/HireBand/usuarios/add
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 153
+header - [internal], line ??
+Cake\Http\ResponseEmitter::emitHeaders() - CORE\src\Http\ResponseEmitter.php, line 181
+Cake\Http\ResponseEmitter::emit() - CORE\src\Http\ResponseEmitter.php, line 55
+Cake\Http\Server::emit() - CORE\src\Http\Server.php, line 106
+[main] - ROOT\webroot\index.php, line 40
+
+
+
+2017-10-21 19:23:57 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at C:\xampp\htdocs\HireBand\vendor\cakephp\cakephp\src\Error\Debugger.php:850) in [C:\xampp\htdocs\HireBand\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 181]
+Request URL: /usuarios/add
+Referer URL: http://localhost/HireBand/usuarios/add
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 153
+header - [internal], line ??
+Cake\Http\ResponseEmitter::emitHeaders() - CORE\src\Http\ResponseEmitter.php, line 181
+Cake\Http\ResponseEmitter::emit() - CORE\src\Http\ResponseEmitter.php, line 55
+Cake\Http\Server::emit() - CORE\src\Http\Server.php, line 106
+[main] - ROOT\webroot\index.php, line 40
+
+
+
+2017-10-21 19:24:51 Warning: Warning (512): Unable to emit headers. Headers sent in file=C:\xampp\htdocs\HireBand\vendor\cakephp\cakephp\src\Error\Debugger.php line=850 in [C:\xampp\htdocs\HireBand\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 48]
+Request URL: /usuarios/add
+Referer URL: http://localhost/HireBand/usuarios/add
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 153
+Cake\Http\ResponseEmitter::emit() - CORE\src\Http\ResponseEmitter.php, line 48
+Cake\Http\Server::emit() - CORE\src\Http\Server.php, line 106
+[main] - ROOT\webroot\index.php, line 40
+
+
+
+2017-10-21 19:24:51 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at C:\xampp\htdocs\HireBand\vendor\cakephp\cakephp\src\Error\Debugger.php:850) in [C:\xampp\htdocs\HireBand\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 148]
+Request URL: /usuarios/add
+Referer URL: http://localhost/HireBand/usuarios/add
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 153
+header - [internal], line ??
+Cake\Http\ResponseEmitter::emitStatusLine() - CORE\src\Http\ResponseEmitter.php, line 148
+Cake\Http\ResponseEmitter::emit() - CORE\src\Http\ResponseEmitter.php, line 54
+Cake\Http\Server::emit() - CORE\src\Http\Server.php, line 106
+[main] - ROOT\webroot\index.php, line 40
+
+
+
+2017-10-21 19:24:51 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at C:\xampp\htdocs\HireBand\vendor\cakephp\cakephp\src\Error\Debugger.php:850) in [C:\xampp\htdocs\HireBand\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 181]
+Request URL: /usuarios/add
+Referer URL: http://localhost/HireBand/usuarios/add
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 153
+header - [internal], line ??
+Cake\Http\ResponseEmitter::emitHeaders() - CORE\src\Http\ResponseEmitter.php, line 181
+Cake\Http\ResponseEmitter::emit() - CORE\src\Http\ResponseEmitter.php, line 55
+Cake\Http\Server::emit() - CORE\src\Http\Server.php, line 106
+[main] - ROOT\webroot\index.php, line 40
+
+
+
+2017-10-21 19:24:51 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at C:\xampp\htdocs\HireBand\vendor\cakephp\cakephp\src\Error\Debugger.php:850) in [C:\xampp\htdocs\HireBand\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 181]
+Request URL: /usuarios/add
+Referer URL: http://localhost/HireBand/usuarios/add
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 153
+header - [internal], line ??
+Cake\Http\ResponseEmitter::emitHeaders() - CORE\src\Http\ResponseEmitter.php, line 181
+Cake\Http\ResponseEmitter::emit() - CORE\src\Http\ResponseEmitter.php, line 55
+Cake\Http\Server::emit() - CORE\src\Http\Server.php, line 106
+[main] - ROOT\webroot\index.php, line 40
+
+
+
+2017-10-21 19:24:51 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at C:\xampp\htdocs\HireBand\vendor\cakephp\cakephp\src\Error\Debugger.php:850) in [C:\xampp\htdocs\HireBand\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 181]
+Request URL: /usuarios/add
+Referer URL: http://localhost/HireBand/usuarios/add
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 153
+header - [internal], line ??
+Cake\Http\ResponseEmitter::emitHeaders() - CORE\src\Http\ResponseEmitter.php, line 181
+Cake\Http\ResponseEmitter::emit() - CORE\src\Http\ResponseEmitter.php, line 55
+Cake\Http\Server::emit() - CORE\src\Http\Server.php, line 106
+[main] - ROOT\webroot\index.php, line 40
+
+
+
+2017-10-21 19:57:36 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Banda could not be found.
+Exception Attributes: array (
+  'class' => 'Banda',
+  'plugin' => false,
+  'prefix' => false,
+  '_ext' => false,
+)
+Request URL: /banda/thanks
+Referer URL: http://localhost/HireBand/usuarios/add
+Stack Trace:
+#0 C:\xampp\htdocs\HireBand\vendor\cakephp\cakephp\src\Http\ControllerFactory.php(38): Cake\Http\ControllerFactory->missingController(Object(Cake\Http\ServerRequest))
+#1 C:\xampp\htdocs\HireBand\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(90): Cake\Http\ControllerFactory->create(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#2 C:\xampp\htdocs\HireBand\vendor\cakephp\cakephp\src\Http\BaseApplication.php(103): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#3 C:\xampp\htdocs\HireBand\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#4 C:\xampp\htdocs\HireBand\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(107): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#5 C:\xampp\htdocs\HireBand\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#6 C:\xampp\htdocs\HireBand\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#7 C:\xampp\htdocs\HireBand\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#8 C:\xampp\htdocs\HireBand\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(95): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#9 C:\xampp\htdocs\HireBand\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#10 C:\xampp\htdocs\HireBand\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php(52): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#11 C:\xampp\htdocs\HireBand\vendor\cakephp\cakephp\src\Http\Runner.php(65): DebugKit\Middleware\DebugKitMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#12 C:\xampp\htdocs\HireBand\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#13 C:\xampp\htdocs\HireBand\vendor\cakephp\cakephp\src\Http\Server.php(81): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#14 C:\xampp\htdocs\HireBand\webroot\index.php(40): Cake\Http\Server->run()
+#15 {main}
+
+
+2017-10-21 19:57:49 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Banda could not be found.
+Exception Attributes: array (
+  'class' => 'Banda',
+  'plugin' => false,
+  'prefix' => false,
+  '_ext' => false,
+)
+Request URL: /banda/thanks
+Referer URL: http://localhost/HireBand/usuarios/add
+Stack Trace:
+#0 C:\xampp\htdocs\HireBand\vendor\cakephp\cakephp\src\Http\ControllerFactory.php(38): Cake\Http\ControllerFactory->missingController(Object(Cake\Http\ServerRequest))
+#1 C:\xampp\htdocs\HireBand\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(90): Cake\Http\ControllerFactory->create(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#2 C:\xampp\htdocs\HireBand\vendor\cakephp\cakephp\src\Http\BaseApplication.php(103): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#3 C:\xampp\htdocs\HireBand\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#4 C:\xampp\htdocs\HireBand\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(107): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#5 C:\xampp\htdocs\HireBand\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#6 C:\xampp\htdocs\HireBand\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#7 C:\xampp\htdocs\HireBand\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#8 C:\xampp\htdocs\HireBand\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(95): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#9 C:\xampp\htdocs\HireBand\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#10 C:\xampp\htdocs\HireBand\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php(52): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#11 C:\xampp\htdocs\HireBand\vendor\cakephp\cakephp\src\Http\Runner.php(65): DebugKit\Middleware\DebugKitMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#12 C:\xampp\htdocs\HireBand\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#13 C:\xampp\htdocs\HireBand\vendor\cakephp\cakephp\src\Http\Server.php(81): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#14 C:\xampp\htdocs\HireBand\webroot\index.php(40): Cake\Http\Server->run()
+#15 {main}
+
+
+2017-10-21 19:58:03 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Banda could not be found.
+Exception Attributes: array (
+  'class' => 'Banda',
+  'plugin' => false,
+  'prefix' => false,
+  '_ext' => false,
+)
+Request URL: /banda/thanks
+Referer URL: http://localhost/HireBand/usuarios/add
+Stack Trace:
+#0 C:\xampp\htdocs\HireBand\vendor\cakephp\cakephp\src\Http\ControllerFactory.php(38): Cake\Http\ControllerFactory->missingController(Object(Cake\Http\ServerRequest))
+#1 C:\xampp\htdocs\HireBand\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(90): Cake\Http\ControllerFactory->create(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#2 C:\xampp\htdocs\HireBand\vendor\cakephp\cakephp\src\Http\BaseApplication.php(103): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#3 C:\xampp\htdocs\HireBand\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#4 C:\xampp\htdocs\HireBand\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(107): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#5 C:\xampp\htdocs\HireBand\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#6 C:\xampp\htdocs\HireBand\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#7 C:\xampp\htdocs\HireBand\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#8 C:\xampp\htdocs\HireBand\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(95): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#9 C:\xampp\htdocs\HireBand\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#10 C:\xampp\htdocs\HireBand\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php(52): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#11 C:\xampp\htdocs\HireBand\vendor\cakephp\cakephp\src\Http\Runner.php(65): DebugKit\Middleware\DebugKitMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#12 C:\xampp\htdocs\HireBand\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#13 C:\xampp\htdocs\HireBand\vendor\cakephp\cakephp\src\Http\Server.php(81): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#14 C:\xampp\htdocs\HireBand\webroot\index.php(40): Cake\Http\Server->run()
+#15 {main}
+
+
+2017-10-21 19:58:20 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Estabelecimento could not be found.
+Exception Attributes: array (
+  'class' => 'Estabelecimento',
+  'plugin' => false,
+  'prefix' => false,
+  '_ext' => false,
+)
+Request URL: /estabelecimento/add
+Referer URL: http://localhost/HireBand/usuarios/add
+Stack Trace:
+#0 C:\xampp\htdocs\HireBand\vendor\cakephp\cakephp\src\Http\ControllerFactory.php(38): Cake\Http\ControllerFactory->missingController(Object(Cake\Http\ServerRequest))
+#1 C:\xampp\htdocs\HireBand\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(90): Cake\Http\ControllerFactory->create(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#2 C:\xampp\htdocs\HireBand\vendor\cakephp\cakephp\src\Http\BaseApplication.php(103): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#3 C:\xampp\htdocs\HireBand\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#4 C:\xampp\htdocs\HireBand\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(107): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#5 C:\xampp\htdocs\HireBand\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#6 C:\xampp\htdocs\HireBand\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#7 C:\xampp\htdocs\HireBand\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#8 C:\xampp\htdocs\HireBand\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(95): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#9 C:\xampp\htdocs\HireBand\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#10 C:\xampp\htdocs\HireBand\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php(52): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#11 C:\xampp\htdocs\HireBand\vendor\cakephp\cakephp\src\Http\Runner.php(65): DebugKit\Middleware\DebugKitMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#12 C:\xampp\htdocs\HireBand\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#13 C:\xampp\htdocs\HireBand\vendor\cakephp\cakephp\src\Http\Server.php(81): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#14 C:\xampp\htdocs\HireBand\webroot\index.php(40): Cake\Http\Server->run()
+#15 {main}
+
+
+2017-10-21 19:58:43 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Estabelecimento could not be found.
+Exception Attributes: array (
+  'class' => 'Estabelecimento',
+  'plugin' => false,
+  'prefix' => false,
+  '_ext' => false,
+)
+Request URL: /estabelecimento/add
+Referer URL: http://localhost/HireBand/usuarios/add
+Stack Trace:
+#0 C:\xampp\htdocs\HireBand\vendor\cakephp\cakephp\src\Http\ControllerFactory.php(38): Cake\Http\ControllerFactory->missingController(Object(Cake\Http\ServerRequest))
+#1 C:\xampp\htdocs\HireBand\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(90): Cake\Http\ControllerFactory->create(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#2 C:\xampp\htdocs\HireBand\vendor\cakephp\cakephp\src\Http\BaseApplication.php(103): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#3 C:\xampp\htdocs\HireBand\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#4 C:\xampp\htdocs\HireBand\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(107): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#5 C:\xampp\htdocs\HireBand\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#6 C:\xampp\htdocs\HireBand\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#7 C:\xampp\htdocs\HireBand\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#8 C:\xampp\htdocs\HireBand\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(95): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#9 C:\xampp\htdocs\HireBand\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#10 C:\xampp\htdocs\HireBand\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php(52): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#11 C:\xampp\htdocs\HireBand\vendor\cakephp\cakephp\src\Http\Runner.php(65): DebugKit\Middleware\DebugKitMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#12 C:\xampp\htdocs\HireBand\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#13 C:\xampp\htdocs\HireBand\vendor\cakephp\cakephp\src\Http\Server.php(81): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#14 C:\xampp\htdocs\HireBand\webroot\index.php(40): Cake\Http\Server->run()
+#15 {main}
+
+
+2017-10-21 22:15:50 Error: [ParseError] syntax error, unexpected '}' in C:\xampp\htdocs\HireBand\src\Controller\BandasController.php on line 77
+Request URL: /bandas/add
+Referer URL: http://localhost/HireBand/bandas/add
+Stack Trace:
+#0 C:\xampp\htdocs\HireBand\vendor\composer\ClassLoader.php(322): Composer\Autoload\includeFile('C:\\xampp\\htdocs...')
+#1 [internal function]: Composer\Autoload\ClassLoader->loadClass('App\\Controller\\...')
+#2 [internal function]: spl_autoload_call('App\\Controller\\...')
+#3 C:\xampp\htdocs\HireBand\vendor\cakephp\cakephp\src\Core\App.php(152): class_exists('App\\Controller\\...')
+#4 C:\xampp\htdocs\HireBand\vendor\cakephp\cakephp\src\Core\App.php(64): Cake\Core\App::_classExistsInBase('\\Controller\\Ban...', 'App')
+#5 C:\xampp\htdocs\HireBand\vendor\cakephp\cakephp\src\Http\ControllerFactory.php(88): Cake\Core\App::className('Bandas', 'Controller', 'Controller')
+#6 C:\xampp\htdocs\HireBand\vendor\cakephp\cakephp\src\Http\ControllerFactory.php(36): Cake\Http\ControllerFactory->getControllerClass(Object(Cake\Http\ServerRequest))
+#7 C:\xampp\htdocs\HireBand\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(90): Cake\Http\ControllerFactory->create(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#8 C:\xampp\htdocs\HireBand\vendor\cakephp\cakephp\src\Http\BaseApplication.php(103): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#9 C:\xampp\htdocs\HireBand\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#10 C:\xampp\htdocs\HireBand\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(107): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#11 C:\xampp\htdocs\HireBand\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#12 C:\xampp\htdocs\HireBand\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#13 C:\xampp\htdocs\HireBand\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#14 C:\xampp\htdocs\HireBand\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(95): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#15 C:\xampp\htdocs\HireBand\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#16 C:\xampp\htdocs\HireBand\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php(52): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#17 C:\xampp\htdocs\HireBand\vendor\cakephp\cakephp\src\Http\Runner.php(65): DebugKit\Middleware\DebugKitMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#18 C:\xampp\htdocs\HireBand\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#19 C:\xampp\htdocs\HireBand\vendor\cakephp\cakephp\src\Http\Server.php(81): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#20 C:\xampp\htdocs\HireBand\webroot\index.php(40): Cake\Http\Server->run()
+#21 {main}
+
+
+2017-10-21 22:16:04 Warning: Warning (512): Unable to emit headers. Headers sent in file=C:\xampp\htdocs\HireBand\vendor\cakephp\cakephp\src\Error\Debugger.php line=850 in [C:\xampp\htdocs\HireBand\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 48]
+Request URL: /bandas/add
+Referer URL: http://localhost/HireBand/bandas/add
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 153
+Cake\Http\ResponseEmitter::emit() - CORE\src\Http\ResponseEmitter.php, line 48
+Cake\Http\Server::emit() - CORE\src\Http\Server.php, line 106
+[main] - ROOT\webroot\index.php, line 40
+
+
+
+2017-10-21 22:16:04 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at C:\xampp\htdocs\HireBand\vendor\cakephp\cakephp\src\Error\Debugger.php:850) in [C:\xampp\htdocs\HireBand\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 148]
+Request URL: /bandas/add
+Referer URL: http://localhost/HireBand/bandas/add
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 153
+header - [internal], line ??
+Cake\Http\ResponseEmitter::emitStatusLine() - CORE\src\Http\ResponseEmitter.php, line 148
+Cake\Http\ResponseEmitter::emit() - CORE\src\Http\ResponseEmitter.php, line 54
+Cake\Http\Server::emit() - CORE\src\Http\Server.php, line 106
+[main] - ROOT\webroot\index.php, line 40
+
+
+
+2017-10-21 22:16:04 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at C:\xampp\htdocs\HireBand\vendor\cakephp\cakephp\src\Error\Debugger.php:850) in [C:\xampp\htdocs\HireBand\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 181]
+Request URL: /bandas/add
+Referer URL: http://localhost/HireBand/bandas/add
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 153
+header - [internal], line ??
+Cake\Http\ResponseEmitter::emitHeaders() - CORE\src\Http\ResponseEmitter.php, line 181
+Cake\Http\ResponseEmitter::emit() - CORE\src\Http\ResponseEmitter.php, line 55
+Cake\Http\Server::emit() - CORE\src\Http\Server.php, line 106
+[main] - ROOT\webroot\index.php, line 40
+
+
+
+2017-10-21 22:16:04 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at C:\xampp\htdocs\HireBand\vendor\cakephp\cakephp\src\Error\Debugger.php:850) in [C:\xampp\htdocs\HireBand\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 181]
+Request URL: /bandas/add
+Referer URL: http://localhost/HireBand/bandas/add
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 153
+header - [internal], line ??
+Cake\Http\ResponseEmitter::emitHeaders() - CORE\src\Http\ResponseEmitter.php, line 181
+Cake\Http\ResponseEmitter::emit() - CORE\src\Http\ResponseEmitter.php, line 55
+Cake\Http\Server::emit() - CORE\src\Http\Server.php, line 106
+[main] - ROOT\webroot\index.php, line 40
+
+
+
+2017-10-21 22:17:20 Warning: Warning (512): Unable to emit headers. Headers sent in file=C:\xampp\htdocs\HireBand\vendor\cakephp\cakephp\src\Error\Debugger.php line=850 in [C:\xampp\htdocs\HireBand\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 48]
+Request URL: /bandas/add
+Referer URL: http://localhost/HireBand/bandas/add
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 153
+Cake\Http\ResponseEmitter::emit() - CORE\src\Http\ResponseEmitter.php, line 48
+Cake\Http\Server::emit() - CORE\src\Http\Server.php, line 106
+[main] - ROOT\webroot\index.php, line 40
+
+
+
+2017-10-21 22:17:20 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at C:\xampp\htdocs\HireBand\vendor\cakephp\cakephp\src\Error\Debugger.php:850) in [C:\xampp\htdocs\HireBand\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 148]
+Request URL: /bandas/add
+Referer URL: http://localhost/HireBand/bandas/add
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 153
+header - [internal], line ??
+Cake\Http\ResponseEmitter::emitStatusLine() - CORE\src\Http\ResponseEmitter.php, line 148
+Cake\Http\ResponseEmitter::emit() - CORE\src\Http\ResponseEmitter.php, line 54
+Cake\Http\Server::emit() - CORE\src\Http\Server.php, line 106
+[main] - ROOT\webroot\index.php, line 40
+
+
+
+2017-10-21 22:17:20 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at C:\xampp\htdocs\HireBand\vendor\cakephp\cakephp\src\Error\Debugger.php:850) in [C:\xampp\htdocs\HireBand\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 181]
+Request URL: /bandas/add
+Referer URL: http://localhost/HireBand/bandas/add
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 153
+header - [internal], line ??
+Cake\Http\ResponseEmitter::emitHeaders() - CORE\src\Http\ResponseEmitter.php, line 181
+Cake\Http\ResponseEmitter::emit() - CORE\src\Http\ResponseEmitter.php, line 55
+Cake\Http\Server::emit() - CORE\src\Http\Server.php, line 106
+[main] - ROOT\webroot\index.php, line 40
+
+
+
+2017-10-21 22:17:20 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at C:\xampp\htdocs\HireBand\vendor\cakephp\cakephp\src\Error\Debugger.php:850) in [C:\xampp\htdocs\HireBand\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 181]
+Request URL: /bandas/add
+Referer URL: http://localhost/HireBand/bandas/add
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 153
+header - [internal], line ??
+Cake\Http\ResponseEmitter::emitHeaders() - CORE\src\Http\ResponseEmitter.php, line 181
+Cake\Http\ResponseEmitter::emit() - CORE\src\Http\ResponseEmitter.php, line 55
+Cake\Http\Server::emit() - CORE\src\Http\Server.php, line 106
+[main] - ROOT\webroot\index.php, line 40
+
+
+
+2017-10-21 22:18:58 Warning: Warning (2): Invalid argument supplied for foreach() in [C:\xampp\htdocs\HireBand\src\Template\Bandas\index.ctp, line 32]
+Request URL: /bandas
+Referer URL: http://localhost/HireBand/bandas/add
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 153
+include - APP/Template\Bandas\index.ctp, line 32
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 1196
+Cake\View\View::_render() - CORE\src\View\View.php, line 1157
+Cake\View\View::render() - CORE\src\View\View.php, line 765
+Cake\Controller\Controller::render() - CORE\src\Controller\Controller.php, line 623
+Cake\Http\ActionDispatcher::_invoke() - CORE\src\Http\ActionDispatcher.php, line 125
+Cake\Http\ActionDispatcher::dispatch() - CORE\src\Http\ActionDispatcher.php, line 93
+Cake\Http\BaseApplication::__invoke() - CORE\src\Http\BaseApplication.php, line 103
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\RoutingMiddleware::__invoke() - CORE\src\Routing\Middleware\RoutingMiddleware.php, line 107
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\AssetMiddleware::__invoke() - CORE\src\Routing\Middleware\AssetMiddleware.php, line 88
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Error\Middleware\ErrorHandlerMiddleware::__invoke() - CORE\src\Error\Middleware\ErrorHandlerMiddleware.php, line 95
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+DebugKit\Middleware\DebugKitMiddleware::__invoke() - ROOT\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php, line 52
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Http\Runner::run() - CORE\src\Http\Runner.php, line 51
+Cake\Http\Server::run() - CORE\src\Http\Server.php, line 81
+[main] - ROOT\webroot\index.php, line 40
+
+
+
+2017-10-21 22:19:14 Warning: Warning (2): Invalid argument supplied for foreach() in [C:\xampp\htdocs\HireBand\src\Template\Bandas\index.ctp, line 32]
+Request URL: /bandas
+Referer URL: http://localhost/HireBand/bandas/add
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 153
+include - APP/Template\Bandas\index.ctp, line 32
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 1196
+Cake\View\View::_render() - CORE\src\View\View.php, line 1157
+Cake\View\View::render() - CORE\src\View\View.php, line 765
+Cake\Controller\Controller::render() - CORE\src\Controller\Controller.php, line 623
+Cake\Http\ActionDispatcher::_invoke() - CORE\src\Http\ActionDispatcher.php, line 125
+Cake\Http\ActionDispatcher::dispatch() - CORE\src\Http\ActionDispatcher.php, line 93
+Cake\Http\BaseApplication::__invoke() - CORE\src\Http\BaseApplication.php, line 103
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\RoutingMiddleware::__invoke() - CORE\src\Routing\Middleware\RoutingMiddleware.php, line 107
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\AssetMiddleware::__invoke() - CORE\src\Routing\Middleware\AssetMiddleware.php, line 88
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Error\Middleware\ErrorHandlerMiddleware::__invoke() - CORE\src\Error\Middleware\ErrorHandlerMiddleware.php, line 95
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+DebugKit\Middleware\DebugKitMiddleware::__invoke() - ROOT\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php, line 52
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Http\Runner::run() - CORE\src\Http\Runner.php, line 51
+Cake\Http\Server::run() - CORE\src\Http\Server.php, line 81
+[main] - ROOT\webroot\index.php, line 40
+
+
+
+2017-10-21 22:25:30 Error: [RuntimeException] Cannot insert row in "bandas_estilos" table, it has no primary key.
+Request URL: /bandas/add
+Referer URL: http://localhost/HireBand/bandas/add
+Stack Trace:
+#0 C:\xampp\htdocs\HireBand\vendor\cakephp\cakephp\src\ORM\Table.php(1819): Cake\ORM\Table->_insert(Object(App\Model\Entity\BandasEstilo), Array)
+#1 C:\xampp\htdocs\HireBand\vendor\cakephp\cakephp\src\ORM\Table.php(1732): Cake\ORM\Table->_processSave(Object(App\Model\Entity\BandasEstilo), Object(ArrayObject))
+#2 C:\xampp\htdocs\HireBand\vendor\cakephp\cakephp\src\ORM\Table.php(1455): Cake\ORM\Table->Cake\ORM\{closure}()
+#3 C:\xampp\htdocs\HireBand\vendor\cakephp\cakephp\src\Database\Connection.php(681): Cake\ORM\Table->Cake\ORM\{closure}(Object(Cake\Database\Connection))
+#4 C:\xampp\htdocs\HireBand\vendor\cakephp\cakephp\src\ORM\Table.php(1456): Cake\Database\Connection->transactional(Object(Closure))
+#5 C:\xampp\htdocs\HireBand\vendor\cakephp\cakephp\src\ORM\Table.php(1733): Cake\ORM\Table->_executeTransaction(Object(Closure), true)
+#6 C:\xampp\htdocs\HireBand\vendor\cakephp\cakephp\src\ORM\Association\BelongsToMany.php(838): Cake\ORM\Table->save(Object(App\Model\Entity\BandasEstilo), Object(ArrayObject))
+#7 C:\xampp\htdocs\HireBand\vendor\cakephp\cakephp\src\ORM\Association\BelongsToMany.php(782): Cake\ORM\Association\BelongsToMany->_saveLinks(Object(App\Model\Entity\Banda), Array, Array)
+#8 C:\xampp\htdocs\HireBand\vendor\cakephp\cakephp\src\ORM\Association\BelongsToMany.php(1211): Cake\ORM\Association\BelongsToMany->_saveTarget(Object(App\Model\Entity\Banda), Array, Array)
+#9 C:\xampp\htdocs\HireBand\vendor\cakephp\cakephp\src\Database\Connection.php(681): Cake\ORM\Association\BelongsToMany->Cake\ORM\Association\{closure}(Object(Cake\Database\Connection))
+#10 C:\xampp\htdocs\HireBand\vendor\cakephp\cakephp\src\ORM\Association\BelongsToMany.php(1230): Cake\Database\Connection->transactional(Object(Closure))
+#11 C:\xampp\htdocs\HireBand\vendor\cakephp\cakephp\src\ORM\Association\BelongsToMany.php(716): Cake\ORM\Association\BelongsToMany->replaceLinks(Object(App\Model\Entity\Banda), Array, Array)
+#12 C:\xampp\htdocs\HireBand\vendor\cakephp\cakephp\src\ORM\AssociationCollection.php(274): Cake\ORM\Association\BelongsToMany->saveAssociated(Object(App\Model\Entity\Banda), Array)
+#13 C:\xampp\htdocs\HireBand\vendor\cakephp\cakephp\src\ORM\AssociationCollection.php(248): Cake\ORM\AssociationCollection->_save(Object(Cake\ORM\Association\BelongsToMany), Object(App\Model\Entity\Banda), Array, Array)
+#14 C:\xampp\htdocs\HireBand\vendor\cakephp\cakephp\src\ORM\AssociationCollection.php(213): Cake\ORM\AssociationCollection->_saveAssociations(Object(App\Model\Table\BandasTable), Object(App\Model\Entity\Banda), Array, Array, true)
+#15 C:\xampp\htdocs\HireBand\vendor\cakephp\cakephp\src\ORM\Table.php(1852): Cake\ORM\AssociationCollection->saveChildren(Object(App\Model\Table\BandasTable), Object(App\Model\Entity\Banda), Array, Array)
+#16 C:\xampp\htdocs\HireBand\vendor\cakephp\cakephp\src\ORM\Table.php(1825): Cake\ORM\Table->_onSaveSuccess(Object(App\Model\Entity\Banda), Object(ArrayObject))
+#17 C:\xampp\htdocs\HireBand\vendor\cakephp\cakephp\src\ORM\Table.php(1732): Cake\ORM\Table->_processSave(Object(App\Model\Entity\Banda), Object(ArrayObject))
+#18 C:\xampp\htdocs\HireBand\vendor\cakephp\cakephp\src\ORM\Table.php(1455): Cake\ORM\Table->Cake\ORM\{closure}()
+#19 C:\xampp\htdocs\HireBand\vendor\cakephp\cakephp\src\Database\Connection.php(681): Cake\ORM\Table->Cake\ORM\{closure}(Object(Cake\Database\Connection))
+#20 C:\xampp\htdocs\HireBand\vendor\cakephp\cakephp\src\ORM\Table.php(1456): Cake\Database\Connection->transactional(Object(Closure))
+#21 C:\xampp\htdocs\HireBand\vendor\cakephp\cakephp\src\ORM\Table.php(1733): Cake\ORM\Table->_executeTransaction(Object(Closure), true)
+#22 C:\xampp\htdocs\HireBand\src\Controller\BandasController.php(70): Cake\ORM\Table->save(Object(App\Model\Entity\Banda))
+#23 C:\xampp\htdocs\HireBand\vendor\cakephp\cakephp\src\Controller\Controller.php(440): App\Controller\BandasController->add()
+#24 C:\xampp\htdocs\HireBand\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(119): Cake\Controller\Controller->invokeAction()
+#25 C:\xampp\htdocs\HireBand\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(93): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\BandasController))
+#26 C:\xampp\htdocs\HireBand\vendor\cakephp\cakephp\src\Http\BaseApplication.php(103): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#27 C:\xampp\htdocs\HireBand\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#28 C:\xampp\htdocs\HireBand\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(107): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#29 C:\xampp\htdocs\HireBand\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#30 C:\xampp\htdocs\HireBand\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#31 C:\xampp\htdocs\HireBand\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#32 C:\xampp\htdocs\HireBand\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(95): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#33 C:\xampp\htdocs\HireBand\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#34 C:\xampp\htdocs\HireBand\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php(52): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#35 C:\xampp\htdocs\HireBand\vendor\cakephp\cakephp\src\Http\Runner.php(65): DebugKit\Middleware\DebugKitMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#36 C:\xampp\htdocs\HireBand\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#37 C:\xampp\htdocs\HireBand\vendor\cakephp\cakephp\src\Http\Server.php(81): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#38 C:\xampp\htdocs\HireBand\webroot\index.php(40): Cake\Http\Server->run()
+#39 {main}
+
+

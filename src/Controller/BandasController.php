@@ -20,6 +20,7 @@ class BandasController extends AppController
      */
     public function index()
     {
+        /*
         $this->paginate = [
             'contain' => ['Usuarios']
         ];
@@ -27,6 +28,7 @@ class BandasController extends AppController
 
         $this->set(compact('bandas'));
         $this->set('_serialize', ['bandas']);
+        */
     }
 
     /**
@@ -38,12 +40,19 @@ class BandasController extends AppController
      */
     public function view($id = null)
     {
-        $banda = $this->Bandas->get($id, [
-            'contain' => ['Usuarios', 'Estilos']
-        ]);
+        @session_start();
+        if($_SESSION["usuario"]->id == $id) {
+            $banda = $this->Bandas->get($id, [
+                'contain' => ['Usuarios', 'Estilos']
+            ]);
 
-        $this->set('banda', $banda);
-        $this->set('_serialize', ['banda']);
+            $this->set('banda', $banda);
+            $this->set('_serialize', ['banda']);
+        }else{
+            @session_start();
+            $_SESSION['mensagem'] = "Você não tem permissão para acessar esta página.";
+            $this->redirect("/");
+        }
     }
 
     /**
@@ -56,6 +65,8 @@ class BandasController extends AppController
         $banda = $this->Bandas->newEntity();
         if ($this->request->is('post')) {
             $banda = $this->Bandas->patchEntity($banda, $this->request->getData());
+            @session_start();
+            $banda->usuario_id = $_SESSION['usuario']->id;
             if ($this->Bandas->save($banda)) {
                 $this->Flash->success(__('The banda has been saved.'));
 

@@ -1,5 +1,5 @@
 <div class="container">
-    <div class="formulario col-12">
+    <div class="formulario col-12 mt-xs-20 mt-sm-50">
         <div class="row">
             <form action="<?php echo LOCAL_HOST; ?>/login/sessao" method="post" class="col-xs-12">
                 <div class="row">
