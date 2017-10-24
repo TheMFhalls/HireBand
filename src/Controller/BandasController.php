@@ -63,14 +63,12 @@ class BandasController extends AppController
     public function add()
     {
         $banda = $this->Bandas->newEntity();
+        @session_start();
+        $banda->usuario_id = $_SESSION["usuario"]->id;
         if ($this->request->is('post')) {
             $banda = $this->Bandas->patchEntity($banda, $this->request->getData());
-            @session_start();
-            $banda->usuario_id = $_SESSION['usuario']->id;
             if ($this->Bandas->save($banda)) {
                 $this->Flash->success(__('The banda has been saved.'));
-
-                return $this->redirect(['action' => 'index']);
             }
             $this->Flash->error(__('The banda could not be saved. Please, try again.'));
         }
