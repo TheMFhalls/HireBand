@@ -1,5 +1,13 @@
 <div class="container">
     <div class="row">
+        <div class="col-12">
+            <pre>
+            <?php
+            @session_start();
+            var_dump($_SESSION);
+            ?>
+            </pre>
+        </div>
         <!--INICIO BLOCO CENTRAL-->
         <div class="col-sm-12 col-md-9" style="background-color:">
             <div class="col-12" style="background-color:">

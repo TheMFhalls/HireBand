@@ -2,6 +2,7 @@
 namespace App\Controller;
 
 use App\Controller\AppController;
+use Cake\ORM\TableRegistry;
 
 /**
  * Bandas Controller
@@ -40,6 +41,7 @@ class BandasController extends AppController
      */
     public function view($id = null)
     {
+        /*
         @session_start();
         if($_SESSION["usuario"]->id == $id) {
             $banda = $this->Bandas->get($id, [
@@ -53,6 +55,7 @@ class BandasController extends AppController
             $_SESSION['mensagem'] = "Você não tem permissão para acessar esta página.";
             $this->redirect("/");
         }
+        */
     }
 
     /**
@@ -69,6 +72,22 @@ class BandasController extends AppController
             $banda = $this->Bandas->patchEntity($banda, $this->request->getData());
             if ($this->Bandas->save($banda)) {
                 $this->Flash->success(__('The banda has been saved.'));
+                @session_start();
+
+                $new_banda = TableRegistry::get('bandas')
+                    ->find()
+                    ->select([
+                        'id',
+                        'nome_banda'
+                    ])
+                    ->where(['usuario_id' => $_SESSION['usuario']->id])
+                    ->first();
+
+                @session_start();
+                $_SESSION['usuario']['banda'] = $new_banda;
+
+                $_SESSION['mensagem'] = "Usuário inserido com sucesso!";
+                return $this->redirect("/");
             }
             $this->Flash->error(__('The banda could not be saved. Please, try again.'));
         }
@@ -114,6 +133,7 @@ class BandasController extends AppController
      */
     public function delete($id = null)
     {
+        /*
         $this->request->allowMethod(['post', 'delete']);
         $banda = $this->Bandas->get($id);
         if ($this->Bandas->delete($banda)) {
@@ -123,5 +143,6 @@ class BandasController extends AppController
         }
 
         return $this->redirect(['action' => 'index']);
+        */
     }
 }

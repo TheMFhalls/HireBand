@@ -20,6 +20,7 @@ class BandasEstilosController extends AppController
      */
     public function index()
     {
+        /*
         $this->paginate = [
             'contain' => ['Bandas', 'Estilos']
         ];
@@ -27,6 +28,7 @@ class BandasEstilosController extends AppController
 
         $this->set(compact('bandasEstilos'));
         $this->set('_serialize', ['bandasEstilos']);
+        */
     }
 
     /**
@@ -38,12 +40,14 @@ class BandasEstilosController extends AppController
      */
     public function view($id = null)
     {
+        /*
         $bandasEstilo = $this->BandasEstilos->get($id, [
             'contain' => ['Bandas', 'Estilos']
         ]);
 
         $this->set('bandasEstilo', $bandasEstilo);
         $this->set('_serialize', ['bandasEstilo']);
+        */
     }
 
     /**
@@ -58,8 +62,9 @@ class BandasEstilosController extends AppController
             $bandasEstilo = $this->BandasEstilos->patchEntity($bandasEstilo, $this->request->getData());
             if ($this->BandasEstilos->save($bandasEstilo)) {
                 $this->Flash->success(__('The bandas estilo has been saved.'));
-
-                return $this->redirect(['action' => 'index']);
+                @session_start();
+                $_SESSION['mensagem'] = "Usuário inserido com sucesso!";
+                return $this->redirect("/");
             }
             $this->Flash->error(__('The bandas estilo could not be saved. Please, try again.'));
         }
@@ -105,6 +110,7 @@ class BandasEstilosController extends AppController
      */
     public function delete($id = null)
     {
+        /*
         $this->request->allowMethod(['post', 'delete']);
         $bandasEstilo = $this->BandasEstilos->get($id);
         if ($this->BandasEstilos->delete($bandasEstilo)) {
@@ -114,5 +120,6 @@ class BandasEstilosController extends AppController
         }
 
         return $this->redirect(['action' => 'index']);
+        */
     }
 }
