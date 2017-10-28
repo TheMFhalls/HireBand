@@ -1,6 +1,11 @@
 <div class="container">
     <div class="row">
         <div class="col-12">
+        <?php
+        block_estilos();
+        ?>
+        </div>
+        <div class="col-12">
             <pre>
             <?php
             @session_start();

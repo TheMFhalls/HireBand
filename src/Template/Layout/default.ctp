@@ -29,11 +29,6 @@
         </button>
     </div>
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <!--
-        <form class="form-inline col-md-6" style="">
-            <input class="form-control col-10" type="text" placeholder="BUSCAR" aria-label="BUSCAR" style="">
-        </form>
-        -->
         <ul class="navbar-nav col-md-4 ml-auto">
             <li class="nav-item active">
                 <a class="nav-link" href="<?= LOCAL_HOST ?>"  style=" color:#FFFFFF" >Home</a>

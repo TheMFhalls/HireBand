@@ -20,10 +20,12 @@ class EstilosController extends AppController
      */
     public function index()
     {
+        /*
         $estilos = $this->paginate($this->Estilos);
 
         $this->set(compact('estilos'));
         $this->set('_serialize', ['estilos']);
+        */
     }
 
     /**
@@ -35,12 +37,14 @@ class EstilosController extends AppController
      */
     public function view($id = null)
     {
+        /*
         $estilo = $this->Estilos->get($id, [
             'contain' => ['Bandas']
         ]);
 
         $this->set('estilo', $estilo);
         $this->set('_serialize', ['estilo']);
+        */
     }
 
     /**
@@ -48,21 +52,28 @@ class EstilosController extends AppController
      *
      * @return \Cake\Http\Response|null Redirects on successful add, renders view otherwise.
      */
-    public function add()
+    public function add($secure)
     {
-        $estilo = $this->Estilos->newEntity();
-        if ($this->request->is('post')) {
-            $estilo = $this->Estilos->patchEntity($estilo, $this->request->getData());
-            if ($this->Estilos->save($estilo)) {
-                $this->Flash->success(__('The estilo has been saved.'));
-
-                return $this->redirect(['action' => 'index']);
+        if($secure == "20010911") {
+            $estilo = $this->Estilos->newEntity();
+            if ($this->request->is('post')) {
+                $estilo = $this->Estilos->patchEntity($estilo, $this->request->getData());
+                if ($this->Estilos->save($estilo)) {
+                    $this->Flash->success(__('The estilo has been saved.'));
+                    @session_start();
+                    $_SESSION['mensagem'] = "Estilo inserido com sucesso!";
+                    return $this->redirect("/");
+                }
+                $this->Flash->error(__('The estilo could not be saved. Please, try again.'));
             }
-            $this->Flash->error(__('The estilo could not be saved. Please, try again.'));
+            $bandas = $this->Estilos->Bandas->find('list', ['limit' => 200]);
+            $this->set(compact('estilo', 'bandas'));
+            $this->set('_serialize', ['estilo']);
+        }else{
+            @session_start();
+            $_SESSION['mensagem'] = "Sem acesso!";
+            return $this->redirect("/");
         }
-        $bandas = $this->Estilos->Bandas->find('list', ['limit' => 200]);
-        $this->set(compact('estilo', 'bandas'));
-        $this->set('_serialize', ['estilo']);
     }
 
     /**
@@ -74,6 +85,7 @@ class EstilosController extends AppController
      */
     public function edit($id = null)
     {
+        /*
         $estilo = $this->Estilos->get($id, [
             'contain' => ['Bandas']
         ]);
@@ -89,6 +101,7 @@ class EstilosController extends AppController
         $bandas = $this->Estilos->Bandas->find('list', ['limit' => 200]);
         $this->set(compact('estilo', 'bandas'));
         $this->set('_serialize', ['estilo']);
+        */
     }
 
     /**
@@ -100,6 +113,7 @@ class EstilosController extends AppController
      */
     public function delete($id = null)
     {
+        /*
         $this->request->allowMethod(['post', 'delete']);
         $estilo = $this->Estilos->get($id);
         if ($this->Estilos->delete($estilo)) {
@@ -109,5 +123,6 @@ class EstilosController extends AppController
         }
 
         return $this->redirect(['action' => 'index']);
+        */
     }
 }

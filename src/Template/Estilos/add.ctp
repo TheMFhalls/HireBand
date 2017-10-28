@@ -3,23 +3,17 @@
  * @var \App\View\AppView $this
  */
 ?>
-<nav class="large-3 medium-4 columns" id="actions-sidebar">
-    <ul class="side-nav">
-        <li class="heading"><?= __('Actions') ?></li>
-        <li><?= $this->Html->link(__('List Estilos'), ['action' => 'index']) ?></li>
-        <li><?= $this->Html->link(__('List Bandas'), ['controller' => 'Bandas', 'action' => 'index']) ?></li>
-        <li><?= $this->Html->link(__('New Banda'), ['controller' => 'Bandas', 'action' => 'add']) ?></li>
-    </ul>
-</nav>
-<div class="estilos form large-9 medium-8 columns content">
-    <?= $this->Form->create($estilo) ?>
-    <fieldset>
-        <legend><?= __('Add Estilo') ?></legend>
-        <?php
+<div class="container">
+    <div class="estilos col-12 mt-xs-20 mt-sm-5">
+        <?= $this->Form->create($estilo) ?>
+        <fieldset>
+            <legend><?= __('Add Estilo') ?></legend>
+            <?php
             echo $this->Form->control('nome');
-            echo $this->Form->control('bandas._ids', ['options' => $bandas]);
-        ?>
-    </fieldset>
-    <?= $this->Form->button(__('Submit')) ?>
-    <?= $this->Form->end() ?>
+            //echo $this->Form->control('bandas._ids', ['options' => $bandas]);
+            ?>
+        </fieldset>
+        <?= $this->Form->button(__('Submit')) ?>
+        <?= $this->Form->end() ?>
+    </div>
 </div>
