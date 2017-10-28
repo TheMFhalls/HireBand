@@ -10,7 +10,7 @@ use Cake\Validation\Validator;
  * Bandas Model
  *
  * @property \App\Model\Table\UsuariosTable|\Cake\ORM\Association\BelongsTo $Usuarios
- * @property |\Cake\ORM\Association\HasMany $Avaliacao
+ * @property \App\Model\Table\AvaliacaoTable|\Cake\ORM\Association\HasMany $Avaliacao
  * @property \App\Model\Table\EstilosTable|\Cake\ORM\Association\BelongsToMany $Estilos
  *
  * @method \App\Model\Entity\Banda get($primaryKey, $options = [])

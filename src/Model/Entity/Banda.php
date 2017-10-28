@@ -15,6 +15,7 @@ use Cake\ORM\Entity;
  * @property \Cake\I18n\FrozenTime $modified
  *
  * @property \App\Model\Entity\Usuario $usuario
+ * @property \App\Model\Entity\Avaliacao[] $avaliacao
  * @property \App\Model\Entity\Estilo[] $estilos
  */
 class Banda extends Entity
@@ -37,6 +38,7 @@ class Banda extends Entity
         'created' => true,
         'modified' => true,
         'usuario' => true,
+        'avaliacao' => true,
         'estilos' => true
     ];
 }

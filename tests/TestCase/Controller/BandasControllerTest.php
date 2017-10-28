@@ -20,6 +20,7 @@ class BandasControllerTest extends IntegrationTestCase
         'app.usuarios',
         'app.estabelecimentos',
         'app.videos',
+        'app.avaliacao',
         'app.estilos',
         'app.bandas_estilos'
     ];

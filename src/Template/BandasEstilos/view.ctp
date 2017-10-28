@@ -28,5 +28,9 @@
             <th scope="row"><?= __('Estilo') ?></th>
             <td><?= $bandasEstilo->has('estilo') ? $this->Html->link($bandasEstilo->estilo->nome, ['controller' => 'Estilos', 'action' => 'view', $bandasEstilo->estilo->id]) : '' ?></td>
         </tr>
+        <tr>
+            <th scope="row"><?= __('Id') ?></th>
+            <td><?= $this->Number->format($bandasEstilo->id) ?></td>
+        </tr>
     </table>
 </div>

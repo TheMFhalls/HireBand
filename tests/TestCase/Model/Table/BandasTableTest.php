@@ -28,6 +28,7 @@ class BandasTableTest extends TestCase
         'app.usuarios',
         'app.estabelecimentos',
         'app.videos',
+        'app.avaliacao',
         'app.estilos',
         'app.bandas_estilos'
     ];

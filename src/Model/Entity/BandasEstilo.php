@@ -6,6 +6,7 @@ use Cake\ORM\Entity;
 /**
  * BandasEstilo Entity
  *
+ * @property int $id
  * @property int $banda_id
  * @property int $estilo_id
  *

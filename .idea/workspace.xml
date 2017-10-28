@@ -2,42 +2,23 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a9348a68-74c2-406a-8275-3c197836d88e" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tmp/cache/models/myapp_cake_model_default_bandas" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tmp/cache/models/myapp_cake_model_default_bandas_estilos" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tmp/cache/models/myapp_cake_model_default_estilos" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/logs/cli-debug.log" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Controller/AvaliacaoController.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Model/Entity/Avaliacao.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Model/Table/AvaliacaoTable.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Template/Avaliacao/add.ctp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Template/Avaliacao/edit.ctp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Template/Avaliacao/index.ctp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Template/Avaliacao/view.ctp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Template/BandasEstilos/add.ctp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Template/BandasEstilos/edit.ctp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Template/BandasEstilos/index.ctp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Template/BandasEstilos/view.ctp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tests/Fixture/AvaliacaoFixture.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tests/TestCase/Controller/AvaliacaoControllerTest.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tests/TestCase/Model/Table/AvaliacaoTableTest.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tmp/cache/models/myapp_cake_model_debug_kit_panels" afterPath="$PROJECT_DIR$/tmp/cache/models/myapp_cake_model_debug_kit_panels" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tmp/cache/models/myapp_cake_model_debug_kit_requests" afterPath="$PROJECT_DIR$/tmp/cache/models/myapp_cake_model_debug_kit_requests" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tmp/cache/models/myapp_cake_model_default_usuarios" afterPath="$PROJECT_DIR$/tmp/cache/models/myapp_cake_model_default_usuarios" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tmp/cache/persistent/myapp_cake_core_translations_cake_en__u_s" afterPath="$PROJECT_DIR$/tmp/cache/persistent/myapp_cake_core_translations_cake_en__u_s" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tmp/cache/persistent/myapp_cake_core_translations_debug_kit_en__u_s" afterPath="$PROJECT_DIR$/tmp/cache/persistent/myapp_cake_core_translations_debug_kit_en__u_s" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tmp/cache/persistent/myapp_cake_core_translations_default_en__u_s" afterPath="$PROJECT_DIR$/tmp/cache/persistent/myapp_cake_core_translations_default_en__u_s" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tmp/debug_kit.sqlite" afterPath="$PROJECT_DIR$/tmp/debug_kit.sqlite" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/logs/debug.log" afterPath="$PROJECT_DIR$/logs/debug.log" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/logs/error.log" afterPath="$PROJECT_DIR$/logs/error.log" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Controller/BandasController.php" afterPath="$PROJECT_DIR$/src/Controller/BandasController.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Model/Entity/Banda.php" afterPath="$PROJECT_DIR$/src/Model/Entity/Banda.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Model/Entity/BandasEstilo.php" afterPath="$PROJECT_DIR$/src/Model/Entity/BandasEstilo.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Model/Table/BandasEstilosTable.php" afterPath="$PROJECT_DIR$/src/Model/Table/BandasEstilosTable.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Model/Table/BandasTable.php" afterPath="$PROJECT_DIR$/src/Model/Table/BandasTable.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Template/Bandas/edit.ctp" afterPath="$PROJECT_DIR$/src/Template/Bandas/edit.ctp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Template/Bandas/index.ctp" afterPath="$PROJECT_DIR$/src/Template/Bandas/index.ctp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Template/Bandas/view.ctp" afterPath="$PROJECT_DIR$/src/Template/Bandas/view.ctp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Template/Estilos/view.ctp" afterPath="$PROJECT_DIR$/src/Template/Estilos/view.ctp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Template/BandasEstilos/index.ctp" afterPath="$PROJECT_DIR$/src/Template/BandasEstilos/index.ctp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Template/BandasEstilos/view.ctp" afterPath="$PROJECT_DIR$/src/Template/BandasEstilos/view.ctp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tests/Fixture/BandasEstilosFixture.php" afterPath="$PROJECT_DIR$/tests/Fixture/BandasEstilosFixture.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tests/Fixture/BandasFixture.php" afterPath="$PROJECT_DIR$/tests/Fixture/BandasFixture.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tests/Fixture/EstilosFixture.php" afterPath="$PROJECT_DIR$/tests/Fixture/EstilosFixture.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tests/TestCase/Controller/BandasControllerTest.php" afterPath="$PROJECT_DIR$/tests/TestCase/Controller/BandasControllerTest.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tests/TestCase/Controller/BandasEstilosControllerTest.php" afterPath="$PROJECT_DIR$/tests/TestCase/Controller/BandasEstilosControllerTest.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tests/TestCase/Controller/EstilosControllerTest.php" afterPath="$PROJECT_DIR$/tests/TestCase/Controller/EstilosControllerTest.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tests/TestCase/Model/Table/BandasEstilosTableTest.php" afterPath="$PROJECT_DIR$/tests/TestCase/Model/Table/BandasEstilosTableTest.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tests/TestCase/Model/Table/BandasTableTest.php" afterPath="$PROJECT_DIR$/tests/TestCase/Model/Table/BandasTableTest.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tests/TestCase/Model/Table/EstilosTableTest.php" afterPath="$PROJECT_DIR$/tests/TestCase/Model/Table/EstilosTableTest.php" />
     </list>
@@ -50,28 +31,7 @@
   </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file leaf-file-name="BandasController.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/Controller/BandasController.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="325">
-              <caret line="61" column="7" lean-forward="true" selection-start-line="61" selection-start-column="7" selection-end-line="61" selection-end-column="7" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="AvaliacaoController.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Controller/AvaliacaoController.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="375" />
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
@@ -186,38 +146,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="HireBand" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="HireBand" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="HireBand" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="HireBand" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="HireBand" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Controller" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
           </PATH>
@@ -344,7 +272,7 @@
       <workItem from="1508371726609" duration="2414000" />
       <workItem from="1508584266695" duration="31228000" />
       <workItem from="1508806578193" duration="3158000" />
-      <workItem from="1509195775288" duration="3967000" />
+      <workItem from="1509195775288" duration="4481000" />
     </task>
     <task id="LOCAL-00001" summary=".">
       <created>1507524077436</created>
@@ -444,11 +372,18 @@
       <option name="project" value="LOCAL" />
       <updated>1509199761536</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="201710281243">
+      <created>1509201837730</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1509201837730</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="42527000" />
+    <option name="totallyTimeSpent" value="43041000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-9" y="-9" width="1938" height="1048" extended-state="6" />
@@ -488,7 +423,8 @@
     <MESSAGE value="201710232358" />
     <MESSAGE value="201710281104" />
     <MESSAGE value="201710281209" />
-    <option name="LAST_COMMIT_MESSAGE" value="201710281209" />
+    <MESSAGE value="201710281243" />
+    <option name="LAST_COMMIT_MESSAGE" value="201710281243" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -504,28 +440,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Template/Layout/default.ctp.bkp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/front-end/resultados.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="293">
-          <caret line="49" column="73" lean-forward="false" selection-start-line="49" selection-start-column="73" selection-end-line="49" selection-end-column="73" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/config/routes.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="346">
@@ -880,8 +794,32 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Controller/BandasController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="325">
-          <caret line="61" column="7" lean-forward="true" selection-start-line="61" selection-start-column="7" selection-end-line="61" selection-end-column="7" />
+        <state relative-caret-position="598">
+          <caret line="77" column="44" lean-forward="true" selection-start-line="77" selection-start-column="44" selection-end-line="77" selection-end-column="44" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Model/Table/BandasEstilosTable.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="293">
+          <caret line="17" column="35" lean-forward="true" selection-start-line="17" selection-start-column="35" selection-end-line="17" selection-end-column="35" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Model/Entity/BandasEstilo.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="17" column="7" lean-forward="true" selection-start-line="17" selection-start-column="7" selection-end-line="17" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Controller/BandasEstilosController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="273">
+          <caret line="13" column="1" lean-forward="true" selection-start-line="13" selection-start-column="1" selection-end-line="13" selection-end-column="1" />
           <folding />
         </state>
       </provider>

@@ -19,6 +19,7 @@
     <table cellpadding="0" cellspacing="0">
         <thead>
             <tr>
+                <th scope="col"><?= $this->Paginator->sort('id') ?></th>
                 <th scope="col"><?= $this->Paginator->sort('banda_id') ?></th>
                 <th scope="col"><?= $this->Paginator->sort('estilo_id') ?></th>
                 <th scope="col" class="actions"><?= __('Actions') ?></th>
@@ -27,6 +28,7 @@
         <tbody>
             <?php foreach ($bandasEstilos as $bandasEstilo): ?>
             <tr>
+                <td><?= $this->Number->format($bandasEstilo->id) ?></td>
                 <td><?= $bandasEstilo->has('banda') ? $this->Html->link($bandasEstilo->banda->id, ['controller' => 'Bandas', 'action' => 'view', $bandasEstilo->banda->id]) : '' ?></td>
                 <td><?= $bandasEstilo->has('estilo') ? $this->Html->link($bandasEstilo->estilo->nome, ['controller' => 'Estilos', 'action' => 'view', $bandasEstilo->estilo->id]) : '' ?></td>
                 <td class="actions">

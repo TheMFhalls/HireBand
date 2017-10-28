@@ -13,6 +13,8 @@
         <li><?= $this->Html->link(__('New Banda'), ['action' => 'add']) ?> </li>
         <li><?= $this->Html->link(__('List Usuarios'), ['controller' => 'Usuarios', 'action' => 'index']) ?> </li>
         <li><?= $this->Html->link(__('New Usuario'), ['controller' => 'Usuarios', 'action' => 'add']) ?> </li>
+        <li><?= $this->Html->link(__('List Avaliacao'), ['controller' => 'Avaliacao', 'action' => 'index']) ?> </li>
+        <li><?= $this->Html->link(__('New Avaliacao'), ['controller' => 'Avaliacao', 'action' => 'add']) ?> </li>
         <li><?= $this->Html->link(__('List Estilos'), ['controller' => 'Estilos', 'action' => 'index']) ?> </li>
         <li><?= $this->Html->link(__('New Estilo'), ['controller' => 'Estilos', 'action' => 'add']) ?> </li>
     </ul>
@@ -48,6 +50,37 @@
     <div class="row">
         <h4><?= __('Endereco') ?></h4>
         <?= $this->Text->autoParagraph(h($banda->endereco)); ?>
+    </div>
+    <div class="related">
+        <h4><?= __('Related Avaliacao') ?></h4>
+        <?php if (!empty($banda->avaliacao)): ?>
+        <table cellpadding="0" cellspacing="0">
+            <tr>
+                <th scope="col"><?= __('Id') ?></th>
+                <th scope="col"><?= __('Banda Id') ?></th>
+                <th scope="col"><?= __('Usuario Id') ?></th>
+                <th scope="col"><?= __('Avaliacao') ?></th>
+                <th scope="col"><?= __('Created') ?></th>
+                <th scope="col"><?= __('Modified') ?></th>
+                <th scope="col" class="actions"><?= __('Actions') ?></th>
+            </tr>
+            <?php foreach ($banda->avaliacao as $avaliacao): ?>
+            <tr>
+                <td><?= h($avaliacao->id) ?></td>
+                <td><?= h($avaliacao->banda_id) ?></td>
+                <td><?= h($avaliacao->usuario_id) ?></td>
+                <td><?= h($avaliacao->avaliacao) ?></td>
+                <td><?= h($avaliacao->created) ?></td>
+                <td><?= h($avaliacao->modified) ?></td>
+                <td class="actions">
+                    <?= $this->Html->link(__('View'), ['controller' => 'Avaliacao', 'action' => 'view', $avaliacao->id]) ?>
+                    <?= $this->Html->link(__('Edit'), ['controller' => 'Avaliacao', 'action' => 'edit', $avaliacao->id]) ?>
+                    <?= $this->Form->postLink(__('Delete'), ['controller' => 'Avaliacao', 'action' => 'delete', $avaliacao->id], ['confirm' => __('Are you sure you want to delete # {0}?', $avaliacao->id)]) ?>
+                </td>
+            </tr>
+            <?php endforeach; ?>
+        </table>
+        <?php endif; ?>
     </div>
     <div class="related">
         <h4><?= __('Related Estilos') ?></h4>
