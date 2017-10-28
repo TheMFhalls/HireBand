@@ -18,6 +18,8 @@ class BandasControllerTest extends IntegrationTestCase
     public $fixtures = [
         'app.bandas',
         'app.usuarios',
+        'app.estabelecimentos',
+        'app.videos',
         'app.estilos',
         'app.bandas_estilos'
     ];

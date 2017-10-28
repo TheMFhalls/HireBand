@@ -27,6 +27,8 @@ class EstilosTableTest extends TestCase
         'app.estilos',
         'app.bandas',
         'app.usuarios',
+        'app.estabelecimentos',
+        'app.videos',
         'app.bandas_estilos'
     ];
 

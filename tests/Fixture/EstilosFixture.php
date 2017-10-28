@@ -40,8 +40,8 @@ class EstilosFixture extends TestFixture
         [
             'id' => 1,
             'nome' => 'Lorem ipsum dolor sit amet',
-            'created' => '2017-10-09 04:16:10',
-            'modified' => '2017-10-09 04:16:10'
+            'created' => '2017-10-28 14:10:28',
+            'modified' => '2017-10-28 14:10:28'
         ],
     ];
 }

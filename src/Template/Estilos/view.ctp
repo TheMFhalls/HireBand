@@ -16,7 +16,7 @@
     </ul>
 </nav>
 <div class="estilos view large-9 medium-8 columns content">
-    <h3><?= h($estilo->id) ?></h3>
+    <h3><?= h($estilo->nome) ?></h3>
     <table class="vertical-table">
         <tr>
             <th scope="row"><?= __('Nome') ?></th>

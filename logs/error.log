@@ -4046,3 +4046,51 @@ Stack Trace:
 #41 {main}
 
 
+2017-10-28 14:42:53 Error: [InvalidArgumentException] Unknown type ""
+Request URL: /bandas/add
+Referer URL: http://localhost/HireBand/bandas/add
+Stack Trace:
+#0 C:\xampp\htdocs\HireBand\vendor\cakephp\cakephp\src\ORM\Table.php(1965): Cake\Database\Type::build(NULL)
+#1 C:\xampp\htdocs\HireBand\vendor\cakephp\cakephp\src\ORM\Table.php(1894): Cake\ORM\Table->_newId(Array)
+#2 C:\xampp\htdocs\HireBand\vendor\cakephp\cakephp\src\ORM\Table.php(1819): Cake\ORM\Table->_insert(Object(App\Model\Entity\BandasEstilo), Array)
+#3 C:\xampp\htdocs\HireBand\vendor\cakephp\cakephp\src\ORM\Table.php(1732): Cake\ORM\Table->_processSave(Object(App\Model\Entity\BandasEstilo), Object(ArrayObject))
+#4 C:\xampp\htdocs\HireBand\vendor\cakephp\cakephp\src\ORM\Table.php(1455): Cake\ORM\Table->Cake\ORM\{closure}()
+#5 C:\xampp\htdocs\HireBand\vendor\cakephp\cakephp\src\Database\Connection.php(681): Cake\ORM\Table->Cake\ORM\{closure}(Object(Cake\Database\Connection))
+#6 C:\xampp\htdocs\HireBand\vendor\cakephp\cakephp\src\ORM\Table.php(1456): Cake\Database\Connection->transactional(Object(Closure))
+#7 C:\xampp\htdocs\HireBand\vendor\cakephp\cakephp\src\ORM\Table.php(1733): Cake\ORM\Table->_executeTransaction(Object(Closure), true)
+#8 C:\xampp\htdocs\HireBand\vendor\cakephp\cakephp\src\ORM\Association\BelongsToMany.php(838): Cake\ORM\Table->save(Object(App\Model\Entity\BandasEstilo), Object(ArrayObject))
+#9 C:\xampp\htdocs\HireBand\vendor\cakephp\cakephp\src\ORM\Association\BelongsToMany.php(782): Cake\ORM\Association\BelongsToMany->_saveLinks(Object(App\Model\Entity\Banda), Array, Array)
+#10 C:\xampp\htdocs\HireBand\vendor\cakephp\cakephp\src\ORM\Association\BelongsToMany.php(1211): Cake\ORM\Association\BelongsToMany->_saveTarget(Object(App\Model\Entity\Banda), Array, Array)
+#11 C:\xampp\htdocs\HireBand\vendor\cakephp\cakephp\src\Database\Connection.php(681): Cake\ORM\Association\BelongsToMany->Cake\ORM\Association\{closure}(Object(Cake\Database\Connection))
+#12 C:\xampp\htdocs\HireBand\vendor\cakephp\cakephp\src\ORM\Association\BelongsToMany.php(1230): Cake\Database\Connection->transactional(Object(Closure))
+#13 C:\xampp\htdocs\HireBand\vendor\cakephp\cakephp\src\ORM\Association\BelongsToMany.php(716): Cake\ORM\Association\BelongsToMany->replaceLinks(Object(App\Model\Entity\Banda), Array, Array)
+#14 C:\xampp\htdocs\HireBand\vendor\cakephp\cakephp\src\ORM\AssociationCollection.php(274): Cake\ORM\Association\BelongsToMany->saveAssociated(Object(App\Model\Entity\Banda), Array)
+#15 C:\xampp\htdocs\HireBand\vendor\cakephp\cakephp\src\ORM\AssociationCollection.php(248): Cake\ORM\AssociationCollection->_save(Object(Cake\ORM\Association\BelongsToMany), Object(App\Model\Entity\Banda), Array, Array)
+#16 C:\xampp\htdocs\HireBand\vendor\cakephp\cakephp\src\ORM\AssociationCollection.php(213): Cake\ORM\AssociationCollection->_saveAssociations(Object(App\Model\Table\BandasTable), Object(App\Model\Entity\Banda), Array, Array, true)
+#17 C:\xampp\htdocs\HireBand\vendor\cakephp\cakephp\src\ORM\Table.php(1852): Cake\ORM\AssociationCollection->saveChildren(Object(App\Model\Table\BandasTable), Object(App\Model\Entity\Banda), Array, Array)
+#18 C:\xampp\htdocs\HireBand\vendor\cakephp\cakephp\src\ORM\Table.php(1825): Cake\ORM\Table->_onSaveSuccess(Object(App\Model\Entity\Banda), Object(ArrayObject))
+#19 C:\xampp\htdocs\HireBand\vendor\cakephp\cakephp\src\ORM\Table.php(1732): Cake\ORM\Table->_processSave(Object(App\Model\Entity\Banda), Object(ArrayObject))
+#20 C:\xampp\htdocs\HireBand\vendor\cakephp\cakephp\src\ORM\Table.php(1455): Cake\ORM\Table->Cake\ORM\{closure}()
+#21 C:\xampp\htdocs\HireBand\vendor\cakephp\cakephp\src\Database\Connection.php(681): Cake\ORM\Table->Cake\ORM\{closure}(Object(Cake\Database\Connection))
+#22 C:\xampp\htdocs\HireBand\vendor\cakephp\cakephp\src\ORM\Table.php(1456): Cake\Database\Connection->transactional(Object(Closure))
+#23 C:\xampp\htdocs\HireBand\vendor\cakephp\cakephp\src\ORM\Table.php(1733): Cake\ORM\Table->_executeTransaction(Object(Closure), true)
+#24 C:\xampp\htdocs\HireBand\src\Controller\BandasController.php(70): Cake\ORM\Table->save(Object(App\Model\Entity\Banda))
+#25 C:\xampp\htdocs\HireBand\vendor\cakephp\cakephp\src\Controller\Controller.php(440): App\Controller\BandasController->add()
+#26 C:\xampp\htdocs\HireBand\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(119): Cake\Controller\Controller->invokeAction()
+#27 C:\xampp\htdocs\HireBand\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(93): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\BandasController))
+#28 C:\xampp\htdocs\HireBand\vendor\cakephp\cakephp\src\Http\BaseApplication.php(103): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#29 C:\xampp\htdocs\HireBand\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#30 C:\xampp\htdocs\HireBand\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(107): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#31 C:\xampp\htdocs\HireBand\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#32 C:\xampp\htdocs\HireBand\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#33 C:\xampp\htdocs\HireBand\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#34 C:\xampp\htdocs\HireBand\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(95): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#35 C:\xampp\htdocs\HireBand\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#36 C:\xampp\htdocs\HireBand\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php(52): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#37 C:\xampp\htdocs\HireBand\vendor\cakephp\cakephp\src\Http\Runner.php(65): DebugKit\Middleware\DebugKitMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#38 C:\xampp\htdocs\HireBand\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#39 C:\xampp\htdocs\HireBand\vendor\cakephp\cakephp\src\Http\Server.php(81): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#40 C:\xampp\htdocs\HireBand\webroot\index.php(40): Cake\Http\Server->run()
+#41 {main}
+
+
