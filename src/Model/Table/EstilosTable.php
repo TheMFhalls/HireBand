@@ -35,7 +35,7 @@ class EstilosTable extends Table
         parent::initialize($config);
 
         $this->setTable('estilos');
-        $this->setDisplayField('id');
+        $this->setDisplayField('nome');
         $this->setPrimaryKey('id');
 
         $this->addBehavior('Timestamp');

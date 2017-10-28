@@ -27,6 +27,8 @@ class BandasEstilosTableTest extends TestCase
         'app.bandas_estilos',
         'app.bandas',
         'app.usuarios',
+        'app.estabelecimentos',
+        'app.videos',
         'app.estilos'
     ];
 
@@ -60,6 +62,16 @@ class BandasEstilosTableTest extends TestCase
      * @return void
      */
     public function testInitialize()
+    {
+        $this->markTestIncomplete('Not implemented yet.');
+    }
+
+    /**
+     * Test validationDefault method
+     *
+     * @return void
+     */
+    public function testValidationDefault()
     {
         $this->markTestIncomplete('Not implemented yet.');
     }

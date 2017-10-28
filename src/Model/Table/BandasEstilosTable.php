@@ -34,6 +34,8 @@ class BandasEstilosTable extends Table
         parent::initialize($config);
 
         $this->setTable('bandas_estilos');
+        $this->setDisplayField('id');
+        $this->setPrimaryKey('id');
 
         $this->belongsTo('Bandas', [
             'foreignKey' => 'banda_id',
