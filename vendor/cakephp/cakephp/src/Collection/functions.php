@@ -13,6 +13,7 @@
  * @license       https://opensource.org/licenses/mit-license.php MIT License
  */
 use Cake\Collection\Collection;
+use Cake\ORM\TableRegistry;
 
 if (!function_exists('collection')) {
     /**
@@ -31,4 +32,9 @@ if (!function_exists('collection')) {
 function user_logged(){
     @session_start();
     return isset($_SESSION["usuario"]);
+}
+
+function user_owner_banda($banda_id){
+    @session_start();
+
 }

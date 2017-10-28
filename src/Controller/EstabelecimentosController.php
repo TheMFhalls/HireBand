@@ -2,6 +2,7 @@
 namespace App\Controller;
 
 use App\Controller\AppController;
+use Cake\ORM\TableRegistry;
 
 /**
  * Estabelecimentos Controller
@@ -20,6 +21,7 @@ class EstabelecimentosController extends AppController
      */
     public function index()
     {
+        /*
         $this->paginate = [
             'contain' => ['Usuarios']
         ];
@@ -27,6 +29,7 @@ class EstabelecimentosController extends AppController
 
         $this->set(compact('estabelecimentos'));
         $this->set('_serialize', ['estabelecimentos']);
+        */
     }
 
     /**
@@ -38,12 +41,14 @@ class EstabelecimentosController extends AppController
      */
     public function view($id = null)
     {
+        /*
         $estabelecimento = $this->Estabelecimentos->get($id, [
             'contain' => ['Usuarios']
         ]);
 
         $this->set('estabelecimento', $estabelecimento);
         $this->set('_serialize', ['estabelecimento']);
+        */
     }
 
     /**
@@ -53,13 +58,34 @@ class EstabelecimentosController extends AppController
      */
     public function add()
     {
+        @session_start();
+        if(
+            isset($_SESSION['usuario']['banda']) ||
+            isset($_SESSION['usuario']['estabelecimento'])
+        ){
+            $_SESSION['mensagem'] = "Você já possui um cadastro!";
+            return $this->redirect("/");
+        }
         $estabelecimento = $this->Estabelecimentos->newEntity();
         if ($this->request->is('post')) {
+            @session_start();
+            $estabelecimento->usuario_id = $_SESSION["usuario"]->id;
             $estabelecimento = $this->Estabelecimentos->patchEntity($estabelecimento, $this->request->getData());
             if ($this->Estabelecimentos->save($estabelecimento)) {
                 $this->Flash->success(__('The estabelecimento has been saved.'));
 
-                return $this->redirect(['action' => 'index']);
+                $new_estabelecimento = TableRegistry::get('estabelecimentos')
+                    ->find()
+                    ->select([
+                        'id',
+                        'nome_fantasia'
+                    ])
+                    ->where(['usuario_id' => $_SESSION['usuario']->id])
+                    ->first();
+
+                $_SESSION['usuario']['estabelecimento'] = $new_estabelecimento;
+                $_SESSION['mensagem'] = "Usuário inserido com sucesso!";
+                return $this->redirect("/");
             }
             $this->Flash->error(__('The estabelecimento could not be saved. Please, try again.'));
         }
@@ -77,6 +103,11 @@ class EstabelecimentosController extends AppController
      */
     public function edit($id = null)
     {
+        @session_start();
+        if(isset($_SESSION['usuario']['banda'])){
+            $_SESSION['mensagem'] = "Você não tem permissão para editar um estabelecimento!";
+            return $this->redirect("/");
+        }
         $estabelecimento = $this->Estabelecimentos->get($id, [
             'contain' => []
         ]);

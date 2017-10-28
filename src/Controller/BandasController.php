@@ -65,14 +65,20 @@ class BandasController extends AppController
      */
     public function add()
     {
-        $banda = $this->Bandas->newEntity();
         @session_start();
-        $banda->usuario_id = $_SESSION["usuario"]->id;
+        if(
+            isset($_SESSION['usuario']['banda']) ||
+            isset($_SESSION['usuario']['estabelecimento'])
+        ){
+            $_SESSION['mensagem'] = "Você já possui um cadastro!";
+            return $this->redirect("/");
+        }
+        $banda = $this->Bandas->newEntity();
         if ($this->request->is('post')) {
+            $banda->usuario_id = $_SESSION["usuario"]->id;
             $banda = $this->Bandas->patchEntity($banda, $this->request->getData());
             if ($this->Bandas->save($banda)) {
                 $this->Flash->success(__('The banda has been saved.'));
-                @session_start();
 
                 $new_banda = TableRegistry::get('bandas')
                     ->find()
@@ -83,9 +89,7 @@ class BandasController extends AppController
                     ->where(['usuario_id' => $_SESSION['usuario']->id])
                     ->first();
 
-                @session_start();
                 $_SESSION['usuario']['banda'] = $new_banda;
-
                 $_SESSION['mensagem'] = "Usuário inserido com sucesso!";
                 return $this->redirect("/");
             }
@@ -106,6 +110,11 @@ class BandasController extends AppController
      */
     public function edit($id = null)
     {
+        @session_start();
+        if(isset($_SESSION['usuario']['estabelecimento'])){
+            $_SESSION['mensagem'] = "Você não tem permissão para editar uma banda!";
+            return $this->redirect("/");
+        }
         $banda = $this->Bandas->get($id, [
             'contain' => ['Estilos']
         ]);
