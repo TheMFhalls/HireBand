@@ -12,6 +12,12 @@ font-family: 'Yanone Kaffeesatz', sans-serif;
 	max-width:100%;
 }
 
+.img-responsive{
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
 .img-{
 	
 }

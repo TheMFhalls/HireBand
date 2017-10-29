@@ -62,21 +62,12 @@ class BandasController extends AppController
      */
     public function view($id = null)
     {
-        /*
-        @session_start();
-        if($_SESSION["usuario"]->id == $id) {
-            $banda = $this->Bandas->get($id, [
-                'contain' => ['Usuarios', 'Estilos']
-            ]);
+        $banda = $this->Bandas->get($id, [
+            'contain' => ['Usuarios', 'Estilos']
+        ]);
 
-            $this->set('banda', $banda);
-            $this->set('_serialize', ['banda']);
-        }else{
-            @session_start();
-            $_SESSION['mensagem'] = "Você não tem permissão para acessar esta página.";
-            $this->redirect("/");
-        }
-        */
+        $this->set('banda', $banda);
+        $this->set('_serialize', ['banda']);
     }
 
     /**
