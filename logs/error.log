@@ -6130,3 +6130,883 @@ Stack Trace:
 #15 {main}
 
 
+2017-10-28 22:18:29 Error: [Cake\View\Exception\MissingTemplateException] Template file "Bandas\search.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'Bandas\\search.ctp',
+)
+Request URL: /bandas/search/2
+Referer URL: http://localhost/HireBand/
+Stack Trace:
+#0 C:\xampp\htdocs\HireBand\vendor\cakephp\cakephp\src\View\View.php(761): Cake\View\View->_getViewFileName('Bandas\\search')
+#1 C:\xampp\htdocs\HireBand\vendor\cakephp\cakephp\src\Controller\Controller.php(623): Cake\View\View->render(NULL, NULL)
+#2 C:\xampp\htdocs\HireBand\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(125): Cake\Controller\Controller->render()
+#3 C:\xampp\htdocs\HireBand\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(93): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\BandasController))
+#4 C:\xampp\htdocs\HireBand\vendor\cakephp\cakephp\src\Http\BaseApplication.php(103): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#5 C:\xampp\htdocs\HireBand\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#6 C:\xampp\htdocs\HireBand\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(107): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#7 C:\xampp\htdocs\HireBand\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#8 C:\xampp\htdocs\HireBand\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#9 C:\xampp\htdocs\HireBand\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#10 C:\xampp\htdocs\HireBand\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(95): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#11 C:\xampp\htdocs\HireBand\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#12 C:\xampp\htdocs\HireBand\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php(52): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#13 C:\xampp\htdocs\HireBand\vendor\cakephp\cakephp\src\Http\Runner.php(65): DebugKit\Middleware\DebugKitMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#14 C:\xampp\htdocs\HireBand\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#15 C:\xampp\htdocs\HireBand\vendor\cakephp\cakephp\src\Http\Server.php(81): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#16 C:\xampp\htdocs\HireBand\webroot\index.php(40): Cake\Http\Server->run()
+#17 {main}
+
+
+2017-10-28 22:19:11 Error: [Cake\View\Exception\MissingTemplateException] Template file "Bandas\search.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'Bandas\\search.ctp',
+)
+Request URL: /bandas/search/2
+Referer URL: http://localhost/HireBand/
+Stack Trace:
+#0 C:\xampp\htdocs\HireBand\vendor\cakephp\cakephp\src\View\View.php(761): Cake\View\View->_getViewFileName('Bandas\\search')
+#1 C:\xampp\htdocs\HireBand\vendor\cakephp\cakephp\src\Controller\Controller.php(623): Cake\View\View->render(NULL, NULL)
+#2 C:\xampp\htdocs\HireBand\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(125): Cake\Controller\Controller->render()
+#3 C:\xampp\htdocs\HireBand\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(93): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\BandasController))
+#4 C:\xampp\htdocs\HireBand\vendor\cakephp\cakephp\src\Http\BaseApplication.php(103): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#5 C:\xampp\htdocs\HireBand\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#6 C:\xampp\htdocs\HireBand\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(107): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#7 C:\xampp\htdocs\HireBand\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#8 C:\xampp\htdocs\HireBand\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#9 C:\xampp\htdocs\HireBand\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#10 C:\xampp\htdocs\HireBand\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(95): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#11 C:\xampp\htdocs\HireBand\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#12 C:\xampp\htdocs\HireBand\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php(52): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#13 C:\xampp\htdocs\HireBand\vendor\cakephp\cakephp\src\Http\Runner.php(65): DebugKit\Middleware\DebugKitMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#14 C:\xampp\htdocs\HireBand\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#15 C:\xampp\htdocs\HireBand\vendor\cakephp\cakephp\src\Http\Server.php(81): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#16 C:\xampp\htdocs\HireBand\webroot\index.php(40): Cake\Http\Server->run()
+#17 {main}
+
+
+2017-10-28 22:19:21 Error: [Cake\View\Exception\MissingTemplateException] Template file "Bandas\search.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'Bandas\\search.ctp',
+)
+Request URL: /bandas/search/2
+Referer URL: http://localhost/HireBand/
+Stack Trace:
+#0 C:\xampp\htdocs\HireBand\vendor\cakephp\cakephp\src\View\View.php(761): Cake\View\View->_getViewFileName('Bandas\\search')
+#1 C:\xampp\htdocs\HireBand\vendor\cakephp\cakephp\src\Controller\Controller.php(623): Cake\View\View->render(NULL, NULL)
+#2 C:\xampp\htdocs\HireBand\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(125): Cake\Controller\Controller->render()
+#3 C:\xampp\htdocs\HireBand\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(93): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\BandasController))
+#4 C:\xampp\htdocs\HireBand\vendor\cakephp\cakephp\src\Http\BaseApplication.php(103): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#5 C:\xampp\htdocs\HireBand\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#6 C:\xampp\htdocs\HireBand\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(107): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#7 C:\xampp\htdocs\HireBand\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#8 C:\xampp\htdocs\HireBand\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#9 C:\xampp\htdocs\HireBand\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#10 C:\xampp\htdocs\HireBand\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(95): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#11 C:\xampp\htdocs\HireBand\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#12 C:\xampp\htdocs\HireBand\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php(52): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#13 C:\xampp\htdocs\HireBand\vendor\cakephp\cakephp\src\Http\Runner.php(65): DebugKit\Middleware\DebugKitMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#14 C:\xampp\htdocs\HireBand\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#15 C:\xampp\htdocs\HireBand\vendor\cakephp\cakephp\src\Http\Server.php(81): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#16 C:\xampp\htdocs\HireBand\webroot\index.php(40): Cake\Http\Server->run()
+#17 {main}
+
+
+2017-10-29 00:10:07 Warning: Warning (2): A non-numeric value encountered in [C:\xampp\htdocs\HireBand\src\Template\Bandas\search.ctp, line 4]
+Request URL: /bandas/search/2
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 153
+include - APP/Template\Bandas\search.ctp, line 4
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 1196
+Cake\View\View::_render() - CORE\src\View\View.php, line 1157
+Cake\View\View::render() - CORE\src\View\View.php, line 765
+Cake\Controller\Controller::render() - CORE\src\Controller\Controller.php, line 623
+Cake\Http\ActionDispatcher::_invoke() - CORE\src\Http\ActionDispatcher.php, line 125
+Cake\Http\ActionDispatcher::dispatch() - CORE\src\Http\ActionDispatcher.php, line 93
+Cake\Http\BaseApplication::__invoke() - CORE\src\Http\BaseApplication.php, line 103
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\RoutingMiddleware::__invoke() - CORE\src\Routing\Middleware\RoutingMiddleware.php, line 107
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\AssetMiddleware::__invoke() - CORE\src\Routing\Middleware\AssetMiddleware.php, line 88
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Error\Middleware\ErrorHandlerMiddleware::__invoke() - CORE\src\Error\Middleware\ErrorHandlerMiddleware.php, line 95
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+DebugKit\Middleware\DebugKitMiddleware::__invoke() - ROOT\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php, line 52
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Http\Runner::run() - CORE\src\Http\Runner.php, line 51
+Cake\Http\Server::run() - CORE\src\Http\Server.php, line 81
+[main] - ROOT\webroot\index.php, line 40
+
+
+
+2017-10-29 00:10:07 Warning: Warning (2): A non-numeric value encountered in [C:\xampp\htdocs\HireBand\src\Template\Bandas\search.ctp, line 4]
+Request URL: /bandas/search/2
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 153
+include - APP/Template\Bandas\search.ctp, line 4
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 1196
+Cake\View\View::_render() - CORE\src\View\View.php, line 1157
+Cake\View\View::render() - CORE\src\View\View.php, line 765
+Cake\Controller\Controller::render() - CORE\src\Controller\Controller.php, line 623
+Cake\Http\ActionDispatcher::_invoke() - CORE\src\Http\ActionDispatcher.php, line 125
+Cake\Http\ActionDispatcher::dispatch() - CORE\src\Http\ActionDispatcher.php, line 93
+Cake\Http\BaseApplication::__invoke() - CORE\src\Http\BaseApplication.php, line 103
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\RoutingMiddleware::__invoke() - CORE\src\Routing\Middleware\RoutingMiddleware.php, line 107
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\AssetMiddleware::__invoke() - CORE\src\Routing\Middleware\AssetMiddleware.php, line 88
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Error\Middleware\ErrorHandlerMiddleware::__invoke() - CORE\src\Error\Middleware\ErrorHandlerMiddleware.php, line 95
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+DebugKit\Middleware\DebugKitMiddleware::__invoke() - ROOT\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php, line 52
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Http\Runner::run() - CORE\src\Http\Runner.php, line 51
+Cake\Http\Server::run() - CORE\src\Http\Server.php, line 81
+[main] - ROOT\webroot\index.php, line 40
+
+
+
+2017-10-29 00:10:08 Warning: Warning (2): A non-numeric value encountered in [C:\xampp\htdocs\HireBand\src\Template\Bandas\search.ctp, line 4]
+Request URL: /bandas/search/2
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 153
+include - APP/Template\Bandas\search.ctp, line 4
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 1196
+Cake\View\View::_render() - CORE\src\View\View.php, line 1157
+Cake\View\View::render() - CORE\src\View\View.php, line 765
+Cake\Controller\Controller::render() - CORE\src\Controller\Controller.php, line 623
+Cake\Http\ActionDispatcher::_invoke() - CORE\src\Http\ActionDispatcher.php, line 125
+Cake\Http\ActionDispatcher::dispatch() - CORE\src\Http\ActionDispatcher.php, line 93
+Cake\Http\BaseApplication::__invoke() - CORE\src\Http\BaseApplication.php, line 103
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\RoutingMiddleware::__invoke() - CORE\src\Routing\Middleware\RoutingMiddleware.php, line 107
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\AssetMiddleware::__invoke() - CORE\src\Routing\Middleware\AssetMiddleware.php, line 88
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Error\Middleware\ErrorHandlerMiddleware::__invoke() - CORE\src\Error\Middleware\ErrorHandlerMiddleware.php, line 95
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+DebugKit\Middleware\DebugKitMiddleware::__invoke() - ROOT\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php, line 52
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Http\Runner::run() - CORE\src\Http\Runner.php, line 51
+Cake\Http\Server::run() - CORE\src\Http\Server.php, line 81
+[main] - ROOT\webroot\index.php, line 40
+
+
+
+2017-10-29 00:10:08 Warning: Warning (2): A non-numeric value encountered in [C:\xampp\htdocs\HireBand\src\Template\Bandas\search.ctp, line 4]
+Request URL: /bandas/search/2
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 153
+include - APP/Template\Bandas\search.ctp, line 4
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 1196
+Cake\View\View::_render() - CORE\src\View\View.php, line 1157
+Cake\View\View::render() - CORE\src\View\View.php, line 765
+Cake\Controller\Controller::render() - CORE\src\Controller\Controller.php, line 623
+Cake\Http\ActionDispatcher::_invoke() - CORE\src\Http\ActionDispatcher.php, line 125
+Cake\Http\ActionDispatcher::dispatch() - CORE\src\Http\ActionDispatcher.php, line 93
+Cake\Http\BaseApplication::__invoke() - CORE\src\Http\BaseApplication.php, line 103
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\RoutingMiddleware::__invoke() - CORE\src\Routing\Middleware\RoutingMiddleware.php, line 107
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\AssetMiddleware::__invoke() - CORE\src\Routing\Middleware\AssetMiddleware.php, line 88
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Error\Middleware\ErrorHandlerMiddleware::__invoke() - CORE\src\Error\Middleware\ErrorHandlerMiddleware.php, line 95
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+DebugKit\Middleware\DebugKitMiddleware::__invoke() - ROOT\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php, line 52
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Http\Runner::run() - CORE\src\Http\Runner.php, line 51
+Cake\Http\Server::run() - CORE\src\Http\Server.php, line 81
+[main] - ROOT\webroot\index.php, line 40
+
+
+
+2017-10-29 00:10:08 Warning: Warning (2): A non-numeric value encountered in [C:\xampp\htdocs\HireBand\src\Template\Bandas\search.ctp, line 4]
+Request URL: /bandas/search/2
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 153
+include - APP/Template\Bandas\search.ctp, line 4
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 1196
+Cake\View\View::_render() - CORE\src\View\View.php, line 1157
+Cake\View\View::render() - CORE\src\View\View.php, line 765
+Cake\Controller\Controller::render() - CORE\src\Controller\Controller.php, line 623
+Cake\Http\ActionDispatcher::_invoke() - CORE\src\Http\ActionDispatcher.php, line 125
+Cake\Http\ActionDispatcher::dispatch() - CORE\src\Http\ActionDispatcher.php, line 93
+Cake\Http\BaseApplication::__invoke() - CORE\src\Http\BaseApplication.php, line 103
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\RoutingMiddleware::__invoke() - CORE\src\Routing\Middleware\RoutingMiddleware.php, line 107
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\AssetMiddleware::__invoke() - CORE\src\Routing\Middleware\AssetMiddleware.php, line 88
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Error\Middleware\ErrorHandlerMiddleware::__invoke() - CORE\src\Error\Middleware\ErrorHandlerMiddleware.php, line 95
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+DebugKit\Middleware\DebugKitMiddleware::__invoke() - ROOT\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php, line 52
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Http\Runner::run() - CORE\src\Http\Runner.php, line 51
+Cake\Http\Server::run() - CORE\src\Http\Server.php, line 81
+[main] - ROOT\webroot\index.php, line 40
+
+
+
+2017-10-29 00:10:08 Warning: Warning (2): A non-numeric value encountered in [C:\xampp\htdocs\HireBand\src\Template\Bandas\search.ctp, line 4]
+Request URL: /bandas/search/2
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 153
+include - APP/Template\Bandas\search.ctp, line 4
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 1196
+Cake\View\View::_render() - CORE\src\View\View.php, line 1157
+Cake\View\View::render() - CORE\src\View\View.php, line 765
+Cake\Controller\Controller::render() - CORE\src\Controller\Controller.php, line 623
+Cake\Http\ActionDispatcher::_invoke() - CORE\src\Http\ActionDispatcher.php, line 125
+Cake\Http\ActionDispatcher::dispatch() - CORE\src\Http\ActionDispatcher.php, line 93
+Cake\Http\BaseApplication::__invoke() - CORE\src\Http\BaseApplication.php, line 103
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\RoutingMiddleware::__invoke() - CORE\src\Routing\Middleware\RoutingMiddleware.php, line 107
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\AssetMiddleware::__invoke() - CORE\src\Routing\Middleware\AssetMiddleware.php, line 88
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Error\Middleware\ErrorHandlerMiddleware::__invoke() - CORE\src\Error\Middleware\ErrorHandlerMiddleware.php, line 95
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+DebugKit\Middleware\DebugKitMiddleware::__invoke() - ROOT\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php, line 52
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Http\Runner::run() - CORE\src\Http\Runner.php, line 51
+Cake\Http\Server::run() - CORE\src\Http\Server.php, line 81
+[main] - ROOT\webroot\index.php, line 40
+
+
+
+2017-10-29 00:10:08 Warning: Warning (2): A non-numeric value encountered in [C:\xampp\htdocs\HireBand\src\Template\Bandas\search.ctp, line 4]
+Request URL: /bandas/search/2
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 153
+include - APP/Template\Bandas\search.ctp, line 4
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 1196
+Cake\View\View::_render() - CORE\src\View\View.php, line 1157
+Cake\View\View::render() - CORE\src\View\View.php, line 765
+Cake\Controller\Controller::render() - CORE\src\Controller\Controller.php, line 623
+Cake\Http\ActionDispatcher::_invoke() - CORE\src\Http\ActionDispatcher.php, line 125
+Cake\Http\ActionDispatcher::dispatch() - CORE\src\Http\ActionDispatcher.php, line 93
+Cake\Http\BaseApplication::__invoke() - CORE\src\Http\BaseApplication.php, line 103
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\RoutingMiddleware::__invoke() - CORE\src\Routing\Middleware\RoutingMiddleware.php, line 107
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\AssetMiddleware::__invoke() - CORE\src\Routing\Middleware\AssetMiddleware.php, line 88
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Error\Middleware\ErrorHandlerMiddleware::__invoke() - CORE\src\Error\Middleware\ErrorHandlerMiddleware.php, line 95
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+DebugKit\Middleware\DebugKitMiddleware::__invoke() - ROOT\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php, line 52
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Http\Runner::run() - CORE\src\Http\Runner.php, line 51
+Cake\Http\Server::run() - CORE\src\Http\Server.php, line 81
+[main] - ROOT\webroot\index.php, line 40
+
+
+
+2017-10-29 00:10:08 Warning: Warning (2): A non-numeric value encountered in [C:\xampp\htdocs\HireBand\src\Template\Bandas\search.ctp, line 4]
+Request URL: /bandas/search/2
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 153
+include - APP/Template\Bandas\search.ctp, line 4
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 1196
+Cake\View\View::_render() - CORE\src\View\View.php, line 1157
+Cake\View\View::render() - CORE\src\View\View.php, line 765
+Cake\Controller\Controller::render() - CORE\src\Controller\Controller.php, line 623
+Cake\Http\ActionDispatcher::_invoke() - CORE\src\Http\ActionDispatcher.php, line 125
+Cake\Http\ActionDispatcher::dispatch() - CORE\src\Http\ActionDispatcher.php, line 93
+Cake\Http\BaseApplication::__invoke() - CORE\src\Http\BaseApplication.php, line 103
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\RoutingMiddleware::__invoke() - CORE\src\Routing\Middleware\RoutingMiddleware.php, line 107
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\AssetMiddleware::__invoke() - CORE\src\Routing\Middleware\AssetMiddleware.php, line 88
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Error\Middleware\ErrorHandlerMiddleware::__invoke() - CORE\src\Error\Middleware\ErrorHandlerMiddleware.php, line 95
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+DebugKit\Middleware\DebugKitMiddleware::__invoke() - ROOT\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php, line 52
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Http\Runner::run() - CORE\src\Http\Runner.php, line 51
+Cake\Http\Server::run() - CORE\src\Http\Server.php, line 81
+[main] - ROOT\webroot\index.php, line 40
+
+
+
+2017-10-29 00:49:47 Error: [Error] Call to a member function find() on null in C:\xampp\htdocs\HireBand\src\Controller\BandasController.php on line 18
+Request URL: /bandas/search/2
+Referer URL: http://localhost/HireBand/
+Stack Trace:
+#0 C:\xampp\htdocs\HireBand\vendor\cakephp\cakephp\src\Controller\Controller.php(440): App\Controller\BandasController->search('2')
+#1 C:\xampp\htdocs\HireBand\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(119): Cake\Controller\Controller->invokeAction()
+#2 C:\xampp\htdocs\HireBand\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(93): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\BandasController))
+#3 C:\xampp\htdocs\HireBand\vendor\cakephp\cakephp\src\Http\BaseApplication.php(103): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#4 C:\xampp\htdocs\HireBand\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#5 C:\xampp\htdocs\HireBand\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(107): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#6 C:\xampp\htdocs\HireBand\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#7 C:\xampp\htdocs\HireBand\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#8 C:\xampp\htdocs\HireBand\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#9 C:\xampp\htdocs\HireBand\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(95): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#10 C:\xampp\htdocs\HireBand\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#11 C:\xampp\htdocs\HireBand\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php(52): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#12 C:\xampp\htdocs\HireBand\vendor\cakephp\cakephp\src\Http\Runner.php(65): DebugKit\Middleware\DebugKitMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#13 C:\xampp\htdocs\HireBand\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#14 C:\xampp\htdocs\HireBand\vendor\cakephp\cakephp\src\Http\Server.php(81): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#15 C:\xampp\htdocs\HireBand\webroot\index.php(40): Cake\Http\Server->run()
+#16 {main}
+
+
+2017-10-29 01:00:53 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'bandas_estilos.banda_id' in 'where clause'
+Request URL: /bandas/search/2
+Referer URL: http://localhost/HireBand/
+Stack Trace:
+#0 C:\xampp\htdocs\HireBand\vendor\cakephp\cakephp\src\Database\Statement\MysqlStatement.php(39): PDOStatement->execute(NULL)
+#1 C:\xampp\htdocs\HireBand\vendor\cakephp\cakephp\src\Database\Statement\StatementDecorator.php(174): Cake\Database\Statement\MysqlStatement->execute(NULL)
+#2 C:\xampp\htdocs\HireBand\vendor\cakephp\cakephp\src\Database\Log\LoggingStatement.php(56): Cake\Database\Statement\StatementDecorator->execute(NULL)
+#3 C:\xampp\htdocs\HireBand\vendor\cakephp\cakephp\src\Database\Connection.php(314): Cake\Database\Log\LoggingStatement->execute()
+#4 C:\xampp\htdocs\HireBand\vendor\cakephp\cakephp\src\Database\Query.php(214): Cake\Database\Connection->run(Object(Cake\ORM\Query))
+#5 C:\xampp\htdocs\HireBand\vendor\cakephp\cakephp\src\ORM\Query.php(1039): Cake\Database\Query->execute()
+#6 C:\xampp\htdocs\HireBand\vendor\cakephp\cakephp\src\Datasource\QueryTrait.php(287): Cake\ORM\Query->_execute()
+#7 C:\xampp\htdocs\HireBand\vendor\cakephp\cakephp\src\ORM\Query.php(987): Cake\ORM\Query->_all()
+#8 C:\xampp\htdocs\HireBand\vendor\cakephp\cakephp\src\Datasource\QueryTrait.php(132): Cake\ORM\Query->all()
+#9 C:\xampp\htdocs\HireBand\src\Template\Bandas\search.ctp(3): Cake\ORM\Query->getIterator()
+#10 C:\xampp\htdocs\HireBand\vendor\cakephp\cakephp\src\View\View.php(1196): include('C:\\xampp\\htdocs...')
+#11 C:\xampp\htdocs\HireBand\vendor\cakephp\cakephp\src\View\View.php(1157): Cake\View\View->_evaluate('C:\\xampp\\htdocs...', Array)
+#12 C:\xampp\htdocs\HireBand\vendor\cakephp\cakephp\src\View\View.php(765): Cake\View\View->_render('C:\\xampp\\htdocs...')
+#13 C:\xampp\htdocs\HireBand\vendor\cakephp\cakephp\src\Controller\Controller.php(623): Cake\View\View->render(NULL, NULL)
+#14 C:\xampp\htdocs\HireBand\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(125): Cake\Controller\Controller->render()
+#15 C:\xampp\htdocs\HireBand\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(93): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\BandasController))
+#16 C:\xampp\htdocs\HireBand\vendor\cakephp\cakephp\src\Http\BaseApplication.php(103): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#17 C:\xampp\htdocs\HireBand\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#18 C:\xampp\htdocs\HireBand\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(107): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#19 C:\xampp\htdocs\HireBand\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#20 C:\xampp\htdocs\HireBand\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#21 C:\xampp\htdocs\HireBand\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#22 C:\xampp\htdocs\HireBand\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(95): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#23 C:\xampp\htdocs\HireBand\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#24 C:\xampp\htdocs\HireBand\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php(52): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#25 C:\xampp\htdocs\HireBand\vendor\cakephp\cakephp\src\Http\Runner.php(65): DebugKit\Middleware\DebugKitMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#26 C:\xampp\htdocs\HireBand\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#27 C:\xampp\htdocs\HireBand\vendor\cakephp\cakephp\src\Http\Server.php(81): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#28 C:\xampp\htdocs\HireBand\webroot\index.php(40): Cake\Http\Server->run()
+#29 {main}
+
+
+2017-10-29 01:03:38 Error: [InvalidArgumentException] Bandas is not associated with Estilo
+Request URL: /bandas/search/2
+Referer URL: http://localhost/HireBand/
+Stack Trace:
+#0 C:\xampp\htdocs\HireBand\vendor\cakephp\cakephp\src\ORM\EagerLoader.php(337): Cake\ORM\EagerLoader->_normalizeContain(Object(App\Model\Table\BandasTable), 'Estilo', Array, Array)
+#1 C:\xampp\htdocs\HireBand\vendor\cakephp\cakephp\src\ORM\EagerLoader.php(467): Cake\ORM\EagerLoader->normalized(Object(App\Model\Table\BandasTable))
+#2 C:\xampp\htdocs\HireBand\vendor\cakephp\cakephp\src\ORM\EagerLoader.php(438): Cake\ORM\EagerLoader->attachableAssociations(Object(App\Model\Table\BandasTable))
+#3 C:\xampp\htdocs\HireBand\vendor\cakephp\cakephp\src\ORM\Query.php(1066): Cake\ORM\EagerLoader->attachAssociations(Object(Cake\ORM\Query), Object(App\Model\Table\BandasTable), true)
+#4 C:\xampp\htdocs\HireBand\vendor\cakephp\cakephp\src\ORM\Query.php(1018): Cake\ORM\Query->_transformQuery()
+#5 C:\xampp\htdocs\HireBand\vendor\cakephp\cakephp\src\Database\Driver\Mysql.php(136): Cake\ORM\Query->sql()
+#6 C:\xampp\htdocs\HireBand\vendor\cakephp\cakephp\src\Database\Connection.php(259): Cake\Database\Driver\Mysql->prepare(Object(Cake\ORM\Query))
+#7 C:\xampp\htdocs\HireBand\vendor\cakephp\cakephp\src\Database\Connection.php(312): Cake\Database\Connection->prepare(Object(Cake\ORM\Query))
+#8 C:\xampp\htdocs\HireBand\vendor\cakephp\cakephp\src\Database\Query.php(214): Cake\Database\Connection->run(Object(Cake\ORM\Query))
+#9 C:\xampp\htdocs\HireBand\vendor\cakephp\cakephp\src\ORM\Query.php(1039): Cake\Database\Query->execute()
+#10 C:\xampp\htdocs\HireBand\vendor\cakephp\cakephp\src\Datasource\QueryTrait.php(287): Cake\ORM\Query->_execute()
+#11 C:\xampp\htdocs\HireBand\vendor\cakephp\cakephp\src\ORM\Query.php(987): Cake\ORM\Query->_all()
+#12 C:\xampp\htdocs\HireBand\vendor\cakephp\cakephp\src\Datasource\QueryTrait.php(132): Cake\ORM\Query->all()
+#13 C:\xampp\htdocs\HireBand\src\Template\Bandas\search.ctp(3): Cake\ORM\Query->getIterator()
+#14 C:\xampp\htdocs\HireBand\vendor\cakephp\cakephp\src\View\View.php(1196): include('C:\\xampp\\htdocs...')
+#15 C:\xampp\htdocs\HireBand\vendor\cakephp\cakephp\src\View\View.php(1157): Cake\View\View->_evaluate('C:\\xampp\\htdocs...', Array)
+#16 C:\xampp\htdocs\HireBand\vendor\cakephp\cakephp\src\View\View.php(765): Cake\View\View->_render('C:\\xampp\\htdocs...')
+#17 C:\xampp\htdocs\HireBand\vendor\cakephp\cakephp\src\Controller\Controller.php(623): Cake\View\View->render(NULL, NULL)
+#18 C:\xampp\htdocs\HireBand\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(125): Cake\Controller\Controller->render()
+#19 C:\xampp\htdocs\HireBand\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(93): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\BandasController))
+#20 C:\xampp\htdocs\HireBand\vendor\cakephp\cakephp\src\Http\BaseApplication.php(103): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#21 C:\xampp\htdocs\HireBand\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#22 C:\xampp\htdocs\HireBand\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(107): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#23 C:\xampp\htdocs\HireBand\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#24 C:\xampp\htdocs\HireBand\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#25 C:\xampp\htdocs\HireBand\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#26 C:\xampp\htdocs\HireBand\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(95): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#27 C:\xampp\htdocs\HireBand\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#28 C:\xampp\htdocs\HireBand\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php(52): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#29 C:\xampp\htdocs\HireBand\vendor\cakephp\cakephp\src\Http\Runner.php(65): DebugKit\Middleware\DebugKitMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#30 C:\xampp\htdocs\HireBand\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#31 C:\xampp\htdocs\HireBand\vendor\cakephp\cakephp\src\Http\Server.php(81): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#32 C:\xampp\htdocs\HireBand\webroot\index.php(40): Cake\Http\Server->run()
+#33 {main}
+
+
+2017-10-29 01:04:18 Error: [InvalidArgumentException] Bandas is not associated with estilo
+Request URL: /bandas/search/2
+Referer URL: http://localhost/HireBand/
+Stack Trace:
+#0 C:\xampp\htdocs\HireBand\vendor\cakephp\cakephp\src\ORM\EagerLoader.php(337): Cake\ORM\EagerLoader->_normalizeContain(Object(App\Model\Table\BandasTable), 'estilo', Array, Array)
+#1 C:\xampp\htdocs\HireBand\vendor\cakephp\cakephp\src\ORM\EagerLoader.php(467): Cake\ORM\EagerLoader->normalized(Object(App\Model\Table\BandasTable))
+#2 C:\xampp\htdocs\HireBand\vendor\cakephp\cakephp\src\ORM\EagerLoader.php(438): Cake\ORM\EagerLoader->attachableAssociations(Object(App\Model\Table\BandasTable))
+#3 C:\xampp\htdocs\HireBand\vendor\cakephp\cakephp\src\ORM\Query.php(1066): Cake\ORM\EagerLoader->attachAssociations(Object(Cake\ORM\Query), Object(App\Model\Table\BandasTable), true)
+#4 C:\xampp\htdocs\HireBand\vendor\cakephp\cakephp\src\ORM\Query.php(1018): Cake\ORM\Query->_transformQuery()
+#5 C:\xampp\htdocs\HireBand\vendor\cakephp\cakephp\src\Database\Driver\Mysql.php(136): Cake\ORM\Query->sql()
+#6 C:\xampp\htdocs\HireBand\vendor\cakephp\cakephp\src\Database\Connection.php(259): Cake\Database\Driver\Mysql->prepare(Object(Cake\ORM\Query))
+#7 C:\xampp\htdocs\HireBand\vendor\cakephp\cakephp\src\Database\Connection.php(312): Cake\Database\Connection->prepare(Object(Cake\ORM\Query))
+#8 C:\xampp\htdocs\HireBand\vendor\cakephp\cakephp\src\Database\Query.php(214): Cake\Database\Connection->run(Object(Cake\ORM\Query))
+#9 C:\xampp\htdocs\HireBand\vendor\cakephp\cakephp\src\ORM\Query.php(1039): Cake\Database\Query->execute()
+#10 C:\xampp\htdocs\HireBand\vendor\cakephp\cakephp\src\Datasource\QueryTrait.php(287): Cake\ORM\Query->_execute()
+#11 C:\xampp\htdocs\HireBand\vendor\cakephp\cakephp\src\ORM\Query.php(987): Cake\ORM\Query->_all()
+#12 C:\xampp\htdocs\HireBand\vendor\cakephp\cakephp\src\Datasource\QueryTrait.php(132): Cake\ORM\Query->all()
+#13 C:\xampp\htdocs\HireBand\src\Template\Bandas\search.ctp(3): Cake\ORM\Query->getIterator()
+#14 C:\xampp\htdocs\HireBand\vendor\cakephp\cakephp\src\View\View.php(1196): include('C:\\xampp\\htdocs...')
+#15 C:\xampp\htdocs\HireBand\vendor\cakephp\cakephp\src\View\View.php(1157): Cake\View\View->_evaluate('C:\\xampp\\htdocs...', Array)
+#16 C:\xampp\htdocs\HireBand\vendor\cakephp\cakephp\src\View\View.php(765): Cake\View\View->_render('C:\\xampp\\htdocs...')
+#17 C:\xampp\htdocs\HireBand\vendor\cakephp\cakephp\src\Controller\Controller.php(623): Cake\View\View->render(NULL, NULL)
+#18 C:\xampp\htdocs\HireBand\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(125): Cake\Controller\Controller->render()
+#19 C:\xampp\htdocs\HireBand\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(93): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\BandasController))
+#20 C:\xampp\htdocs\HireBand\vendor\cakephp\cakephp\src\Http\BaseApplication.php(103): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#21 C:\xampp\htdocs\HireBand\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#22 C:\xampp\htdocs\HireBand\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(107): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#23 C:\xampp\htdocs\HireBand\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#24 C:\xampp\htdocs\HireBand\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#25 C:\xampp\htdocs\HireBand\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#26 C:\xampp\htdocs\HireBand\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(95): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#27 C:\xampp\htdocs\HireBand\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#28 C:\xampp\htdocs\HireBand\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php(52): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#29 C:\xampp\htdocs\HireBand\vendor\cakephp\cakephp\src\Http\Runner.php(65): DebugKit\Middleware\DebugKitMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#30 C:\xampp\htdocs\HireBand\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#31 C:\xampp\htdocs\HireBand\vendor\cakephp\cakephp\src\Http\Server.php(81): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#32 C:\xampp\htdocs\HireBand\webroot\index.php(40): Cake\Http\Server->run()
+#33 {main}
+
+
+2017-10-29 01:04:35 Error: [InvalidArgumentException] Bandas is not associated with bandas_estilos
+Request URL: /bandas/search/2
+Referer URL: http://localhost/HireBand/
+Stack Trace:
+#0 C:\xampp\htdocs\HireBand\vendor\cakephp\cakephp\src\ORM\EagerLoader.php(337): Cake\ORM\EagerLoader->_normalizeContain(Object(App\Model\Table\BandasTable), 'bandas_estilos', Array, Array)
+#1 C:\xampp\htdocs\HireBand\vendor\cakephp\cakephp\src\ORM\EagerLoader.php(467): Cake\ORM\EagerLoader->normalized(Object(App\Model\Table\BandasTable))
+#2 C:\xampp\htdocs\HireBand\vendor\cakephp\cakephp\src\ORM\EagerLoader.php(438): Cake\ORM\EagerLoader->attachableAssociations(Object(App\Model\Table\BandasTable))
+#3 C:\xampp\htdocs\HireBand\vendor\cakephp\cakephp\src\ORM\Query.php(1066): Cake\ORM\EagerLoader->attachAssociations(Object(Cake\ORM\Query), Object(App\Model\Table\BandasTable), true)
+#4 C:\xampp\htdocs\HireBand\vendor\cakephp\cakephp\src\ORM\Query.php(1018): Cake\ORM\Query->_transformQuery()
+#5 C:\xampp\htdocs\HireBand\vendor\cakephp\cakephp\src\Database\Driver\Mysql.php(136): Cake\ORM\Query->sql()
+#6 C:\xampp\htdocs\HireBand\vendor\cakephp\cakephp\src\Database\Connection.php(259): Cake\Database\Driver\Mysql->prepare(Object(Cake\ORM\Query))
+#7 C:\xampp\htdocs\HireBand\vendor\cakephp\cakephp\src\Database\Connection.php(312): Cake\Database\Connection->prepare(Object(Cake\ORM\Query))
+#8 C:\xampp\htdocs\HireBand\vendor\cakephp\cakephp\src\Database\Query.php(214): Cake\Database\Connection->run(Object(Cake\ORM\Query))
+#9 C:\xampp\htdocs\HireBand\vendor\cakephp\cakephp\src\ORM\Query.php(1039): Cake\Database\Query->execute()
+#10 C:\xampp\htdocs\HireBand\vendor\cakephp\cakephp\src\Datasource\QueryTrait.php(287): Cake\ORM\Query->_execute()
+#11 C:\xampp\htdocs\HireBand\vendor\cakephp\cakephp\src\ORM\Query.php(987): Cake\ORM\Query->_all()
+#12 C:\xampp\htdocs\HireBand\vendor\cakephp\cakephp\src\Datasource\QueryTrait.php(132): Cake\ORM\Query->all()
+#13 C:\xampp\htdocs\HireBand\src\Template\Bandas\search.ctp(3): Cake\ORM\Query->getIterator()
+#14 C:\xampp\htdocs\HireBand\vendor\cakephp\cakephp\src\View\View.php(1196): include('C:\\xampp\\htdocs...')
+#15 C:\xampp\htdocs\HireBand\vendor\cakephp\cakephp\src\View\View.php(1157): Cake\View\View->_evaluate('C:\\xampp\\htdocs...', Array)
+#16 C:\xampp\htdocs\HireBand\vendor\cakephp\cakephp\src\View\View.php(765): Cake\View\View->_render('C:\\xampp\\htdocs...')
+#17 C:\xampp\htdocs\HireBand\vendor\cakephp\cakephp\src\Controller\Controller.php(623): Cake\View\View->render(NULL, NULL)
+#18 C:\xampp\htdocs\HireBand\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(125): Cake\Controller\Controller->render()
+#19 C:\xampp\htdocs\HireBand\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(93): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\BandasController))
+#20 C:\xampp\htdocs\HireBand\vendor\cakephp\cakephp\src\Http\BaseApplication.php(103): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#21 C:\xampp\htdocs\HireBand\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#22 C:\xampp\htdocs\HireBand\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(107): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#23 C:\xampp\htdocs\HireBand\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#24 C:\xampp\htdocs\HireBand\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#25 C:\xampp\htdocs\HireBand\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#26 C:\xampp\htdocs\HireBand\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(95): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#27 C:\xampp\htdocs\HireBand\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#28 C:\xampp\htdocs\HireBand\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php(52): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#29 C:\xampp\htdocs\HireBand\vendor\cakephp\cakephp\src\Http\Runner.php(65): DebugKit\Middleware\DebugKitMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#30 C:\xampp\htdocs\HireBand\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#31 C:\xampp\htdocs\HireBand\vendor\cakephp\cakephp\src\Http\Server.php(81): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#32 C:\xampp\htdocs\HireBand\webroot\index.php(40): Cake\Http\Server->run()
+#33 {main}
+
+
+2017-10-29 01:10:01 Error: [InvalidArgumentException] Bandas is not associated with bandas_estilos
+Request URL: /bandas/search/2
+Referer URL: http://localhost/HireBand/
+Stack Trace:
+#0 C:\xampp\htdocs\HireBand\vendor\cakephp\cakephp\src\ORM\EagerLoader.php(337): Cake\ORM\EagerLoader->_normalizeContain(Object(App\Model\Table\BandasTable), 'bandas_estilos', Array, Array)
+#1 C:\xampp\htdocs\HireBand\vendor\cakephp\cakephp\src\ORM\EagerLoader.php(467): Cake\ORM\EagerLoader->normalized(Object(App\Model\Table\BandasTable))
+#2 C:\xampp\htdocs\HireBand\vendor\cakephp\cakephp\src\ORM\EagerLoader.php(438): Cake\ORM\EagerLoader->attachableAssociations(Object(App\Model\Table\BandasTable))
+#3 C:\xampp\htdocs\HireBand\vendor\cakephp\cakephp\src\ORM\Query.php(1066): Cake\ORM\EagerLoader->attachAssociations(Object(Cake\ORM\Query), Object(App\Model\Table\BandasTable), true)
+#4 C:\xampp\htdocs\HireBand\vendor\cakephp\cakephp\src\ORM\Query.php(1018): Cake\ORM\Query->_transformQuery()
+#5 C:\xampp\htdocs\HireBand\vendor\cakephp\cakephp\src\Database\Driver\Mysql.php(136): Cake\ORM\Query->sql()
+#6 C:\xampp\htdocs\HireBand\vendor\cakephp\cakephp\src\Database\Connection.php(259): Cake\Database\Driver\Mysql->prepare(Object(Cake\ORM\Query))
+#7 C:\xampp\htdocs\HireBand\vendor\cakephp\cakephp\src\Database\Connection.php(312): Cake\Database\Connection->prepare(Object(Cake\ORM\Query))
+#8 C:\xampp\htdocs\HireBand\vendor\cakephp\cakephp\src\Database\Query.php(214): Cake\Database\Connection->run(Object(Cake\ORM\Query))
+#9 C:\xampp\htdocs\HireBand\vendor\cakephp\cakephp\src\ORM\Query.php(1039): Cake\Database\Query->execute()
+#10 C:\xampp\htdocs\HireBand\vendor\cakephp\cakephp\src\Datasource\QueryTrait.php(287): Cake\ORM\Query->_execute()
+#11 C:\xampp\htdocs\HireBand\vendor\cakephp\cakephp\src\ORM\Query.php(987): Cake\ORM\Query->_all()
+#12 C:\xampp\htdocs\HireBand\vendor\cakephp\cakephp\src\Datasource\QueryTrait.php(132): Cake\ORM\Query->all()
+#13 C:\xampp\htdocs\HireBand\src\Template\Bandas\search.ctp(3): Cake\ORM\Query->getIterator()
+#14 C:\xampp\htdocs\HireBand\vendor\cakephp\cakephp\src\View\View.php(1196): include('C:\\xampp\\htdocs...')
+#15 C:\xampp\htdocs\HireBand\vendor\cakephp\cakephp\src\View\View.php(1157): Cake\View\View->_evaluate('C:\\xampp\\htdocs...', Array)
+#16 C:\xampp\htdocs\HireBand\vendor\cakephp\cakephp\src\View\View.php(765): Cake\View\View->_render('C:\\xampp\\htdocs...')
+#17 C:\xampp\htdocs\HireBand\vendor\cakephp\cakephp\src\Controller\Controller.php(623): Cake\View\View->render(NULL, NULL)
+#18 C:\xampp\htdocs\HireBand\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(125): Cake\Controller\Controller->render()
+#19 C:\xampp\htdocs\HireBand\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(93): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\BandasController))
+#20 C:\xampp\htdocs\HireBand\vendor\cakephp\cakephp\src\Http\BaseApplication.php(103): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#21 C:\xampp\htdocs\HireBand\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#22 C:\xampp\htdocs\HireBand\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(107): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#23 C:\xampp\htdocs\HireBand\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#24 C:\xampp\htdocs\HireBand\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#25 C:\xampp\htdocs\HireBand\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#26 C:\xampp\htdocs\HireBand\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(95): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#27 C:\xampp\htdocs\HireBand\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#28 C:\xampp\htdocs\HireBand\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php(52): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#29 C:\xampp\htdocs\HireBand\vendor\cakephp\cakephp\src\Http\Runner.php(65): DebugKit\Middleware\DebugKitMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#30 C:\xampp\htdocs\HireBand\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#31 C:\xampp\htdocs\HireBand\vendor\cakephp\cakephp\src\Http\Server.php(81): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#32 C:\xampp\htdocs\HireBand\webroot\index.php(40): Cake\Http\Server->run()
+#33 {main}
+
+
+2017-10-29 01:10:47 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'estilos.id' in 'where clause'
+Request URL: /bandas/search/2
+Referer URL: http://localhost/HireBand/
+Stack Trace:
+#0 C:\xampp\htdocs\HireBand\vendor\cakephp\cakephp\src\Database\Statement\MysqlStatement.php(39): PDOStatement->execute(NULL)
+#1 C:\xampp\htdocs\HireBand\vendor\cakephp\cakephp\src\Database\Statement\StatementDecorator.php(174): Cake\Database\Statement\MysqlStatement->execute(NULL)
+#2 C:\xampp\htdocs\HireBand\vendor\cakephp\cakephp\src\Database\Log\LoggingStatement.php(56): Cake\Database\Statement\StatementDecorator->execute(NULL)
+#3 C:\xampp\htdocs\HireBand\vendor\cakephp\cakephp\src\Database\Connection.php(314): Cake\Database\Log\LoggingStatement->execute()
+#4 C:\xampp\htdocs\HireBand\vendor\cakephp\cakephp\src\Database\Query.php(214): Cake\Database\Connection->run(Object(Cake\ORM\Query))
+#5 C:\xampp\htdocs\HireBand\vendor\cakephp\cakephp\src\ORM\Query.php(1039): Cake\Database\Query->execute()
+#6 C:\xampp\htdocs\HireBand\vendor\cakephp\cakephp\src\Datasource\QueryTrait.php(287): Cake\ORM\Query->_execute()
+#7 C:\xampp\htdocs\HireBand\vendor\cakephp\cakephp\src\ORM\Query.php(987): Cake\ORM\Query->_all()
+#8 C:\xampp\htdocs\HireBand\vendor\cakephp\cakephp\src\Datasource\QueryTrait.php(132): Cake\ORM\Query->all()
+#9 C:\xampp\htdocs\HireBand\src\Template\Bandas\search.ctp(3): Cake\ORM\Query->getIterator()
+#10 C:\xampp\htdocs\HireBand\vendor\cakephp\cakephp\src\View\View.php(1196): include('C:\\xampp\\htdocs...')
+#11 C:\xampp\htdocs\HireBand\vendor\cakephp\cakephp\src\View\View.php(1157): Cake\View\View->_evaluate('C:\\xampp\\htdocs...', Array)
+#12 C:\xampp\htdocs\HireBand\vendor\cakephp\cakephp\src\View\View.php(765): Cake\View\View->_render('C:\\xampp\\htdocs...')
+#13 C:\xampp\htdocs\HireBand\vendor\cakephp\cakephp\src\Controller\Controller.php(623): Cake\View\View->render(NULL, NULL)
+#14 C:\xampp\htdocs\HireBand\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(125): Cake\Controller\Controller->render()
+#15 C:\xampp\htdocs\HireBand\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(93): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\BandasController))
+#16 C:\xampp\htdocs\HireBand\vendor\cakephp\cakephp\src\Http\BaseApplication.php(103): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#17 C:\xampp\htdocs\HireBand\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#18 C:\xampp\htdocs\HireBand\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(107): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#19 C:\xampp\htdocs\HireBand\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#20 C:\xampp\htdocs\HireBand\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#21 C:\xampp\htdocs\HireBand\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#22 C:\xampp\htdocs\HireBand\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(95): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#23 C:\xampp\htdocs\HireBand\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#24 C:\xampp\htdocs\HireBand\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php(52): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#25 C:\xampp\htdocs\HireBand\vendor\cakephp\cakephp\src\Http\Runner.php(65): DebugKit\Middleware\DebugKitMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#26 C:\xampp\htdocs\HireBand\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#27 C:\xampp\htdocs\HireBand\vendor\cakephp\cakephp\src\Http\Server.php(81): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#28 C:\xampp\htdocs\HireBand\webroot\index.php(40): Cake\Http\Server->run()
+#29 {main}
+
+
+2017-10-29 01:11:27 Error: [InvalidArgumentException] Bandas is not associated with bandas_estilos
+Request URL: /bandas/search/2
+Referer URL: http://localhost/HireBand/
+Stack Trace:
+#0 C:\xampp\htdocs\HireBand\vendor\cakephp\cakephp\src\ORM\EagerLoader.php(337): Cake\ORM\EagerLoader->_normalizeContain(Object(App\Model\Table\BandasTable), 'bandas_estilos', Array, Array)
+#1 C:\xampp\htdocs\HireBand\vendor\cakephp\cakephp\src\ORM\EagerLoader.php(467): Cake\ORM\EagerLoader->normalized(Object(App\Model\Table\BandasTable))
+#2 C:\xampp\htdocs\HireBand\vendor\cakephp\cakephp\src\ORM\EagerLoader.php(438): Cake\ORM\EagerLoader->attachableAssociations(Object(App\Model\Table\BandasTable))
+#3 C:\xampp\htdocs\HireBand\vendor\cakephp\cakephp\src\ORM\Query.php(1066): Cake\ORM\EagerLoader->attachAssociations(Object(Cake\ORM\Query), Object(App\Model\Table\BandasTable), true)
+#4 C:\xampp\htdocs\HireBand\vendor\cakephp\cakephp\src\ORM\Query.php(1018): Cake\ORM\Query->_transformQuery()
+#5 C:\xampp\htdocs\HireBand\vendor\cakephp\cakephp\src\Database\Driver\Mysql.php(136): Cake\ORM\Query->sql()
+#6 C:\xampp\htdocs\HireBand\vendor\cakephp\cakephp\src\Database\Connection.php(259): Cake\Database\Driver\Mysql->prepare(Object(Cake\ORM\Query))
+#7 C:\xampp\htdocs\HireBand\vendor\cakephp\cakephp\src\Database\Connection.php(312): Cake\Database\Connection->prepare(Object(Cake\ORM\Query))
+#8 C:\xampp\htdocs\HireBand\vendor\cakephp\cakephp\src\Database\Query.php(214): Cake\Database\Connection->run(Object(Cake\ORM\Query))
+#9 C:\xampp\htdocs\HireBand\vendor\cakephp\cakephp\src\ORM\Query.php(1039): Cake\Database\Query->execute()
+#10 C:\xampp\htdocs\HireBand\vendor\cakephp\cakephp\src\Datasource\QueryTrait.php(287): Cake\ORM\Query->_execute()
+#11 C:\xampp\htdocs\HireBand\vendor\cakephp\cakephp\src\ORM\Query.php(987): Cake\ORM\Query->_all()
+#12 C:\xampp\htdocs\HireBand\vendor\cakephp\cakephp\src\Datasource\QueryTrait.php(132): Cake\ORM\Query->all()
+#13 C:\xampp\htdocs\HireBand\src\Template\Bandas\search.ctp(3): Cake\ORM\Query->getIterator()
+#14 C:\xampp\htdocs\HireBand\vendor\cakephp\cakephp\src\View\View.php(1196): include('C:\\xampp\\htdocs...')
+#15 C:\xampp\htdocs\HireBand\vendor\cakephp\cakephp\src\View\View.php(1157): Cake\View\View->_evaluate('C:\\xampp\\htdocs...', Array)
+#16 C:\xampp\htdocs\HireBand\vendor\cakephp\cakephp\src\View\View.php(765): Cake\View\View->_render('C:\\xampp\\htdocs...')
+#17 C:\xampp\htdocs\HireBand\vendor\cakephp\cakephp\src\Controller\Controller.php(623): Cake\View\View->render(NULL, NULL)
+#18 C:\xampp\htdocs\HireBand\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(125): Cake\Controller\Controller->render()
+#19 C:\xampp\htdocs\HireBand\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(93): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\BandasController))
+#20 C:\xampp\htdocs\HireBand\vendor\cakephp\cakephp\src\Http\BaseApplication.php(103): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#21 C:\xampp\htdocs\HireBand\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#22 C:\xampp\htdocs\HireBand\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(107): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#23 C:\xampp\htdocs\HireBand\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#24 C:\xampp\htdocs\HireBand\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#25 C:\xampp\htdocs\HireBand\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#26 C:\xampp\htdocs\HireBand\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(95): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#27 C:\xampp\htdocs\HireBand\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#28 C:\xampp\htdocs\HireBand\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php(52): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#29 C:\xampp\htdocs\HireBand\vendor\cakephp\cakephp\src\Http\Runner.php(65): DebugKit\Middleware\DebugKitMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#30 C:\xampp\htdocs\HireBand\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#31 C:\xampp\htdocs\HireBand\vendor\cakephp\cakephp\src\Http\Server.php(81): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#32 C:\xampp\htdocs\HireBand\webroot\index.php(40): Cake\Http\Server->run()
+#33 {main}
+
+
+2017-10-29 01:12:56 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'BandasEstilos.estilo_id' in 'where clause'
+Request URL: /bandas/search/2
+Referer URL: http://localhost/HireBand/
+Stack Trace:
+#0 C:\xampp\htdocs\HireBand\vendor\cakephp\cakephp\src\Database\Statement\MysqlStatement.php(39): PDOStatement->execute(NULL)
+#1 C:\xampp\htdocs\HireBand\vendor\cakephp\cakephp\src\Database\Statement\StatementDecorator.php(174): Cake\Database\Statement\MysqlStatement->execute(NULL)
+#2 C:\xampp\htdocs\HireBand\vendor\cakephp\cakephp\src\Database\Log\LoggingStatement.php(56): Cake\Database\Statement\StatementDecorator->execute(NULL)
+#3 C:\xampp\htdocs\HireBand\vendor\cakephp\cakephp\src\Database\Connection.php(314): Cake\Database\Log\LoggingStatement->execute()
+#4 C:\xampp\htdocs\HireBand\vendor\cakephp\cakephp\src\Database\Query.php(214): Cake\Database\Connection->run(Object(Cake\ORM\Query))
+#5 C:\xampp\htdocs\HireBand\vendor\cakephp\cakephp\src\ORM\Query.php(1039): Cake\Database\Query->execute()
+#6 C:\xampp\htdocs\HireBand\vendor\cakephp\cakephp\src\Datasource\QueryTrait.php(287): Cake\ORM\Query->_execute()
+#7 C:\xampp\htdocs\HireBand\vendor\cakephp\cakephp\src\ORM\Query.php(987): Cake\ORM\Query->_all()
+#8 C:\xampp\htdocs\HireBand\vendor\cakephp\cakephp\src\Datasource\QueryTrait.php(132): Cake\ORM\Query->all()
+#9 C:\xampp\htdocs\HireBand\src\Template\Bandas\search.ctp(3): Cake\ORM\Query->getIterator()
+#10 C:\xampp\htdocs\HireBand\vendor\cakephp\cakephp\src\View\View.php(1196): include('C:\\xampp\\htdocs...')
+#11 C:\xampp\htdocs\HireBand\vendor\cakephp\cakephp\src\View\View.php(1157): Cake\View\View->_evaluate('C:\\xampp\\htdocs...', Array)
+#12 C:\xampp\htdocs\HireBand\vendor\cakephp\cakephp\src\View\View.php(765): Cake\View\View->_render('C:\\xampp\\htdocs...')
+#13 C:\xampp\htdocs\HireBand\vendor\cakephp\cakephp\src\Controller\Controller.php(623): Cake\View\View->render(NULL, NULL)
+#14 C:\xampp\htdocs\HireBand\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(125): Cake\Controller\Controller->render()
+#15 C:\xampp\htdocs\HireBand\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(93): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\BandasController))
+#16 C:\xampp\htdocs\HireBand\vendor\cakephp\cakephp\src\Http\BaseApplication.php(103): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#17 C:\xampp\htdocs\HireBand\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#18 C:\xampp\htdocs\HireBand\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(107): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#19 C:\xampp\htdocs\HireBand\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#20 C:\xampp\htdocs\HireBand\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#21 C:\xampp\htdocs\HireBand\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#22 C:\xampp\htdocs\HireBand\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(95): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#23 C:\xampp\htdocs\HireBand\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#24 C:\xampp\htdocs\HireBand\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php(52): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#25 C:\xampp\htdocs\HireBand\vendor\cakephp\cakephp\src\Http\Runner.php(65): DebugKit\Middleware\DebugKitMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#26 C:\xampp\htdocs\HireBand\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#27 C:\xampp\htdocs\HireBand\vendor\cakephp\cakephp\src\Http\Server.php(81): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#28 C:\xampp\htdocs\HireBand\webroot\index.php(40): Cake\Http\Server->run()
+#29 {main}
+
+
+2017-10-29 01:13:17 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'bandas_estilos.estilo_id' in 'where clause'
+Request URL: /bandas/search/2
+Referer URL: http://localhost/HireBand/
+Stack Trace:
+#0 C:\xampp\htdocs\HireBand\vendor\cakephp\cakephp\src\Database\Statement\MysqlStatement.php(39): PDOStatement->execute(NULL)
+#1 C:\xampp\htdocs\HireBand\vendor\cakephp\cakephp\src\Database\Statement\StatementDecorator.php(174): Cake\Database\Statement\MysqlStatement->execute(NULL)
+#2 C:\xampp\htdocs\HireBand\vendor\cakephp\cakephp\src\Database\Log\LoggingStatement.php(56): Cake\Database\Statement\StatementDecorator->execute(NULL)
+#3 C:\xampp\htdocs\HireBand\vendor\cakephp\cakephp\src\Database\Connection.php(314): Cake\Database\Log\LoggingStatement->execute()
+#4 C:\xampp\htdocs\HireBand\vendor\cakephp\cakephp\src\Database\Query.php(214): Cake\Database\Connection->run(Object(Cake\ORM\Query))
+#5 C:\xampp\htdocs\HireBand\vendor\cakephp\cakephp\src\ORM\Query.php(1039): Cake\Database\Query->execute()
+#6 C:\xampp\htdocs\HireBand\vendor\cakephp\cakephp\src\Datasource\QueryTrait.php(287): Cake\ORM\Query->_execute()
+#7 C:\xampp\htdocs\HireBand\vendor\cakephp\cakephp\src\ORM\Query.php(987): Cake\ORM\Query->_all()
+#8 C:\xampp\htdocs\HireBand\vendor\cakephp\cakephp\src\Datasource\QueryTrait.php(132): Cake\ORM\Query->all()
+#9 C:\xampp\htdocs\HireBand\src\Template\Bandas\search.ctp(3): Cake\ORM\Query->getIterator()
+#10 C:\xampp\htdocs\HireBand\vendor\cakephp\cakephp\src\View\View.php(1196): include('C:\\xampp\\htdocs...')
+#11 C:\xampp\htdocs\HireBand\vendor\cakephp\cakephp\src\View\View.php(1157): Cake\View\View->_evaluate('C:\\xampp\\htdocs...', Array)
+#12 C:\xampp\htdocs\HireBand\vendor\cakephp\cakephp\src\View\View.php(765): Cake\View\View->_render('C:\\xampp\\htdocs...')
+#13 C:\xampp\htdocs\HireBand\vendor\cakephp\cakephp\src\Controller\Controller.php(623): Cake\View\View->render(NULL, NULL)
+#14 C:\xampp\htdocs\HireBand\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(125): Cake\Controller\Controller->render()
+#15 C:\xampp\htdocs\HireBand\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(93): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\BandasController))
+#16 C:\xampp\htdocs\HireBand\vendor\cakephp\cakephp\src\Http\BaseApplication.php(103): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#17 C:\xampp\htdocs\HireBand\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#18 C:\xampp\htdocs\HireBand\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(107): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#19 C:\xampp\htdocs\HireBand\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#20 C:\xampp\htdocs\HireBand\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#21 C:\xampp\htdocs\HireBand\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#22 C:\xampp\htdocs\HireBand\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(95): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#23 C:\xampp\htdocs\HireBand\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#24 C:\xampp\htdocs\HireBand\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php(52): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#25 C:\xampp\htdocs\HireBand\vendor\cakephp\cakephp\src\Http\Runner.php(65): DebugKit\Middleware\DebugKitMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#26 C:\xampp\htdocs\HireBand\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#27 C:\xampp\htdocs\HireBand\vendor\cakephp\cakephp\src\Http\Server.php(81): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#28 C:\xampp\htdocs\HireBand\webroot\index.php(40): Cake\Http\Server->run()
+#29 {main}
+
+
+2017-10-29 01:13:27 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'bandas_estilos.estilo_id' in 'where clause'
+Request URL: /bandas/search/2
+Referer URL: http://localhost/HireBand/
+Stack Trace:
+#0 C:\xampp\htdocs\HireBand\vendor\cakephp\cakephp\src\Database\Statement\MysqlStatement.php(39): PDOStatement->execute(NULL)
+#1 C:\xampp\htdocs\HireBand\vendor\cakephp\cakephp\src\Database\Statement\StatementDecorator.php(174): Cake\Database\Statement\MysqlStatement->execute(NULL)
+#2 C:\xampp\htdocs\HireBand\vendor\cakephp\cakephp\src\Database\Log\LoggingStatement.php(56): Cake\Database\Statement\StatementDecorator->execute(NULL)
+#3 C:\xampp\htdocs\HireBand\vendor\cakephp\cakephp\src\Database\Connection.php(314): Cake\Database\Log\LoggingStatement->execute()
+#4 C:\xampp\htdocs\HireBand\vendor\cakephp\cakephp\src\Database\Query.php(214): Cake\Database\Connection->run(Object(Cake\ORM\Query))
+#5 C:\xampp\htdocs\HireBand\vendor\cakephp\cakephp\src\ORM\Query.php(1039): Cake\Database\Query->execute()
+#6 C:\xampp\htdocs\HireBand\vendor\cakephp\cakephp\src\Datasource\QueryTrait.php(287): Cake\ORM\Query->_execute()
+#7 C:\xampp\htdocs\HireBand\vendor\cakephp\cakephp\src\ORM\Query.php(987): Cake\ORM\Query->_all()
+#8 C:\xampp\htdocs\HireBand\vendor\cakephp\cakephp\src\Datasource\QueryTrait.php(132): Cake\ORM\Query->all()
+#9 C:\xampp\htdocs\HireBand\src\Template\Bandas\search.ctp(3): Cake\ORM\Query->getIterator()
+#10 C:\xampp\htdocs\HireBand\vendor\cakephp\cakephp\src\View\View.php(1196): include('C:\\xampp\\htdocs...')
+#11 C:\xampp\htdocs\HireBand\vendor\cakephp\cakephp\src\View\View.php(1157): Cake\View\View->_evaluate('C:\\xampp\\htdocs...', Array)
+#12 C:\xampp\htdocs\HireBand\vendor\cakephp\cakephp\src\View\View.php(765): Cake\View\View->_render('C:\\xampp\\htdocs...')
+#13 C:\xampp\htdocs\HireBand\vendor\cakephp\cakephp\src\Controller\Controller.php(623): Cake\View\View->render(NULL, NULL)
+#14 C:\xampp\htdocs\HireBand\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(125): Cake\Controller\Controller->render()
+#15 C:\xampp\htdocs\HireBand\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(93): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\BandasController))
+#16 C:\xampp\htdocs\HireBand\vendor\cakephp\cakephp\src\Http\BaseApplication.php(103): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#17 C:\xampp\htdocs\HireBand\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#18 C:\xampp\htdocs\HireBand\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(107): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#19 C:\xampp\htdocs\HireBand\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#20 C:\xampp\htdocs\HireBand\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#21 C:\xampp\htdocs\HireBand\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#22 C:\xampp\htdocs\HireBand\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(95): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#23 C:\xampp\htdocs\HireBand\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#24 C:\xampp\htdocs\HireBand\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php(52): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#25 C:\xampp\htdocs\HireBand\vendor\cakephp\cakephp\src\Http\Runner.php(65): DebugKit\Middleware\DebugKitMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#26 C:\xampp\htdocs\HireBand\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#27 C:\xampp\htdocs\HireBand\vendor\cakephp\cakephp\src\Http\Server.php(81): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#28 C:\xampp\htdocs\HireBand\webroot\index.php(40): Cake\Http\Server->run()
+#29 {main}
+
+
+2017-10-29 01:18:09 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'banda.id' in 'on clause'
+Request URL: /bandas/search/2
+Referer URL: http://localhost/HireBand/
+Stack Trace:
+#0 C:\xampp\htdocs\HireBand\vendor\cakephp\cakephp\src\Database\Statement\MysqlStatement.php(39): PDOStatement->execute(NULL)
+#1 C:\xampp\htdocs\HireBand\vendor\cakephp\cakephp\src\Database\Statement\StatementDecorator.php(174): Cake\Database\Statement\MysqlStatement->execute(NULL)
+#2 C:\xampp\htdocs\HireBand\vendor\cakephp\cakephp\src\Database\Log\LoggingStatement.php(56): Cake\Database\Statement\StatementDecorator->execute(NULL)
+#3 C:\xampp\htdocs\HireBand\vendor\cakephp\cakephp\src\Database\Connection.php(314): Cake\Database\Log\LoggingStatement->execute()
+#4 C:\xampp\htdocs\HireBand\vendor\cakephp\cakephp\src\Database\Query.php(214): Cake\Database\Connection->run(Object(Cake\ORM\Query))
+#5 C:\xampp\htdocs\HireBand\vendor\cakephp\cakephp\src\ORM\Query.php(1039): Cake\Database\Query->execute()
+#6 C:\xampp\htdocs\HireBand\vendor\cakephp\cakephp\src\Datasource\QueryTrait.php(287): Cake\ORM\Query->_execute()
+#7 C:\xampp\htdocs\HireBand\vendor\cakephp\cakephp\src\ORM\Query.php(987): Cake\ORM\Query->_all()
+#8 C:\xampp\htdocs\HireBand\vendor\cakephp\cakephp\src\Datasource\QueryTrait.php(132): Cake\ORM\Query->all()
+#9 C:\xampp\htdocs\HireBand\src\Template\Bandas\search.ctp(3): Cake\ORM\Query->getIterator()
+#10 C:\xampp\htdocs\HireBand\vendor\cakephp\cakephp\src\View\View.php(1196): include('C:\\xampp\\htdocs...')
+#11 C:\xampp\htdocs\HireBand\vendor\cakephp\cakephp\src\View\View.php(1157): Cake\View\View->_evaluate('C:\\xampp\\htdocs...', Array)
+#12 C:\xampp\htdocs\HireBand\vendor\cakephp\cakephp\src\View\View.php(765): Cake\View\View->_render('C:\\xampp\\htdocs...')
+#13 C:\xampp\htdocs\HireBand\vendor\cakephp\cakephp\src\Controller\Controller.php(623): Cake\View\View->render(NULL, NULL)
+#14 C:\xampp\htdocs\HireBand\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(125): Cake\Controller\Controller->render()
+#15 C:\xampp\htdocs\HireBand\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(93): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\BandasController))
+#16 C:\xampp\htdocs\HireBand\vendor\cakephp\cakephp\src\Http\BaseApplication.php(103): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#17 C:\xampp\htdocs\HireBand\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#18 C:\xampp\htdocs\HireBand\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(107): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#19 C:\xampp\htdocs\HireBand\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#20 C:\xampp\htdocs\HireBand\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#21 C:\xampp\htdocs\HireBand\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#22 C:\xampp\htdocs\HireBand\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(95): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#23 C:\xampp\htdocs\HireBand\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#24 C:\xampp\htdocs\HireBand\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php(52): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#25 C:\xampp\htdocs\HireBand\vendor\cakephp\cakephp\src\Http\Runner.php(65): DebugKit\Middleware\DebugKitMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#26 C:\xampp\htdocs\HireBand\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#27 C:\xampp\htdocs\HireBand\vendor\cakephp\cakephp\src\Http\Server.php(81): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#28 C:\xampp\htdocs\HireBand\webroot\index.php(40): Cake\Http\Server->run()
+#29 {main}
+
+
+2017-10-29 01:19:20 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'bandas.id' in 'on clause'
+Request URL: /bandas/search/2
+Referer URL: http://localhost/HireBand/
+Stack Trace:
+#0 C:\xampp\htdocs\HireBand\vendor\cakephp\cakephp\src\Database\Statement\MysqlStatement.php(39): PDOStatement->execute(NULL)
+#1 C:\xampp\htdocs\HireBand\vendor\cakephp\cakephp\src\Database\Statement\StatementDecorator.php(174): Cake\Database\Statement\MysqlStatement->execute(NULL)
+#2 C:\xampp\htdocs\HireBand\vendor\cakephp\cakephp\src\Database\Log\LoggingStatement.php(56): Cake\Database\Statement\StatementDecorator->execute(NULL)
+#3 C:\xampp\htdocs\HireBand\vendor\cakephp\cakephp\src\Database\Connection.php(314): Cake\Database\Log\LoggingStatement->execute()
+#4 C:\xampp\htdocs\HireBand\vendor\cakephp\cakephp\src\Database\Query.php(214): Cake\Database\Connection->run(Object(Cake\ORM\Query))
+#5 C:\xampp\htdocs\HireBand\vendor\cakephp\cakephp\src\ORM\Query.php(1039): Cake\Database\Query->execute()
+#6 C:\xampp\htdocs\HireBand\vendor\cakephp\cakephp\src\Datasource\QueryTrait.php(287): Cake\ORM\Query->_execute()
+#7 C:\xampp\htdocs\HireBand\vendor\cakephp\cakephp\src\ORM\Query.php(987): Cake\ORM\Query->_all()
+#8 C:\xampp\htdocs\HireBand\vendor\cakephp\cakephp\src\Datasource\QueryTrait.php(132): Cake\ORM\Query->all()
+#9 C:\xampp\htdocs\HireBand\src\Template\Bandas\search.ctp(3): Cake\ORM\Query->getIterator()
+#10 C:\xampp\htdocs\HireBand\vendor\cakephp\cakephp\src\View\View.php(1196): include('C:\\xampp\\htdocs...')
+#11 C:\xampp\htdocs\HireBand\vendor\cakephp\cakephp\src\View\View.php(1157): Cake\View\View->_evaluate('C:\\xampp\\htdocs...', Array)
+#12 C:\xampp\htdocs\HireBand\vendor\cakephp\cakephp\src\View\View.php(765): Cake\View\View->_render('C:\\xampp\\htdocs...')
+#13 C:\xampp\htdocs\HireBand\vendor\cakephp\cakephp\src\Controller\Controller.php(623): Cake\View\View->render(NULL, NULL)
+#14 C:\xampp\htdocs\HireBand\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(125): Cake\Controller\Controller->render()
+#15 C:\xampp\htdocs\HireBand\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(93): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\BandasController))
+#16 C:\xampp\htdocs\HireBand\vendor\cakephp\cakephp\src\Http\BaseApplication.php(103): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#17 C:\xampp\htdocs\HireBand\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#18 C:\xampp\htdocs\HireBand\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(107): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#19 C:\xampp\htdocs\HireBand\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#20 C:\xampp\htdocs\HireBand\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#21 C:\xampp\htdocs\HireBand\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#22 C:\xampp\htdocs\HireBand\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(95): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#23 C:\xampp\htdocs\HireBand\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#24 C:\xampp\htdocs\HireBand\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php(52): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#25 C:\xampp\htdocs\HireBand\vendor\cakephp\cakephp\src\Http\Runner.php(65): DebugKit\Middleware\DebugKitMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#26 C:\xampp\htdocs\HireBand\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#27 C:\xampp\htdocs\HireBand\vendor\cakephp\cakephp\src\Http\Server.php(81): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#28 C:\xampp\htdocs\HireBand\webroot\index.php(40): Cake\Http\Server->run()
+#29 {main}
+
+
+2017-10-29 01:30:02 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'bandas.id' in 'field list'
+Request URL: /bandas/search/3
+Referer URL: http://localhost/HireBand/
+Stack Trace:
+#0 C:\xampp\htdocs\HireBand\vendor\cakephp\cakephp\src\Database\Statement\MysqlStatement.php(39): PDOStatement->execute(NULL)
+#1 C:\xampp\htdocs\HireBand\vendor\cakephp\cakephp\src\Database\Statement\StatementDecorator.php(174): Cake\Database\Statement\MysqlStatement->execute(NULL)
+#2 C:\xampp\htdocs\HireBand\vendor\cakephp\cakephp\src\Database\Log\LoggingStatement.php(56): Cake\Database\Statement\StatementDecorator->execute(NULL)
+#3 C:\xampp\htdocs\HireBand\vendor\cakephp\cakephp\src\Database\Connection.php(314): Cake\Database\Log\LoggingStatement->execute()
+#4 C:\xampp\htdocs\HireBand\vendor\cakephp\cakephp\src\Database\Query.php(214): Cake\Database\Connection->run(Object(Cake\ORM\Query))
+#5 C:\xampp\htdocs\HireBand\vendor\cakephp\cakephp\src\ORM\Query.php(1039): Cake\Database\Query->execute()
+#6 C:\xampp\htdocs\HireBand\vendor\cakephp\cakephp\src\Datasource\QueryTrait.php(287): Cake\ORM\Query->_execute()
+#7 C:\xampp\htdocs\HireBand\vendor\cakephp\cakephp\src\ORM\Query.php(987): Cake\ORM\Query->_all()
+#8 C:\xampp\htdocs\HireBand\vendor\cakephp\cakephp\src\Datasource\QueryTrait.php(132): Cake\ORM\Query->all()
+#9 C:\xampp\htdocs\HireBand\src\Template\Bandas\search.ctp(3): Cake\ORM\Query->getIterator()
+#10 C:\xampp\htdocs\HireBand\vendor\cakephp\cakephp\src\View\View.php(1196): include('C:\\xampp\\htdocs...')
+#11 C:\xampp\htdocs\HireBand\vendor\cakephp\cakephp\src\View\View.php(1157): Cake\View\View->_evaluate('C:\\xampp\\htdocs...', Array)
+#12 C:\xampp\htdocs\HireBand\vendor\cakephp\cakephp\src\View\View.php(765): Cake\View\View->_render('C:\\xampp\\htdocs...')
+#13 C:\xampp\htdocs\HireBand\vendor\cakephp\cakephp\src\Controller\Controller.php(623): Cake\View\View->render(NULL, NULL)
+#14 C:\xampp\htdocs\HireBand\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(125): Cake\Controller\Controller->render()
+#15 C:\xampp\htdocs\HireBand\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(93): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\BandasController))
+#16 C:\xampp\htdocs\HireBand\vendor\cakephp\cakephp\src\Http\BaseApplication.php(103): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#17 C:\xampp\htdocs\HireBand\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#18 C:\xampp\htdocs\HireBand\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(107): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#19 C:\xampp\htdocs\HireBand\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#20 C:\xampp\htdocs\HireBand\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#21 C:\xampp\htdocs\HireBand\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#22 C:\xampp\htdocs\HireBand\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(95): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#23 C:\xampp\htdocs\HireBand\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#24 C:\xampp\htdocs\HireBand\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php(52): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#25 C:\xampp\htdocs\HireBand\vendor\cakephp\cakephp\src\Http\Runner.php(65): DebugKit\Middleware\DebugKitMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#26 C:\xampp\htdocs\HireBand\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#27 C:\xampp\htdocs\HireBand\vendor\cakephp\cakephp\src\Http\Server.php(81): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#28 C:\xampp\htdocs\HireBand\webroot\index.php(40): Cake\Http\Server->run()
+#29 {main}
+
+
+2017-10-29 01:33:42 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'estilo.nome' in 'field list'
+Request URL: /bandas/search/3
+Referer URL: http://localhost/HireBand/
+Stack Trace:
+#0 C:\xampp\htdocs\HireBand\vendor\cakephp\cakephp\src\Database\Statement\MysqlStatement.php(39): PDOStatement->execute(NULL)
+#1 C:\xampp\htdocs\HireBand\vendor\cakephp\cakephp\src\Database\Statement\StatementDecorator.php(174): Cake\Database\Statement\MysqlStatement->execute(NULL)
+#2 C:\xampp\htdocs\HireBand\vendor\cakephp\cakephp\src\Database\Log\LoggingStatement.php(56): Cake\Database\Statement\StatementDecorator->execute(NULL)
+#3 C:\xampp\htdocs\HireBand\vendor\cakephp\cakephp\src\Database\Connection.php(314): Cake\Database\Log\LoggingStatement->execute()
+#4 C:\xampp\htdocs\HireBand\vendor\cakephp\cakephp\src\Database\Query.php(214): Cake\Database\Connection->run(Object(Cake\ORM\Query))
+#5 C:\xampp\htdocs\HireBand\vendor\cakephp\cakephp\src\ORM\Query.php(1039): Cake\Database\Query->execute()
+#6 C:\xampp\htdocs\HireBand\vendor\cakephp\cakephp\src\Datasource\QueryTrait.php(287): Cake\ORM\Query->_execute()
+#7 C:\xampp\htdocs\HireBand\vendor\cakephp\cakephp\src\ORM\Query.php(987): Cake\ORM\Query->_all()
+#8 C:\xampp\htdocs\HireBand\vendor\cakephp\cakephp\src\Datasource\QueryTrait.php(132): Cake\ORM\Query->all()
+#9 C:\xampp\htdocs\HireBand\src\Template\Bandas\search.ctp(7): Cake\ORM\Query->getIterator()
+#10 C:\xampp\htdocs\HireBand\vendor\cakephp\cakephp\src\View\View.php(1196): include('C:\\xampp\\htdocs...')
+#11 C:\xampp\htdocs\HireBand\vendor\cakephp\cakephp\src\View\View.php(1157): Cake\View\View->_evaluate('C:\\xampp\\htdocs...', Array)
+#12 C:\xampp\htdocs\HireBand\vendor\cakephp\cakephp\src\View\View.php(765): Cake\View\View->_render('C:\\xampp\\htdocs...')
+#13 C:\xampp\htdocs\HireBand\vendor\cakephp\cakephp\src\Controller\Controller.php(623): Cake\View\View->render(NULL, NULL)
+#14 C:\xampp\htdocs\HireBand\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(125): Cake\Controller\Controller->render()
+#15 C:\xampp\htdocs\HireBand\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(93): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\BandasController))
+#16 C:\xampp\htdocs\HireBand\vendor\cakephp\cakephp\src\Http\BaseApplication.php(103): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#17 C:\xampp\htdocs\HireBand\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#18 C:\xampp\htdocs\HireBand\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(107): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#19 C:\xampp\htdocs\HireBand\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#20 C:\xampp\htdocs\HireBand\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#21 C:\xampp\htdocs\HireBand\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#22 C:\xampp\htdocs\HireBand\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(95): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#23 C:\xampp\htdocs\HireBand\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#24 C:\xampp\htdocs\HireBand\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php(52): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#25 C:\xampp\htdocs\HireBand\vendor\cakephp\cakephp\src\Http\Runner.php(65): DebugKit\Middleware\DebugKitMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#26 C:\xampp\htdocs\HireBand\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#27 C:\xampp\htdocs\HireBand\vendor\cakephp\cakephp\src\Http\Server.php(81): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#28 C:\xampp\htdocs\HireBand\webroot\index.php(40): Cake\Http\Server->run()
+#29 {main}
+
+
+2017-10-29 01:34:01 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'estilo.nome' in 'field list'
+Request URL: /bandas/search/3
+Referer URL: http://localhost/HireBand/
+Stack Trace:
+#0 C:\xampp\htdocs\HireBand\vendor\cakephp\cakephp\src\Database\Statement\MysqlStatement.php(39): PDOStatement->execute(NULL)
+#1 C:\xampp\htdocs\HireBand\vendor\cakephp\cakephp\src\Database\Statement\StatementDecorator.php(174): Cake\Database\Statement\MysqlStatement->execute(NULL)
+#2 C:\xampp\htdocs\HireBand\vendor\cakephp\cakephp\src\Database\Log\LoggingStatement.php(56): Cake\Database\Statement\StatementDecorator->execute(NULL)
+#3 C:\xampp\htdocs\HireBand\vendor\cakephp\cakephp\src\Database\Connection.php(314): Cake\Database\Log\LoggingStatement->execute()
+#4 C:\xampp\htdocs\HireBand\vendor\cakephp\cakephp\src\Database\Query.php(214): Cake\Database\Connection->run(Object(Cake\ORM\Query))
+#5 C:\xampp\htdocs\HireBand\vendor\cakephp\cakephp\src\ORM\Query.php(1039): Cake\Database\Query->execute()
+#6 C:\xampp\htdocs\HireBand\vendor\cakephp\cakephp\src\Datasource\QueryTrait.php(287): Cake\ORM\Query->_execute()
+#7 C:\xampp\htdocs\HireBand\vendor\cakephp\cakephp\src\ORM\Query.php(987): Cake\ORM\Query->_all()
+#8 C:\xampp\htdocs\HireBand\vendor\cakephp\cakephp\src\Datasource\QueryTrait.php(132): Cake\ORM\Query->all()
+#9 C:\xampp\htdocs\HireBand\src\Template\Bandas\search.ctp(7): Cake\ORM\Query->getIterator()
+#10 C:\xampp\htdocs\HireBand\vendor\cakephp\cakephp\src\View\View.php(1196): include('C:\\xampp\\htdocs...')
+#11 C:\xampp\htdocs\HireBand\vendor\cakephp\cakephp\src\View\View.php(1157): Cake\View\View->_evaluate('C:\\xampp\\htdocs...', Array)
+#12 C:\xampp\htdocs\HireBand\vendor\cakephp\cakephp\src\View\View.php(765): Cake\View\View->_render('C:\\xampp\\htdocs...')
+#13 C:\xampp\htdocs\HireBand\vendor\cakephp\cakephp\src\Controller\Controller.php(623): Cake\View\View->render(NULL, NULL)
+#14 C:\xampp\htdocs\HireBand\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(125): Cake\Controller\Controller->render()
+#15 C:\xampp\htdocs\HireBand\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(93): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\BandasController))
+#16 C:\xampp\htdocs\HireBand\vendor\cakephp\cakephp\src\Http\BaseApplication.php(103): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#17 C:\xampp\htdocs\HireBand\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#18 C:\xampp\htdocs\HireBand\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(107): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#19 C:\xampp\htdocs\HireBand\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#20 C:\xampp\htdocs\HireBand\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#21 C:\xampp\htdocs\HireBand\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#22 C:\xampp\htdocs\HireBand\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(95): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#23 C:\xampp\htdocs\HireBand\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#24 C:\xampp\htdocs\HireBand\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php(52): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#25 C:\xampp\htdocs\HireBand\vendor\cakephp\cakephp\src\Http\Runner.php(65): DebugKit\Middleware\DebugKitMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#26 C:\xampp\htdocs\HireBand\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#27 C:\xampp\htdocs\HireBand\vendor\cakephp\cakephp\src\Http\Server.php(81): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#28 C:\xampp\htdocs\HireBand\webroot\index.php(40): Cake\Http\Server->run()
+#29 {main}
+
+

@@ -14,6 +14,27 @@ use Cake\ORM\TableRegistry;
 class BandasController extends AppController
 {
 
+    public function search($estilo_id){
+        $bandas = $this->Bandas
+            ->find("all")
+            ->select([
+                "Bandas.id",
+                "Bandas.nome_banda",
+                "Bandas.data_inicio",
+                "estilos.nome"
+            ])
+            ->innerJoin("bandas_estilos", [
+                "bandas_estilos.estilo_id" => $estilo_id,
+                "bandas_estilos.banda_id = Bandas.id"
+            ])
+            ->innerJoin("estilos", [
+                "estilos.id = bandas_estilos.estilo_id"
+            ]);
+
+        $this->set(compact('bandas'));
+        $this->set('_serialize', ['bandas']);
+    }
+
     /**
      * Index method
      *
