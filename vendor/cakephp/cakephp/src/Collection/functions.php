@@ -29,6 +29,14 @@ if (!function_exists('collection')) {
 
 }
 
+function convertYoutube($string) {
+    return preg_replace(
+        "/\s*[a-zA-Z\/\/:\.]*youtu(be.com\/watch\?v=|.be\/)([a-zA-Z0-9\-_]+)([a-zA-Z0-9\/\*\-\_\?\&\;\%\=\.]*)/i",
+        "//www.youtube.com/embed/$2\"",
+        $string
+    );
+}
+
 function user_logged(){
     @session_start();
     return isset($_SESSION["usuario"]);

@@ -62,12 +62,29 @@ class BandasController extends AppController
      */
     public function view($id = null)
     {
+        @session_start();
         $banda = $this->Bandas->get($id, [
             'contain' => ['Usuarios', 'Estilos', 'Avaliacao']
         ]);
 
+        $videos = TableRegistry::get('videos')
+            ->find()
+            ->select([
+                'id',
+                'nome',
+                'url'
+            ])
+            ->where(['usuario_id' => $banda->usuario_id])
+            ->all();
+
+        if($banda->usuario_id == @$_SESSION['usuario']->id){
+            $this->set('is_owner', true);
+        }
+
         $this->set('banda', $banda);
         $this->set('_serialize', ['banda']);
+        $this->set('videos', $videos);
+        $this->set('_serialize', ['videos']);
     }
 
     /**

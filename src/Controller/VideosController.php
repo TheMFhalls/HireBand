@@ -57,13 +57,22 @@ class VideosController extends AppController
      */
     public function add()
     {
+        @session_start();
+        if(
+            isset($_SESSION['usuario']['estabelecimento'])
+        ){
+            $_SESSION['mensagem'] = "Você não tem permissão para acessar esta página.";
+            return $this->redirect("/");
+        }
         $video = $this->Videos->newEntity();
         if ($this->request->is('post')) {
+            $video->usuario_id = $_SESSION["usuario"]->id;
             $video = $this->Videos->patchEntity($video, $this->request->getData());
             if ($this->Videos->save($video)) {
                 $this->Flash->success(__('The video has been saved.'));
 
-                return $this->redirect(['action' => 'index']);
+                $_SESSION['mensagem'] = "Vídeo inserido com sucesso!";
+                return $this->redirect("/");
             }
             $this->Flash->error(__('The video could not be saved. Please, try again.'));
         }
@@ -81,23 +90,30 @@ class VideosController extends AppController
      */
     public function edit($id = null)
     {
-        /*
+        @session_start();
+
         $video = $this->Videos->get($id, [
             'contain' => []
         ]);
+
+        if($video->usuario_id != @$_SESSION["usuario"]->id){
+            $_SESSION['mensagem'] = "Você não tem permissão para acessar esta página.";
+            return $this->redirect("/");
+        }
+
         if ($this->request->is(['patch', 'post', 'put'])) {
             $video = $this->Videos->patchEntity($video, $this->request->getData());
             if ($this->Videos->save($video)) {
                 $this->Flash->success(__('The video has been saved.'));
 
-                return $this->redirect(['action' => 'index']);
+                $_SESSION['mensagem'] = "Vídeo editado com sucesso!!";
+                return $this->redirect("/");
             }
             $this->Flash->error(__('The video could not be saved. Please, try again.'));
         }
         $usuarios = $this->Videos->Usuarios->find('list', ['limit' => 200]);
         $this->set(compact('video', 'usuarios'));
         $this->set('_serialize', ['video']);
-        */
     }
 
     /**

@@ -41,6 +41,12 @@
             <li class="nav-item">
                 <a class="nav-link" href="<?= LOCAL_HOST ?>/bandas/edit/<?= $_SESSION["usuario"]["banda"]->id ?>"  style=" color:#FFFFFF" >Editar Banda</a>
             </li>
+            <li class="nav-item">
+                <a class="nav-link" href="<?= LOCAL_HOST ?>/bandas/view/<?= $_SESSION["usuario"]["banda"]->id ?>"  style=" color:#FFFFFF" >Visualizar Perfil</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="<?= LOCAL_HOST ?>/videos/add"  style=" color:#FFFFFF" >Adicionar Vídeo</a>
+            </li>
             <?php elseif(user_is_estabelecimento()): ?>
             <li class="nav-item">
                 <a class="nav-link" href="<?= LOCAL_HOST ?>/estabelecimentos/edit/<?= $_SESSION["usuario"]["estabelecimento"]->id ?>"  style=" color:#FFFFFF" >Editar Estabelecimento</a>
