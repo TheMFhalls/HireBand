@@ -63,7 +63,7 @@ class BandasController extends AppController
     public function view($id = null)
     {
         $banda = $this->Bandas->get($id, [
-            'contain' => ['Usuarios', 'Estilos']
+            'contain' => ['Usuarios', 'Estilos', 'Avaliacao']
         ]);
 
         $this->set('banda', $banda);

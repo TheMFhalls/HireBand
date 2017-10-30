@@ -25,6 +25,8 @@
                 <th scope="col"><?= $this->Paginator->sort('usuario_id') ?></th>
                 <th scope="col"><?= $this->Paginator->sort('nome_banda') ?></th>
                 <th scope="col"><?= $this->Paginator->sort('data_inicio') ?></th>
+                <th scope="col"><?= $this->Paginator->sort('telefone') ?></th>
+                <th scope="col"><?= $this->Paginator->sort('email') ?></th>
                 <th scope="col"><?= $this->Paginator->sort('created') ?></th>
                 <th scope="col"><?= $this->Paginator->sort('modified') ?></th>
                 <th scope="col" class="actions"><?= __('Actions') ?></th>
@@ -37,6 +39,8 @@
                 <td><?= $banda->has('usuario') ? $this->Html->link($banda->usuario->id, ['controller' => 'Usuarios', 'action' => 'view', $banda->usuario->id]) : '' ?></td>
                 <td><?= h($banda->nome_banda) ?></td>
                 <td><?= h($banda->data_inicio) ?></td>
+                <td><?= h($banda->telefone) ?></td>
+                <td><?= h($banda->email) ?></td>
                 <td><?= h($banda->created) ?></td>
                 <td><?= h($banda->modified) ?></td>
                 <td class="actions">

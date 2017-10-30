@@ -11,6 +11,8 @@ use Cake\ORM\Entity;
  * @property string $nome_banda
  * @property \Cake\I18n\FrozenDate $data_inicio
  * @property string $endereco
+ * @property string $telefone
+ * @property string $email
  * @property \Cake\I18n\FrozenTime $created
  * @property \Cake\I18n\FrozenTime $modified
  *
@@ -35,6 +37,8 @@ class Banda extends Entity
         'nome_banda' => true,
         'data_inicio' => true,
         'endereco' => true,
+        'telefone' => true,
+        'email' => true,
         'created' => true,
         'modified' => true,
         'usuario' => true,

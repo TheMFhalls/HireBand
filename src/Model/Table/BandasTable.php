@@ -81,6 +81,16 @@ class BandasTable extends Table
             ->scalar('endereco')
             ->allowEmpty('endereco');
 
+        $validator
+            ->scalar('telefone')
+            ->requirePresence('telefone', 'create')
+            ->notEmpty('telefone');
+
+        $validator
+            ->email('email')
+            ->requirePresence('email', 'create')
+            ->notEmpty('email');
+
         return $validator;
     }
 
@@ -93,6 +103,7 @@ class BandasTable extends Table
      */
     public function buildRules(RulesChecker $rules)
     {
+        $rules->add($rules->isUnique(['email']));
         $rules->add($rules->existsIn(['usuario_id'], 'Usuarios'));
 
         return $rules;
