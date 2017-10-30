@@ -40,22 +40,20 @@ function user_is_estabelecimento(){
 }
 
 function block_estilos(){
-    if(user_is_estabelecimento()) {
-        $local_host = LOCAL_HOST;
-        $block_estilos = TableRegistry::get('estilos')
-            ->find()
-            ->select([
-                'id',
-                'nome'
-            ]);
+    $local_host = LOCAL_HOST;
+    $block_estilos = TableRegistry::get('estilos')
+        ->find()
+        ->select([
+            'id',
+            'nome'
+        ]);
 
-        echo "<h3>Encontre uma banda pela categoria:</h3>";
-        echo "<ul>";
-        foreach($block_estilos as $estilo){
-            echo "<li>";
-            echo "<a href='$local_host/bandas/search/$estilo->id'>$estilo->nome</a>";
-            echo "</li>";
-        }
-        echo "</ul>";
+    echo "<h3>Encontre uma banda pela categoria:</h3>";
+    echo "<ul>";
+    foreach($block_estilos as $estilo){
+        echo "<li>";
+        echo "<a href='$local_host/bandas/search/$estilo->id'>$estilo->nome</a>";
+        echo "</li>";
     }
+    echo "</ul>";
 }

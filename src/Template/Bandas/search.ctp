@@ -7,7 +7,7 @@
         <?php
         foreach($bandas as $banda):
         ?>
-            <div class="banda col-12 col-sm-6">
+            <div class="banda col-12 col-sm-6 col-md-3">
                 <div class="image">
                     <img src="<?=LOCAL_HOST?>/img/banda.jpg" alt="Banda"
                     class="img-responsive">
