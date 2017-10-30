@@ -27,7 +27,6 @@ class UsuariosController extends AppController
         $this->set(compact('usuarios'));
         $this->set('_serialize', ['usuarios']);
         */
-
         @session_start();
         $_SESSION['mensagem'] = "Obrigado por se cadastrar. Favor realizar o login...";
         $this->redirect(
@@ -44,6 +43,7 @@ class UsuariosController extends AppController
      */
     public function view($id = null)
     {
+        /*
         @session_start();
         if($_SESSION["usuario"]->id == $id) {
             $usuario = $this->Usuarios->get($id, [
@@ -57,6 +57,7 @@ class UsuariosController extends AppController
             $_SESSION['mensagem'] = "Você não tem permissão para acessar esta página.";
             $this->redirect("/");
         }
+        */
     }
 
     /**
@@ -67,7 +68,6 @@ class UsuariosController extends AppController
     public function add()
     {
         $usuario = $this->Usuarios->newEntity();
-
 
         if ($this->request->is('post')) {
             if($this->request->getData("tipo") != ""){
@@ -156,6 +156,7 @@ class UsuariosController extends AppController
      */
     public function delete($id = null)
     {
+        /*
         @session_start();
         if($_SESSION["usuario"]->id == $id) {
             $this->request->allowMethod(['post', 'delete']);
@@ -172,5 +173,6 @@ class UsuariosController extends AppController
             $_SESSION['mensagem'] = "Você não tem permissão para acessar esta página.";
             $this->redirect("/");
         }
+        */
     }
 }

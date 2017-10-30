@@ -104,7 +104,7 @@ class EstabelecimentosController extends AppController
     public function edit($id = null)
     {
         @session_start();
-        if(isset($_SESSION['usuario']['banda'])){
+        if(@$_SESSION['usuario']['estabelecimento']->id != $id){
             $_SESSION['mensagem'] = "Você não tem permissão para editar um estabelecimento!";
             return $this->redirect("/");
         }
@@ -134,6 +134,7 @@ class EstabelecimentosController extends AppController
      */
     public function delete($id = null)
     {
+        /*
         $this->request->allowMethod(['post', 'delete']);
         $estabelecimento = $this->Estabelecimentos->get($id);
         if ($this->Estabelecimentos->delete($estabelecimento)) {
@@ -143,5 +144,6 @@ class EstabelecimentosController extends AppController
         }
 
         return $this->redirect(['action' => 'index']);
+        */
     }
 }

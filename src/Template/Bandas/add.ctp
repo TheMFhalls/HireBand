@@ -4,7 +4,7 @@
  */
 ?>
 <div class="container">
-    <div class="bandas  col-12 mt-xs-20 mt-sm-5">
+    <div class="bandas col-12 mt-xs-20 mt-sm-5">
         <?= $this->Form->create($banda) ?>
         <fieldset>
             <legend><?= __('Add Banda') ?></legend>

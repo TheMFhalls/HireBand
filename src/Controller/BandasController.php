@@ -123,7 +123,7 @@ class BandasController extends AppController
     public function edit($id = null)
     {
         @session_start();
-        if(isset($_SESSION['usuario']['estabelecimento'])){
+        if(@$_SESSION['usuario']['banda']->id != $id){
             $_SESSION['mensagem'] = "Você não tem permissão para editar uma banda!";
             return $this->redirect("/");
         }
@@ -135,7 +135,8 @@ class BandasController extends AppController
             if ($this->Bandas->save($banda)) {
                 $this->Flash->success(__('The banda has been saved.'));
 
-                return $this->redirect(['action' => 'index']);
+                $_SESSION['mensagem'] = "Banda editada com sucesso!!";
+                return $this->redirect("/");
             }
             $this->Flash->error(__('The banda could not be saved. Please, try again.'));
         }

@@ -29,20 +29,32 @@
         </button>
     </div>
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav col-md-4 ml-auto">
-            <li class="nav-item active">
+        <ul class="navbar-nav col-12">
+            <li class="nav-item">
                 <a class="nav-link" href="<?= LOCAL_HOST ?>"  style=" color:#FFFFFF" >Home</a>
             </li>
             <?php if(user_logged()): ?>
             <li class="nav-item">
-                <a class="nav-link" href="<?php echo LOCAL_HOST; ?>/login/logout" style=" color:#FFFFFF" >Sair</a>
+                <a class="nav-link" href="<?= LOCAL_HOST ?>/usuarios/edit/<?= $_SESSION["usuario"]->id ?>"  style="color:#FFFFFF" >Editar usuário</a>
+            </li>
+            <?php if(user_is_banda()): ?>
+            <li class="nav-item">
+                <a class="nav-link" href="<?= LOCAL_HOST ?>/bandas/edit/<?= $_SESSION["usuario"]["banda"]->id ?>"  style=" color:#FFFFFF" >Editar Banda</a>
+            </li>
+            <?php elseif(user_is_estabelecimento()): ?>
+            <li class="nav-item">
+                <a class="nav-link" href="<?= LOCAL_HOST ?>/estabelecimentos/edit/<?= $_SESSION["usuario"]["estabelecimento"]->id ?>"  style=" color:#FFFFFF" >Editar Estabelecimento</a>
+            </li>
+            <?php endif; ?>
+            <li class="nav-item">
+                <a class="nav-link" href="<?= LOCAL_HOST ?>/login/logout" style=" color:#FFFFFF" >Sair</a>
             </li>
             <?php else: ?>
             <li class="nav-item">
-                <a class="nav-link" href="<?php echo LOCAL_HOST; ?>/usuarios/add" style=" color:#FFFFFF" >Cadastre-se</a>
+                <a class="nav-link" href="<?= LOCAL_HOST ?>/usuarios/add" style=" color:#FFFFFF" >Cadastre-se</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link disabled" href="<?php echo LOCAL_HOST; ?>/login"  style=" color:#FFFFFF" >Login</a>
+                <a class="nav-link disabled" href="<?= LOCAL_HOST ?>/login"  style=" color:#FFFFFF" >Login</a>
             </li>
             <?php endif; ?>
         </ul>

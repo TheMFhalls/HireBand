@@ -39,6 +39,11 @@ function user_is_estabelecimento(){
     return isset($_SESSION['usuario']['estabelecimento']);
 }
 
+function user_is_banda(){
+    @session_start();
+    return isset($_SESSION['usuario']['banda']);
+}
+
 function block_estilos(){
     $local_host = LOCAL_HOST;
     $block_estilos = TableRegistry::get('estilos')

@@ -20,6 +20,7 @@ class VideosController extends AppController
      */
     public function index()
     {
+        /*
         $this->paginate = [
             'contain' => ['Usuarios']
         ];
@@ -27,6 +28,7 @@ class VideosController extends AppController
 
         $this->set(compact('videos'));
         $this->set('_serialize', ['videos']);
+        */
     }
 
     /**
@@ -38,12 +40,14 @@ class VideosController extends AppController
      */
     public function view($id = null)
     {
+        /*
         $video = $this->Videos->get($id, [
             'contain' => ['Usuarios']
         ]);
 
         $this->set('video', $video);
         $this->set('_serialize', ['video']);
+        */
     }
 
     /**
@@ -77,6 +81,7 @@ class VideosController extends AppController
      */
     public function edit($id = null)
     {
+        /*
         $video = $this->Videos->get($id, [
             'contain' => []
         ]);
@@ -92,6 +97,7 @@ class VideosController extends AppController
         $usuarios = $this->Videos->Usuarios->find('list', ['limit' => 200]);
         $this->set(compact('video', 'usuarios'));
         $this->set('_serialize', ['video']);
+        */
     }
 
     /**
@@ -103,6 +109,7 @@ class VideosController extends AppController
      */
     public function delete($id = null)
     {
+        /*
         $this->request->allowMethod(['post', 'delete']);
         $video = $this->Videos->get($id);
         if ($this->Videos->delete($video)) {
@@ -112,5 +119,6 @@ class VideosController extends AppController
         }
 
         return $this->redirect(['action' => 'index']);
+        */
     }
 }
