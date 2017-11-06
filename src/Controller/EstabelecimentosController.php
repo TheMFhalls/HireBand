@@ -115,8 +115,9 @@ class EstabelecimentosController extends AppController
             $estabelecimento = $this->Estabelecimentos->patchEntity($estabelecimento, $this->request->getData());
             if ($this->Estabelecimentos->save($estabelecimento)) {
                 $this->Flash->success(__('The estabelecimento has been saved.'));
-
-                return $this->redirect(['action' => 'index']);
+                
+                $_SESSION['mensagem'] = "Estabelecimento editado com sucesso!";
+                return $this->redirect("/");
             }
             $this->Flash->error(__('The estabelecimento could not be saved. Please, try again.'));
         }

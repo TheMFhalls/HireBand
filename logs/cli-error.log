@@ -1,0 +1,19 @@
+2017-11-06 03:27:37 Error: [Cake\Database\Exception] SQLSTATE[42S02]: Base table or view not found: 1146 Table 'hireband.banda' doesn't exist in C:\xampp\htdocs\HireBand\vendor\cakephp\cakephp\src\Database\Schema\Collection.php on line 131
+Stack Trace:
+#0 C:\xampp\htdocs\HireBand\vendor\cakephp\cakephp\src\Database\Schema\Collection.php(97): Cake\Database\Schema\Collection->_reflect('Column', 'banda', Array, Object(Cake\Database\Schema\TableSchema))
+#1 C:\xampp\htdocs\HireBand\vendor\cakephp\cakephp\src\Database\Schema\CachedCollection.php(63): Cake\Database\Schema\Collection->describe('banda', Array)
+#2 C:\xampp\htdocs\HireBand\vendor\cakephp\cakephp\src\ORM\Table.php(532): Cake\Database\Schema\CachedCollection->describe('banda')
+#3 C:\xampp\htdocs\HireBand\vendor\cakephp\cakephp\src\ORM\Table.php(653): Cake\ORM\Table->getSchema()
+#4 C:\xampp\htdocs\HireBand\vendor\cakephp\bake\src\Shell\Task\ModelTask.php(217): Cake\ORM\Table->getPrimaryKey()
+#5 C:\xampp\htdocs\HireBand\vendor\cakephp\bake\src\Shell\Task\ModelTask.php(127): Bake\Shell\Task\ModelTask->getAssociations(Object(Cake\ORM\Table))
+#6 C:\xampp\htdocs\HireBand\vendor\cakephp\bake\src\Shell\Task\ModelTask.php(110): Bake\Shell\Task\ModelTask->getTableContext(Object(Cake\ORM\Table), 'banda', 'Banda')
+#7 C:\xampp\htdocs\HireBand\vendor\cakephp\bake\src\Shell\Task\ModelTask.php(97): Bake\Shell\Task\ModelTask->bake('Banda')
+#8 C:\xampp\htdocs\HireBand\vendor\cakephp\bake\src\Shell\BakeShell.php(257): Bake\Shell\Task\ModelTask->main('Banda')
+#9 C:\xampp\htdocs\HireBand\vendor\cakephp\cakephp\src\Collection\CollectionTrait.php(51): Bake\Shell\BakeShell->Bake\Shell\{closure}('Banda', 0)
+#10 C:\xampp\htdocs\HireBand\vendor\cakephp\bake\src\Shell\BakeShell.php(258): Cake\Collection\Collection->each(Object(Closure))
+#11 C:\xampp\htdocs\HireBand\vendor\cakephp\cakephp\src\Console\Shell.php(494): Bake\Shell\BakeShell->all('banda')
+#12 C:\xampp\htdocs\HireBand\vendor\cakephp\cakephp\src\Console\CommandRunner.php(141): Cake\Console\Shell->runCommand(Array, true)
+#13 C:\xampp\htdocs\HireBand\bin\cake.php(12): Cake\Console\CommandRunner->run(Array)
+#14 {main}
+
+
