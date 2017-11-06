@@ -7,7 +7,7 @@
     <div class="videos col-12 mt-xs-20 mt-sm-5">
         <?= $this->Form->create($video) ?>
         <fieldset>
-            <legend><?= __('Edit Video') ?></legend>
+            <legend>Editar Vídeo</legend>
             <?php
             echo $this->Form->control('nome');
             echo $this->Form->control('url');

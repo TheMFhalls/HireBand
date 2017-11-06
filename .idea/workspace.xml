@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a9348a68-74c2-406a-8275-3c197836d88e" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webroot/js/scripts.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tmp/cache/models/myapp_cake_model_debug_kit_panels" afterPath="$PROJECT_DIR$/tmp/cache/models/myapp_cake_model_debug_kit_panels" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tmp/cache/models/myapp_cake_model_debug_kit_requests" afterPath="$PROJECT_DIR$/tmp/cache/models/myapp_cake_model_debug_kit_requests" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tmp/cache/models/myapp_cake_model_default_avaliacao" afterPath="$PROJECT_DIR$/tmp/cache/models/myapp_cake_model_default_avaliacao" />
@@ -15,12 +14,16 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tmp/cache/persistent/myapp_cake_core_translations_default_en__u_s" afterPath="$PROJECT_DIR$/tmp/cache/persistent/myapp_cake_core_translations_default_en__u_s" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tmp/debug_kit.sqlite" afterPath="$PROJECT_DIR$/tmp/debug_kit.sqlite" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Template/Bandas/add.ctp" afterPath="$PROJECT_DIR$/src/Template/Bandas/add.ctp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Template/BandasEstilos/add.ctp" afterPath="$PROJECT_DIR$/src/Template/BandasEstilos/add.ctp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Template/Estabelecimentos/add.ctp" afterPath="$PROJECT_DIR$/src/Template/Estabelecimentos/add.ctp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Template/Estilos/add.ctp" afterPath="$PROJECT_DIR$/src/Template/Estilos/add.ctp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Template/Layout/default.ctp" afterPath="$PROJECT_DIR$/src/Template/Layout/default.ctp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Template/Videos/add.ctp" afterPath="$PROJECT_DIR$/src/Template/Videos/add.ctp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/logs/debug.log" afterPath="$PROJECT_DIR$/logs/debug.log" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/logs/error.log" afterPath="$PROJECT_DIR$/logs/error.log" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Controller/VideosController.php" afterPath="$PROJECT_DIR$/src/Controller/VideosController.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Template/Bandas/edit.ctp" afterPath="$PROJECT_DIR$/src/Template/Bandas/edit.ctp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Template/Bandas/view.ctp" afterPath="$PROJECT_DIR$/src/Template/Bandas/view.ctp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Template/BandasEstilos/edit.ctp" afterPath="$PROJECT_DIR$/src/Template/BandasEstilos/edit.ctp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Template/Estabelecimentos/edit.ctp" afterPath="$PROJECT_DIR$/src/Template/Estabelecimentos/edit.ctp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Template/Estilos/edit.ctp" afterPath="$PROJECT_DIR$/src/Template/Estilos/edit.ctp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Template/Videos/edit.ctp" afterPath="$PROJECT_DIR$/src/Template/Videos/edit.ctp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/webroot/js/scripts.js" afterPath="$PROJECT_DIR$/webroot/js/scripts.js" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -31,18 +34,23 @@
   </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="375" />
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
+      <file leaf-file-name="BandasController.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/Controller/BandasController.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="345">
+              <caret line="114" column="29" lean-forward="true" selection-start-line="114" selection-start-column="29" selection-end-line="114" selection-end-column="29" />
+              <folding>
+                <element signature="e#33#66#0#PHP" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>home'</find>
-      <find>'home'</find>
-      <find>pagination</find>
-      <find>img-responsive</find>
-      <find>f</find>
-      <find>functions</find>
-      <find>functions.</find>
-      <find>navbar-nav col-md-4 ml-auto</find>
       <find>v</find>
       <find>view</find>
       <find>j</find>
@@ -65,6 +73,14 @@
       <find>bootstrap.js</find>
       <find>a</find>
       <find>add</find>
+      <find>edita</find>
+      <find>e</find>
+      <find>editar video</find>
+      <find>editar vide</find>
+      <find>editar vid</find>
+      <find>editar vi</find>
+      <find>editar</find>
+      <find>editar v</find>
     </findStrings>
     <dirStrings>
       <dir>C:\xampp\htdocs\HireBand\src\Template\Bandas</dir>
@@ -100,22 +116,24 @@
         <option value="$PROJECT_DIR$/webroot/css/style.css" />
         <option value="$PROJECT_DIR$/src/Template/Pages/home.ctp" />
         <option value="$PROJECT_DIR$/src/Template/Bandas/search.ctp" />
-        <option value="$PROJECT_DIR$/src/Template/Bandas/edit.ctp" />
         <option value="$PROJECT_DIR$/src/Controller/UsuariosController.php" />
-        <option value="$PROJECT_DIR$/src/Template/Estabelecimentos/edit.ctp" />
         <option value="$PROJECT_DIR$/src/Controller/EstabelecimentosController.php" />
         <option value="$PROJECT_DIR$/vendor/cakephp/cakephp/src/Collection/functions.php" />
-        <option value="$PROJECT_DIR$/src/Controller/BandasController.php" />
-        <option value="$PROJECT_DIR$/src/Template/Bandas/view.ctp" />
-        <option value="$PROJECT_DIR$/src/Controller/VideosController.php" />
-        <option value="$PROJECT_DIR$/src/Template/Videos/edit.ctp" />
         <option value="$PROJECT_DIR$/src/Template/Layout/default.ctp" />
-        <option value="$PROJECT_DIR$/webroot/js/scripts.js" />
         <option value="$PROJECT_DIR$/src/Template/Videos/add.ctp" />
         <option value="$PROJECT_DIR$/src/Template/Bandas/add.ctp" />
         <option value="$PROJECT_DIR$/src/Template/BandasEstilos/add.ctp" />
         <option value="$PROJECT_DIR$/src/Template/Estabelecimentos/add.ctp" />
         <option value="$PROJECT_DIR$/src/Template/Estilos/add.ctp" />
+        <option value="$PROJECT_DIR$/webroot/js/scripts.js" />
+        <option value="$PROJECT_DIR$/src/Template/Videos/edit.ctp" />
+        <option value="$PROJECT_DIR$/src/Template/Bandas/edit.ctp" />
+        <option value="$PROJECT_DIR$/src/Template/BandasEstilos/edit.ctp" />
+        <option value="$PROJECT_DIR$/src/Template/Estabelecimentos/edit.ctp" />
+        <option value="$PROJECT_DIR$/src/Template/Estilos/edit.ctp" />
+        <option value="$PROJECT_DIR$/src/Template/Bandas/view.ctp" />
+        <option value="$PROJECT_DIR$/src/Controller/VideosController.php" />
+        <option value="$PROJECT_DIR$/src/Controller/BandasController.php" />
       </list>
     </option>
   </component>
@@ -298,7 +316,7 @@
       <workItem from="1508806578193" duration="3158000" />
       <workItem from="1509195775288" duration="32224000" />
       <workItem from="1509323581364" duration="14176000" />
-      <workItem from="1509935041648" duration="1455000" />
+      <workItem from="1509935041648" duration="3829000" />
     </task>
     <task id="LOCAL-00001" summary=".">
       <created>1507524077436</created>
@@ -496,17 +514,26 @@
       <option name="project" value="LOCAL" />
       <updated>1509935156829</updated>
     </task>
-    <option name="localTasksCounter" value="29" />
+    <task id="LOCAL-00029" summary="201711060048">
+      <created>1509936508175</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1509936508175</updated>
+    </task>
+    <option name="localTasksCounter" value="30" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="86415000" />
+    <option name="totallyTimeSpent" value="88789000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1552" height="840" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32930845" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32930845" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -554,7 +581,8 @@
     <MESSAGE value="201710300255" />
     <MESSAGE value="201710300446" />
     <MESSAGE value="201711060025" />
-    <option name="LAST_COMMIT_MESSAGE" value="201711060025" />
+    <MESSAGE value="201711060048" />
+    <option name="LAST_COMMIT_MESSAGE" value="201711060048" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -570,31 +598,11 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/Model/Table/BandasTable.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="252">
-          <caret line="15" column="3" lean-forward="false" selection-start-line="15" selection-start-column="3" selection-end-line="15" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/config/app.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="480">
-          <caret line="235" column="32" lean-forward="true" selection-start-line="235" selection-start-column="32" selection-end-line="235" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Model/Table/EstilosTable.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="38" column="35" lean-forward="true" selection-start-line="38" selection-start-column="35" selection-end-line="38" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Controller/AvaliacaoController.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -648,6 +656,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1942">
           <caret line="100" column="44" lean-forward="false" selection-start-line="100" selection-start-column="44" selection-end-line="100" selection-end-column="44" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -662,6 +671,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="399">
           <caret line="49" column="6" lean-forward="false" selection-start-line="49" selection-start-column="6" selection-end-line="49" selection-end-column="6" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -684,6 +694,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="672">
           <caret line="71" column="14" lean-forward="true" selection-start-line="71" selection-start-column="14" selection-end-line="71" selection-end-column="14" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -699,6 +710,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="293">
           <caret line="53" column="8" lean-forward="false" selection-start-line="53" selection-start-column="8" selection-end-line="53" selection-end-column="8" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -706,6 +718,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="293">
           <caret line="161" column="20" lean-forward="false" selection-start-line="161" selection-start-column="20" selection-end-line="161" selection-end-column="20" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -721,6 +734,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="608">
           <caret line="1112" column="20" lean-forward="false" selection-start-line="1112" selection-start-column="20" selection-end-line="1112" selection-end-column="20" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -728,6 +742,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="293">
           <caret line="724" column="20" lean-forward="false" selection-start-line="724" selection-start-column="20" selection-end-line="724" selection-end-column="20" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -742,6 +757,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="357">
           <caret line="17" column="16" lean-forward="false" selection-start-line="17" selection-start-column="16" selection-end-line="17" selection-end-column="16" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -761,26 +777,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Template/Bandas/edit.ctp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="420">
-          <caret line="22" column="6" lean-forward="false" selection-start-line="22" selection-start-column="6" selection-end-line="22" selection-end-column="6" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Template/Estabelecimentos/edit.ctp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="378">
-          <caret line="20" column="0" lean-forward="true" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Controller/PagesController.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -797,18 +798,13 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Template/Usuarios/edit.ctp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="273">
-          <caret line="15" column="19" lean-forward="true" selection-start-line="15" selection-start-column="19" selection-end-line="15" selection-end-column="19" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Controller/EstabelecimentosController.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="273">
           <caret line="112" column="11" lean-forward="true" selection-start-line="112" selection-start-column="11" selection-end-line="112" selection-end-column="11" />
+          <folding>
+            <element signature="e#33#66#0#PHP" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -824,6 +820,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="493">
           <caret line="26" column="26" lean-forward="true" selection-start-line="26" selection-start-column="26" selection-end-line="33" selection-end-column="26" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -834,37 +831,6 @@
           <folding>
             <element signature="e#592#623#0#PHP" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Template/Bandas/view.ctp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="640">
-          <caret line="39" column="42" lean-forward="false" selection-start-line="39" selection-start-column="42" selection-end-line="39" selection-end-column="42" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Controller/BandasController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="438">
-          <caret line="154" column="16" lean-forward="false" selection-start-line="154" selection-start-column="16" selection-end-line="155" selection-end-column="44" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Controller/VideosController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="314">
-          <caret line="100" column="40" lean-forward="true" selection-start-line="100" selection-start-column="40" selection-end-line="100" selection-end-column="40" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Template/Videos/edit.ctp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="18" column="6" lean-forward="true" selection-start-line="18" selection-start-column="6" selection-end-line="18" selection-end-column="6" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -896,14 +862,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
           <caret line="15" column="44" lean-forward="true" selection-start-line="15" selection-start-column="44" selection-end-line="15" selection-end-column="44" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/webroot/js/scripts.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="11" lean-forward="true" selection-start-line="10" selection-start-column="11" selection-end-line="10" selection-end-column="11" />
           <folding />
         </state>
       </provider>
@@ -961,6 +919,96 @@
         <state relative-caret-position="68">
           <caret line="6" column="51" lean-forward="true" selection-start-line="6" selection-start-column="51" selection-end-line="6" selection-end-column="51" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Template/Bandas/edit.ctp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="9" column="32" lean-forward="false" selection-start-line="9" selection-start-column="32" selection-end-line="9" selection-end-column="32" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Template/BandasEstilos/edit.ctp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="7" column="49" lean-forward="true" selection-start-line="7" selection-start-column="49" selection-end-line="7" selection-end-column="49" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Template/Estabelecimentos/edit.ctp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="9" column="42" lean-forward="false" selection-start-line="9" selection-start-column="42" selection-end-line="9" selection-end-column="42" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Template/Usuarios/edit.ctp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="6" column="25" lean-forward="true" selection-start-line="6" selection-start-column="25" selection-end-line="6" selection-end-column="49" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Template/Estilos/edit.ctp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="9" column="33" lean-forward="false" selection-start-line="9" selection-start-column="33" selection-end-line="9" selection-end-column="33" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Template/Videos/edit.ctp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="9" column="20" lean-forward="false" selection-start-line="9" selection-start-column="20" selection-end-line="9" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Controller/VideosController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="203">
+          <caret line="127" column="22" lean-forward="true" selection-start-line="127" selection-start-column="22" selection-end-line="127" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/webroot/js/scripts.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="40" lean-forward="false" selection-start-line="7" selection-start-column="40" selection-end-line="7" selection-end-column="40" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Template/Bandas/view.ctp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="21" column="17" lean-forward="true" selection-start-line="21" selection-start-column="17" selection-end-line="21" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Model/Table/BandasTable.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="48">
+          <caret line="31" column="48" lean-forward="false" selection-start-line="31" selection-start-column="48" selection-end-line="31" selection-end-column="48" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Controller/BandasController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="114" column="29" lean-forward="true" selection-start-line="114" selection-start-column="29" selection-end-line="114" selection-end-column="29" />
+          <folding>
+            <element signature="e#33#66#0#PHP" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

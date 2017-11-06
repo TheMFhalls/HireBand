@@ -125,16 +125,28 @@ class VideosController extends AppController
      */
     public function delete($id = null)
     {
-        /*
-        $this->request->allowMethod(['post', 'delete']);
+        @session_start();
+
+        $video = $this->Videos->get($id, [
+            'contain' => []
+        ]);
+
+        if($video->usuario_id != @$_SESSION["usuario"]->id){
+            $_SESSION['mensagem'] = "Você não tem permissão para acessar esta página.";
+            return $this->redirect("/");
+        }
+
+        //$this->request->allowMethod(['post', 'delete']);
         $video = $this->Videos->get($id);
         if ($this->Videos->delete($video)) {
             $this->Flash->success(__('The video has been deleted.'));
+
+            $_SESSION['mensagem'] = "Vídeo deletado com sucesso!!";
+            return $this->redirect("/");
         } else {
             $this->Flash->error(__('The video could not be deleted. Please, try again.'));
         }
 
         return $this->redirect(['action' => 'index']);
-        */
     }
 }

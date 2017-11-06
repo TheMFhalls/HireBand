@@ -3,31 +3,17 @@
  * @var \App\View\AppView $this
  */
 ?>
-<nav class="large-3 medium-4 columns" id="actions-sidebar">
-    <ul class="side-nav">
-        <li class="heading"><?= __('Actions') ?></li>
-        <li><?= $this->Form->postLink(
-                __('Delete'),
-                ['action' => 'delete', $bandasEstilo->id],
-                ['confirm' => __('Are you sure you want to delete # {0}?', $bandasEstilo->id)]
-            )
-        ?></li>
-        <li><?= $this->Html->link(__('List Bandas Estilos'), ['action' => 'index']) ?></li>
-        <li><?= $this->Html->link(__('List Bandas'), ['controller' => 'Bandas', 'action' => 'index']) ?></li>
-        <li><?= $this->Html->link(__('New Banda'), ['controller' => 'Bandas', 'action' => 'add']) ?></li>
-        <li><?= $this->Html->link(__('List Estilos'), ['controller' => 'Estilos', 'action' => 'index']) ?></li>
-        <li><?= $this->Html->link(__('New Estilo'), ['controller' => 'Estilos', 'action' => 'add']) ?></li>
-    </ul>
-</nav>
-<div class="bandasEstilos form large-9 medium-8 columns content">
-    <?= $this->Form->create($bandasEstilo) ?>
-    <fieldset>
-        <legend><?= __('Edit Bandas Estilo') ?></legend>
-        <?php
-            echo $this->Form->control('banda_id', ['options' => $bandas]);
-            echo $this->Form->control('estilo_id', ['options' => $estilos]);
-        ?>
-    </fieldset>
-    <?= $this->Form->button(__('Submit')) ?>
-    <?= $this->Form->end() ?>
+<div class="container">
+    <div class="bandasEstilos col-12 mt-xs-20 mt-sm-5">
+        <?= $this->Form->create($bandasEstilo) ?>
+        <fieldset>
+            <legend>Editar Bandas Estilos</legend>
+            <?php
+                echo $this->Form->control('banda_id', ['options' => $bandas]);
+                echo $this->Form->control('estilo_id', ['options' => $estilos]);
+            ?>
+        </fieldset>
+        <?= $this->Form->button(__('Submit')) ?>
+        <?= $this->Form->end() ?>
+    </div>
 </div>

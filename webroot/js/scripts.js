@@ -1,5 +1,5 @@
 $(document).ready(function(){
-    $("input").addClass("form-control");
+    $("input,select,textarea").addClass("form-control");
     $("input[type='submit'],button[type='submit']")
         .addClass("btn btn-sucess")
         .text("ENVIAR")

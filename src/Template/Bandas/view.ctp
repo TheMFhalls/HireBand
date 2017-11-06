@@ -35,9 +35,15 @@
                     <?= $video->nome; ?>
                 </div>
                 <?php if(isset($is_owner)): ?>
-                <div class="editar">
-                    <a href="<?= LOCAL_HOST ?>/videos/edit/<?= $video->id ?>"
-                    class="btn btn-warning">Editar Vídeo</a>
+                <div class="row">
+                    <div class="editar col-12 col-sm-6">
+                        <a href="<?= LOCAL_HOST ?>/videos/edit/<?= $video->id ?>"
+                        class="btn btn-warning">Editar Vídeo</a>
+                    </div>
+                    <div class="deletar col-12 col-sm-6">
+                        <a href="<?= LOCAL_HOST ?>/videos/delete/<?= $video->id ?>"
+                       class="btn btn-danger">Deletar Vídeo</a>
+                    </div>
                 </div>
                 <?php endif; ?>
             </div>

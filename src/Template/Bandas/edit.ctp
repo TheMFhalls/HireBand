@@ -7,7 +7,7 @@
     <div class="bandas col-12 mt-xs-20 mt-sm-5">
         <?= $this->Form->create($banda) ?>
         <fieldset>
-            <legend><?= __('Edit Banda') ?></legend>
+            <legend>Editar Banda</legend>
             <?php
             echo $this->Form->control('nome_banda');
             echo $this->Form->control('data_inicio', ['empty' => true]);
