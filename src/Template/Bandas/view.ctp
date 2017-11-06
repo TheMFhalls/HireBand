@@ -8,7 +8,10 @@
     <div class="bandas col-12 mt-xs-20 mt-sm-5">
         <h3><?= h($banda->nome_banda) ?></h3>
 	<table class="vertical-table">
-	<?php if(isset($_SESSION["usuario"]["estabelecimento"])): ?>
+	<?php 
+		session_start();
+		if(isset(@$_SESSION["usuario"]["estabelecimento"])): 
+	?>
             <tr>
                 <th scope="row"><?= __('Telefone') ?></th>
                 <td><a href="tel:<?= h($banda->telefone) ?>"><?= h($banda->telefone) ?></a></td>
