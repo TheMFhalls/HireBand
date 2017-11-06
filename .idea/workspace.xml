@@ -14,17 +14,7 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tmp/cache/persistent/myapp_cake_core_translations_default_en__u_s" afterPath="$PROJECT_DIR$/tmp/cache/persistent/myapp_cake_core_translations_default_en__u_s" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tmp/debug_kit.sqlite" afterPath="$PROJECT_DIR$/tmp/debug_kit.sqlite" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/logs/debug.log" afterPath="$PROJECT_DIR$/logs/debug.log" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/logs/error.log" afterPath="$PROJECT_DIR$/logs/error.log" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Controller/BandasController.php" afterPath="$PROJECT_DIR$/src/Controller/BandasController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Template/Bandas/add.ctp" afterPath="$PROJECT_DIR$/src/Template/Bandas/add.ctp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Template/Bandas/edit.ctp" afterPath="$PROJECT_DIR$/src/Template/Bandas/edit.ctp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Template/Bandas/view.ctp" afterPath="$PROJECT_DIR$/src/Template/Bandas/view.ctp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Template/Pages/home.ctp" afterPath="$PROJECT_DIR$/src/Template/Pages/home.ctp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tests/Fixture/BandasFixture.php" afterPath="$PROJECT_DIR$/tests/Fixture/BandasFixture.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/cakephp/cakephp/src/Collection/functions.php" afterPath="$PROJECT_DIR$/vendor/cakephp/cakephp/src/Collection/functions.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/webroot/css/style.css" afterPath="$PROJECT_DIR$/webroot/css/style.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/webroot/js/scripts.js" afterPath="$PROJECT_DIR$/webroot/js/scripts.js" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -39,8 +29,8 @@
       <file leaf-file-name="view.ctp" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Template/Bandas/view.ctp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="289">
-              <caret line="20" column="54" lean-forward="true" selection-start-line="20" selection-start-column="54" selection-end-line="20" selection-end-column="54" />
+            <state relative-caret-position="425">
+              <caret line="28" column="17" lean-forward="true" selection-start-line="28" selection-start-column="17" selection-end-line="28" selection-end-column="17" />
               <folding />
             </state>
           </provider>
@@ -124,7 +114,6 @@
         <option value="$PROJECT_DIR$/src/Template/BandasEstilos/edit.ctp" />
         <option value="$PROJECT_DIR$/src/Template/Estabelecimentos/edit.ctp" />
         <option value="$PROJECT_DIR$/src/Template/Estilos/edit.ctp" />
-        <option value="$PROJECT_DIR$/src/Template/Bandas/view.ctp" />
         <option value="$PROJECT_DIR$/src/Controller/VideosController.php" />
         <option value="$PROJECT_DIR$/src/Controller/BandasController.php" />
         <option value="$PROJECT_DIR$/src/Template/Pages/home.ctp" />
@@ -133,6 +122,7 @@
         <option value="$PROJECT_DIR$/webroot/js/scripts.js" />
         <option value="$PROJECT_DIR$/src/Template/Bandas/add.ctp" />
         <option value="$PROJECT_DIR$/src/Template/Bandas/edit.ctp" />
+        <option value="$PROJECT_DIR$/src/Template/Bandas/view.ctp" />
       </list>
     </option>
   </component>
@@ -184,60 +174,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="HireBand" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="HireBand" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="HireBand" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="HireBand" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="HireBand" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Template" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="HireBand" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="HireBand" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Template" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Bandas" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
           </PATH>
@@ -369,7 +305,7 @@
       <workItem from="1508806578193" duration="3158000" />
       <workItem from="1509195775288" duration="32224000" />
       <workItem from="1509323581364" duration="14176000" />
-      <workItem from="1509935041648" duration="5827000" />
+      <workItem from="1509935041648" duration="6874000" />
     </task>
     <task id="LOCAL-00001" summary=".">
       <created>1507524077436</created>
@@ -581,11 +517,18 @@
       <option name="project" value="LOCAL" />
       <updated>1509938890100</updated>
     </task>
-    <option name="localTasksCounter" value="31" />
+    <task id="LOCAL-00031" summary="201711060201">
+      <created>1509940874703</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1509940874703</updated>
+    </task>
+    <option name="localTasksCounter" value="32" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="90787000" />
+    <option name="totallyTimeSpent" value="91834000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1552" height="840" extended-state="6" />
@@ -1065,8 +1008,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Template/Bandas/view.ctp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="20" column="54" lean-forward="true" selection-start-line="20" selection-start-column="54" selection-end-line="20" selection-end-column="54" />
+        <state relative-caret-position="425">
+          <caret line="28" column="17" lean-forward="true" selection-start-line="28" selection-start-column="17" selection-end-line="28" selection-end-column="17" />
           <folding />
         </state>
       </provider>

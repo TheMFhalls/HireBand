@@ -10,11 +10,18 @@
         <table class="vertical-table">
             <tr>
                 <th scope="row"><?= __('Telefone') ?></th>
-                <td><?= h($banda->telefone) ?></td>
+                <td><a href="tel:<?= h($banda->telefone) ?>"><?= h($banda->telefone) ?></a></td>
             </tr>
             <tr>
                 <th scope="row"><?= __('Email') ?></th>
-                <td><?= h($banda->email) ?></td>
+                <td>
+                    <a href="mailto:<?= h($banda->email) ?>?subject=
+                    Contratar serviços da banda '<?=h($banda->nome_banda)?>'
+                    &body=Olá eu sou <?=$_SESSION['usuario']->nome?> e gostaria de contratar os seus serviços de banda.
+                    Nosso meio de comunicação será este email.">
+                        <?= h($banda->email) ?>
+                    </a>
+                </td>
             </tr>
             <tr>
                 <th scope="row"><?= __('Data Inicio') ?></th>
