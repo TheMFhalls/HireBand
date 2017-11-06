@@ -7,7 +7,7 @@
     <div class="estabelecimentos col-12 mt-xs-20 mt-sm-5">
         <?= $this->Form->create($estabelecimento) ?>
         <fieldset>
-            <legend><?= __('Add Estabelecimento') ?></legend>
+            <legend>Adicionar Estabelecimento</legend>
             <?php
             echo $this->Form->control('nome_fantasia');
             echo $this->Form->control('endereco');
