@@ -62,7 +62,7 @@ function block_estilos(){
         ]);
 
     echo "<h3>Encontre uma banda pela categoria:</h3>";
-    echo "<ul>";
+    echo "<ul class='category'>";
     foreach($block_estilos as $estilo){
         echo "<li>";
         echo "<a href='$local_host/bandas/search/$estilo->id'>$estilo->nome</a>";

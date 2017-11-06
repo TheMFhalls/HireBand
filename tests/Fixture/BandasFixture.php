@@ -50,12 +50,12 @@ class BandasFixture extends TestFixture
             'id' => 1,
             'usuario_id' => 1,
             'nome_banda' => 'Lorem ipsum dolor sit amet',
-            'data_inicio' => '2017-10-30',
+            'data_inicio' => '2017-11-06',
             'endereco' => 'Lorem ipsum dolor sit amet, aliquet feugiat. Convallis morbi fringilla gravida, phasellus feugiat dapibus velit nunc, pulvinar eget sollicitudin venenatis cum nullam, vivamus ut a sed, mollitia lectus. Nulla vestibulum massa neque ut et, id hendrerit sit, feugiat in taciti enim proin nibh, tempor dignissim, rhoncus duis vestibulum nunc mattis convallis.',
             'telefone' => 'Lorem ipsum dolor sit amet',
             'email' => 'Lorem ipsum dolor sit amet',
-            'created' => '2017-10-30 01:14:38',
-            'modified' => '2017-10-30 01:14:38'
+            'created' => '2017-11-06 03:28:26',
+            'modified' => '2017-11-06 03:28:26'
         ],
     ];
 }

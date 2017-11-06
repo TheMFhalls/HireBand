@@ -10,7 +10,11 @@
             <legend>Editar Banda</legend>
             <?php
             echo $this->Form->control('nome_banda');
-            echo $this->Form->control('data_inicio', ['empty' => true]);
+            echo $this->Form->control('data_inicio', [
+                'empty' => true,
+                'minYear' => date('Y') - 50,
+                'maxYear' => date('Y')
+            ]);
             echo $this->Form->control('endereco');
             echo $this->Form->control('telefone');
             echo $this->Form->control('email');

@@ -10,21 +10,6 @@
             <div class="col-12" style="background-color:">
                 <img src="img/capa.jpg" class="img-fluid" alt="Responsive image">
             </div>
-            <div class="row">
-                <div class="col" style="" >
-                    <i class="fa fa-hand-peace-o fa-5x rounded-circle icones" style="padding:22%" aria-hidden="true"></i>
-                    <!--img src="img/capa.jpg" alt="..." class="rounded-circle icones"-->
-                </div>
-                <div class="col" style="">
-                    <i class="fa fa-music fa-5x rounded-circle icones" style="padding:22%" aria-hidden="true"></i>
-                </div>
-                <div class="col" style="">
-                    <i class="fa fa-music fa-5x rounded-circle icones" style="padding:22%" aria-hidden="true"></i>
-                </div>
-                <div class="col" style="">
-                    <i class="fa fa-music fa-5x rounded-circle icones" style="padding:22%" aria-hidden="true"></i>
-                </div>
-            </div>
         </div>
         <!--FIM BLOCO CENTRAL-->
         <!--INICIO BLOCO LATERAL-->

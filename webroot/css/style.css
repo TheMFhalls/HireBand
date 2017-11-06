@@ -99,3 +99,25 @@ a:active {
 	color:#ff8800;
 }
 
+ul.category {
+    padding: 0px;
+}
+
+ul.category li {
+    display: table-cell;
+    width: 1%;
+}
+
+ul.category li a {
+    white-space: nowrap;
+    font-weight: bolder;
+    color: black;
+    border: 1px solid #700c88;
+    padding: 5px;
+    background-color: rgba(112, 12, 136, 0.2);
+}
+
+label[for='tipo-banda'] {
+    padding-right: 50px;
+    margin-top: 20px;
+}
