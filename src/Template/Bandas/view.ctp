@@ -7,7 +7,8 @@
 <div class="container">
     <div class="bandas col-12 mt-xs-20 mt-sm-5">
         <h3><?= h($banda->nome_banda) ?></h3>
-        <table class="vertical-table">
+	<table class="vertical-table">
+	<?php if(isset($_SESSION["usuario"]["estabelecimento"])): ?>
             <tr>
                 <th scope="row"><?= __('Telefone') ?></th>
                 <td><a href="tel:<?= h($banda->telefone) ?>"><?= h($banda->telefone) ?></a></td>
@@ -30,7 +31,8 @@
             <tr>
                 <th scope="row"><?= __('Endereco') ?></th>
                 <td><?= $this->Text->autoParagraph(h($banda->endereco)); ?></td>
-            </tr>
+	    </tr>
+	<?php endif; ?>
         </table>
     </div>
     <div class="videos col-12 mt-xs-20 mt-sm-5">
