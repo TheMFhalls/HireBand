@@ -23,7 +23,7 @@
 <nav class="navbar navbar-expand-lg corPadrao">
     <div class="form-inline col-md-2" >
         <a class="navbar-brand" href="<?= LOCAL_HOST ?>">
-            <img class="logo-menu" src="<?= LOCAL_HOST ?>/img/logo2.png" alt="Generic placeholder image">
+            <img class="logo-menu" src="<?= LOCAL_HOST ?>/img/logo2.PNG" alt="Generic placeholder image">
         </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon" style="color:#FFFFFF"></span>
