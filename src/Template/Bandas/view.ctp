@@ -19,10 +19,7 @@
             <tr>
                 <th scope="row"><?= __('Email') ?></th>
                 <td>
-                    <a href="mailto:<?= h($banda->email) ?>?subject=
-                    Contratar serviços da banda '<?=h($banda->nome_banda)?>'
-                    &body=Olá estou vendo seu perfil no HireBand e gostaria de contratar os seus serviços de banda.
-                    Nosso meio de comunicação será este email.">
+                    <a href="mailto:<?= h($banda->email) ?>?subject=Contratar serviços da banda '<?=h($banda->nome_banda)?>'&body=Olá estou vendo seu perfil no HireBand e gostaria de contratar os seus serviços de banda. Nosso meio de comunicação será este email.">
                         <?= h($banda->email) ?>
                     </a>
                 </td>
