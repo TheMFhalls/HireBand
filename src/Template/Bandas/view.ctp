@@ -9,8 +9,8 @@
         <h3><?= h($banda->nome_banda) ?></h3>
 	<table class="vertical-table">
 	<?php 
-		session_start();
-		if(isset(@$_SESSION["usuario"]["estabelecimento"])): 
+		@session_start();
+		@if(isset($_SESSION["usuario"]["estabelecimento"])):
 	?>
             <tr>
                 <th scope="row"><?= __('Telefone') ?></th>
